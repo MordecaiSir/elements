@@ -2,9 +2,9 @@
 <index>
 	<info>
 		<name>Vindavia RPG</name>
-        	<description>Fantasy world of MordecaiSir</description>
+        	<source>Fantasy world of MordecaiSir</source>
 		<author url="https://github.com/MordecaiSir">MordecaiSir</author>
-		<update version="1.0.10">
+		<update version="1.0.11">
 			<file name="vindavia.index" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia.index" />
 		</update>
 	</info>
