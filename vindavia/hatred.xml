@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Barbarian Hatred</name>
-		<update version="1.0.10">
+		<update version="1.0.11">
 			<file name="hatred.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/hatred.xml" />
 		</update>
 	</info>
@@ -47,7 +47,7 @@
 		</description>
 		<sheet>
 			<description>
-			<p>When you use Wild Strikes your attacks deal 1d{{wild strikes:damage}} and taking extra {{wild strikes:extra}} damage. </p>
+			<p>When you use Wild Strikes your attacks deal 1d{{wild strikes:damage}} and you are taking extra {{wild strikes:extra}} damage. </p>
 			
 			</description>
 		</sheet>
