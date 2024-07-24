@@ -2,8 +2,8 @@
 <elements>
 	<info>
 		<name>Barbarian Hatred</name>
-		<update version="1.0.1">
-			<file name="barbarian-hatred.xml" url="https://raw.githubusercontent.com/MordecaiSir/barbarian-hatred/master/vindavia/barbarian-hatred.xml" />
+		<update version="1.0.2">
+			<file name="barbarian-hatred.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/barbarian-hatred.xml" />
 		</update>
 	</info>
 	
