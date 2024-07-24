@@ -5,10 +5,10 @@
         	<description>Fantasy world of MordecaiSir</description>
 		<author url="https://github.com/MordecaiSir">MordecaiSir</author>
 		<update version="1.0.0">
-			<file name="user-yourname.index" url="https://raw.githubusercontent.com/yourgithubaccount/repositoryname/master/vindavia.index" />
+			<file name="user-yourname.index" url="https://raw.githubusercontent.com/MordecaiSir/barbarian-hatred/master/vindavia.index" />
 		</update>
 	</info>
 	<files>
-		<file name="file1.xml" url="https://raw.githubusercontent.com/yourgithubaccount/repositoryname/master/vindavia/barbarian-hatred.xml" />
+		<file name="barbarian-hatred.xml" url="https://raw.githubusercontent.com/MordecaiSir/barbarian-hatred/master/vindavia/barbarian-hatred.xml" />
 	</files>
 </index>
