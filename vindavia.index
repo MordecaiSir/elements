@@ -4,7 +4,7 @@
 		<name>Vindavia RPG</name>
         	<description>Fantasy world of MordecaiSir</description>
 		<author url="https://github.com/MordecaiSir">MordecaiSir</author>
-		<update version="1.0.0">
+		<update version="1.0.1">
 			<file name="user-yourname.index" url="https://raw.githubusercontent.com/MordecaiSir/barbarian-hatred/master/vindavia.index" />
 		</update>
 	</info>
