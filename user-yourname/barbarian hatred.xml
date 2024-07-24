@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Barbarian Hatred</name>
+		<update version="1.0.0">
+			<file name="barbarian-hatred.xml" url="https://raw.githubusercontent.com/yourgithubaccount/repositoryname/master/vindavia/barbarian-hatred.xml" />
+		</update>
+	</info>
+	
+	<!-- place your elements here -->
+	
+</elements>
