@@ -4,13 +4,13 @@
 		<name>Vindavia RPG</name>
         	<description>Fantasy world of MordecaiSir</description>
 		<author url="https://github.com/MordecaiSir">MordecaiSir</author>
-		<update version="1.0.24">
+		<update version="1.0.25">
 			<file name="vindavia.index" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia.index" />
 		</update>
 	</info>
 	<files>
-		<obsolete name="sources.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/hatred.xml"/>
-		<file name="hatred.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/hatred.xml" />
-                <file name="source.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/source.xml" />
+		<obsolete name="sources.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/sources.xml"/>
+		<file name="barbarian-hatred.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/barbarian-hatred.xml" />
+        <file name="source.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/source.xml" />
 	</files>
 </index>
