@@ -9,7 +9,7 @@
 		</update>
 	</info>
 	<files>
-		<obsolete name="sources.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/hatred.xml" />
+		<obsolete name="sources.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/hatred.xml"/>
 		<file name="hatred.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/hatred.xml" />
                 <file name="source.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/source.xml" />
 	</files>
