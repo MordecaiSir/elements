@@ -2,13 +2,13 @@
 <elements>
 	<info>
 		<name>Path of the Hatred</name>
-		<update version="1.0.18">
+		<update version="1.0.19">
 			<file name="hatred.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/hatred.xml" />
 		</update>
 	</info>
 	
 	<!-- place your elements here -->
-	<element name="Path of the Hatred" type="Archetype" source="Vindavia" id="ID_MS_VRPG_ARCHETYPE_BARBARIAN_PATH_OF_THE_HATRED">
+	<element name="Path of the Hatred" type="Archetype" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_BARBARIAN_PATH_OF_THE_HATRED">
 		<supports>Primal Path</supports>
 		<description>
 			<p>Barbarians who walk the Path of the Hatred draw their rage from a emotion burning within their souls.</p>
