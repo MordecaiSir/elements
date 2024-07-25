@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<name>Barbarian Hatred</name>
-		<update version="1.0.14">
+		<name>Path of the Hatred</name>
+		<update version="1.0.15">
 			<file name="hatred.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/hatred.xml" />
 		</update>
 	</info>
