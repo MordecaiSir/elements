@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Path of the Hatred</name>
-		<update version="1.0.22">
+		<update version="1.0.23">
 			<file name="hatred.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/hatred.xml" />
 		</update>
 	</info>
@@ -52,7 +52,7 @@
 		<sheet>
 			<description>
 			<p>While you are raging Reckless Attack becomes Wild Strikes. </p>
-			<p style="text-indent: -1em; margin-left: 1em"><strong><em>Wild Strikes.</em></strong> Your attacks deal 1d<strong>{{wild strikes:damage}}</strong> and you are taking extra <strong>{{wild strikes:extra}}</strong> damage. </p>
+			<p>Your attacks deal 1d{{wild strikes:damage}} and you are taking extra {{wild strikes:extra}} damage. </p>
 			
 			</description>
 		</sheet>
