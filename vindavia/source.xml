@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="1.0.17">
+		<update version="1.0.18">
 			<file name="source.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/source.xml" />
 		</update>
 	</info>
@@ -14,8 +14,7 @@
 			<set name="url">https://discord.gg/7SHqJZv37R</set>
 			<set name="image">https://i.hizliresim.com/f18djxq.jpg</set>
 			<set name="author" abbreviation="MS" url="https://discord.gg/7SHqJZv37R">MordecaiSir</set>
-			<set name="official">true</set>
-			<set name="supplement">true</set>
+			<set name="homebrew">true</set>
 			<set name="release">20240724</set>
 		</setters>
 	</element>
