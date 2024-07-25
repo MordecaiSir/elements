@@ -4,7 +4,7 @@
 		<name>Vindavia RPG</name>
         	<description>Fantasy world of MordecaiSir</description>
 		<author url="https://github.com/MordecaiSir">MordecaiSir</author>
-		<update version="1.0.14">
+		<update version="1.0.15">
 			<file name="vindavia.index" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia.index" />
 		</update>
 	</info>
