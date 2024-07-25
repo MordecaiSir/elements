@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Path of the Hatred</name>
-		<update version="1.0.21">
+		<update version="1.0.22">
 			<file name="hatred.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/hatred.xml" />
 		</update>
 	</info>
@@ -109,13 +109,13 @@
 		</description>
 		<sheet>
 			<description>
-			<p>The hatred that fuels your rage allows you to gain unimaginable toughness. While you're raging, when you kill a enemy you regain hit points equal to 5 + constitution modifier.</p>
+			<p>While you're raging, when you kill a enemy you regain {{massacre:hp}} hit points.</p>
 			
 			</description>
 		</sheet>
 		<rules>
-			<stat name="survivor:hp" value="5" />
-			<stat name="survivor:hp" value="constitution:modifier" />
+			<stat name="massacre:hp" value="5" />
+			<stat name="massacre:hp" value="constitution:modifier" />
 		</rules>
 	</element>
 
