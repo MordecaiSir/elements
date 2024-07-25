@@ -2,12 +2,13 @@
 <elements>
 	<info>
 		<name>Path of the Hatred</name>
-		<update version="1.0.20">
+		<update version="1.0.21">
 			<file name="hatred.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/hatred.xml" />
 		</update>
 	</info>
 	
-	<!-- place your elements here -->
+	<!-- Subclass description -->
+
 	<element name="Path of the Hatred" type="Archetype" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_BARBARIAN_PATH_OF_THE_HATRED">
 		<supports>Primal Path</supports>
 		<description>
@@ -36,18 +37,22 @@
 			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_PATH_OF_THE_HATRED_CONTINUE_THE_MASSACRE" level="14" />
 		</rules>
 	</element>
+
+	<!-- HATRED -->
+
 	<element name="HATRED" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_PATH_OF_THE_HATRED_HATRED">
 		<description>
 			<p><em>3rd-level Path of the Hatred feature</em></p>
 			<p>Starting when you choose this path at 3rd level, while you are raging Reckless Attack becomes Wild Strikes.</p>
-			<p style="text-indent: -1em; margin-left: 1em">Your attacks/weapons deal more damage (This bonus increases as you level). 3rd 1d4, 6th 1d6, 10th 1d8, 14th 1d12.</p>
+			<p style="text-indent: -1em; margin-left: 1em">Your attacks/weapons deal more damage. 3rd 1d4, 6th 1d6, 10th 1d8, 14th 1d12.</p>
 			<p style="text-indent: -1em; margin-left: 1em">All of your attacks made with advantage.</p>
 			<p style="text-indent: -1em; margin-left: 1em">All attacks against you made with advantage.</p>
-			<p style="text-indent: -1em; margin-left: 1em">You take extra damage all forms of attacks (spells, magic items etc.). 3rd +1, 6th +2, 10th +3, 14th +4.</p>
+			<p style="text-indent: -1em; margin-left: 1em">You take extra damage all forms of attacks. 3rd +1, 6th +2, 10th +3, 14th +4. (spells, magic items etc.)</p>
 		</description>
 		<sheet>
 			<description>
-			<p>When you use Wild Strikes your attacks deal 1d{{wild strikes:damage}} and you are taking extra {{wild strikes:extra}} damage. </p>
+			<p>While you are raging Reckless Attack becomes Wild Strikes. </p>
+			<p style="text-indent: -1em; margin-left: 1em"><strong><em>Wild Strikes.</em></strong> Your attacks deal 1d<strong>{{wild strikes:damage}}</strong> and you are taking extra <strong>{{wild strikes:extra}}</strong> damage. </p>
 			
 			</description>
 		</sheet>
@@ -62,5 +67,56 @@
 			<stat name="wild strikes:extra" value="4" bonus="ability" level="14"/>
 		</rules>
 	</element>
+
+	<!-- UNTIL LAST ENEMY DIES-->
+
+	<element name="UNTIL LAST ENEMY DIES" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_PATH_OF_THE_HATRED_UNTIL_LAST_ENEMY_DIES">
+		<description>
+			<p><em>6th-level Path of the Hatred feature</em></p>
+			<p>Starting at 6th level, You can use your bonus action to move up to your speed and make an attack.</p>
+			<p>You can’t be charmed or frightened while raging. If you are charmed or frightened when you enter your rage, the effect is suspended for the duration of the rage.</p>
+		</description>
+		<sheet>
+			<description>
+			<p>You can use your bonus action to move up to your speed and make an attack.</p>
+			<p>You can’t be charmed or frightened while raging. If you are charmed or frightened when you enter your rage, the effect is suspended for the duration of the rage.</p>
+			
+			</description>
+		</sheet>
+	</element>
 	
+    <!-- MONSTER IN FRONT OF ME-->
+
+	<element name="MONSTER IN FRONT OF ME" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_PATH_OF_THE_HATRED_MONSTER_IN_FRONT_OF_ME">
+		<description>
+			<p><em>10th-level Path of the Hatred feature</em></p>
+			<p>Starting at 10th level, You pose too much danger to your enemy. Your enemies around you are prioritizing killing you first. While you're raging, if any enemies are within 30 ft. will prioritize attacking you. If the creature cannot attack you, then the target will not prioritize you. You also gain resistance to all types of damage (except extra damage from Wild Strikes).</p>
+		</description>
+		<sheet>
+			<description>
+			<p>While you're raging, if any enemies are within 30 ft. will prioritize attacking you. If the creature cannot attack you, then the target will not prioritize you. You also gain resistance to all types of damage (except Wild Strikes extra damage).</p>
+			
+			</description>
+		</sheet>
+	</element>
+
+    <!-- CONTINUE THE MASSACRE-->
+
+	<element name="CONTINUE THE MASSACRE" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_PATH_OF_THE_HATRED_CONTINUE_THE_MASSACRE">
+		<description>
+			<p><em>14th-level Path of the Hatred feature</em></p>
+			<p>Starting at 14th level, The hatred that fuels your rage allows you to gain unimaginable toughness. While you're raging, when you kill a enemy you regain hit points equal to 5 + constitution modifier.</p>
+		</description>
+		<sheet>
+			<description>
+			<p>The hatred that fuels your rage allows you to gain unimaginable toughness. While you're raging, when you kill a enemy you regain hit points equal to 5 + constitution modifier.</p>
+			
+			</description>
+		</sheet>
+		<rules>
+			<stat name="survivor:hp" value="5" />
+			<stat name="survivor:hp" value="constitution:modifier" />
+		</rules>
+	</element>
+
 </elements>
