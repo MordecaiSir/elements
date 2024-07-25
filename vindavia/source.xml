@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="1.0.13">
+			<file name="source.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/source.xml" />
+		</update>
+	</info>
+	<element name="Vindavia RPG" type="Source" source="Core" id="ID_MS_SOURCE_VINDAVIA_RPG">
+		<description>
+			<![CDATA[<p>Thank you for your attention!</p>]]>
+		</description>
+		<setters>
+			<set name="abbreviation">VRPG</set>
+			<set name="url">https://discord.gg/7SHqJZv37R</set>
+			<set name="image">https://i.hizliresim.com/f18djxq.jpg</set>
+			<set name="author" abbreviation="MS" url="https://discord.gg/7SHqJZv37R">MordecaiSir</set>
+			<set name="official">true</set>
+			<set name="supplement">true</set>
+			<set name="release">20240724</set>
+		</setters>
+	</element>
+</elements>
