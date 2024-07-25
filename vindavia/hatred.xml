@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Path of the Hatred</name>
-		<update version="1.0.23">
+		<update version="1.0.24">
 			<file name="hatred.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/hatred.xml" />
 		</update>
 	</info>
@@ -51,8 +51,7 @@
 		</description>
 		<sheet>
 			<description>
-			<p>While you are raging Reckless Attack becomes Wild Strikes. </p>
-			<p>Your attacks deal 1d{{wild strikes:damage}} and you are taking extra {{wild strikes:extra}} damage. </p>
+			<p>While you are raging Reckless Attack becomes Wild Strikes. Your attacks deal 1d{{wild strikes:damage}} and you are taking extra {{wild strikes:extra}} damage. </p>
 			
 			</description>
 		</sheet>
@@ -78,8 +77,7 @@
 		</description>
 		<sheet>
 			<description>
-			<p>You can use your bonus action to move up to your speed and make an attack.</p>
-			<p>You can’t be charmed or frightened while raging. If you are charmed or frightened when you enter your rage, the effect is suspended for the duration of the rage.</p>
+			<p>You can use your bonus action to move up to your speed and make an attack. You can’t be charmed or frightened while raging. If you are charmed or frightened when you enter your rage, the effect is suspended for the duration of the rage.</p>
 			
 			</description>
 		</sheet>
