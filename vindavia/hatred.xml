@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Barbarian Hatred</name>
-		<update version="1.0.12">
+		<update version="1.0.13">
 			<file name="hatred.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/hatred.xml" />
 		</update>
 	</info>
