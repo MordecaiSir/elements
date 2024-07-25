@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Path of the Hatred</name>
-		<update version="1.0.19">
+		<update version="1.0.20">
 			<file name="hatred.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/hatred.xml" />
 		</update>
 	</info>
@@ -36,7 +36,7 @@
 			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_PATH_OF_THE_HATRED_CONTINUE_THE_MASSACRE" level="14" />
 		</rules>
 	</element>
-	<element name="HATRED" type="Archetype Feature" source="Vindavia" id="ID_MS_VRPG_ARCHETYPE_FEATURE_PATH_OF_THE_HATRED_HATRED">
+	<element name="HATRED" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_PATH_OF_THE_HATRED_HATRED">
 		<description>
 			<p><em>3rd-level Path of the Hatred feature</em></p>
 			<p>Starting when you choose this path at 3rd level, while you are raging Reckless Attack becomes Wild Strikes.</p>
