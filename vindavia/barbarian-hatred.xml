@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Path of the Hatred</name>
-		<update version="1.0.25">
+		<update version="1.0.26">
 			<file name="barbarian-hatred.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/barbarian-hatred.xml" />
 		</update>
 	</info>
@@ -51,7 +51,7 @@
 		</description>
 		<sheet>
 			<description>
-			<p>While you are raging Reckless Attack becomes Wild Strikes. Your attacks deal 1d{{wild strikes:damage}} and you are taking extra {{wild strikes:extra}} damage. </p>
+			<p>While you are raging Reckless Attack becomes Wild Strikes. Your attacks dealing extra 1d{{wild strikes:damage}} damage and you are taking extra {{wild strikes:extra}} damage. </p>
 			
 			</description>
 		</sheet>
