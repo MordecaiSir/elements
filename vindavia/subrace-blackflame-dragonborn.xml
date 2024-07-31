@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
-	<element name="Draconic Ancestry (Dark)" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_DRACONIC_ANCESTRY_BLACKFLAME">
+	<element name="Draconic Ancestry (Black)" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_DRACONIC_ANCESTRY_BLACKFLAME">
 		<supports>Draconic Ancestry</supports>
 		<description>
 			<div element="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY" />
@@ -10,8 +10,8 @@
 		</sheet>
 		<rules>
 			<stat inline="true" name="draconic-ancestry" value="Black Flame"/>
-			<stat inline="true" name="draconic-ancestry:damage type" value="Black Flame" />
-			<stat inline="true" name="draconic-ancestry:breath" value="5 by 30 ft. line (Dex. save)" />
+			<stat inline="true" name="draconic-ancestry:damage type" value="necrotic" />
+			<stat inline="true" name="draconic-ancestry:breath" value="15 ft. cone (Dex. save)" />
 		</rules>
 	</element>
 </elements>
