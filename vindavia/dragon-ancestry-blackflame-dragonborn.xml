@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Dragon Ancestry (Black Flame)</name>
-		<update version="1.0.31">
+		<update version="1.0.32">
 			<file name="dragon-ancestry-blackflame-dragonborn.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/dragon-ancestry-blackflame-dragonborn.xml" />
 		</update>
 	</info>
