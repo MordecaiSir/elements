@@ -4,40 +4,14 @@
 		<name>Vindavia RPG</name>
         	<description>Fantasy world of MordecaiSir</description>
 		<author url="https://github.com/MordecaiSir">MordecaiSir</author>
-		<update version="1.0.30">
+		<update version="1.0.31">
 			<file name="vindavia.index" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia.index" />
 		</update>
 	</info>
 	<files>
 		<obsolete name="sources.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/sources.xml"/>
 		<file name="barbarian-hatred.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/barbarian-hatred.xml" />
-	   <!-- <file name="subrace-blackflame-dragonborn.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/subrace-blackflame-dragonborn.xml" /> -->
+	    <file name="dragon-ancestry-blackflame-dragonborn.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/dragon-ancestry-blackflame-dragonborn.xml" />
         <file name="source.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/source.xml" />
 	</files>
 </index>
-
-
-
-<!-- 
-
-<?xml version="1.0" encoding="utf-8" ?>
-<elements>
-	<element name="Draconic Ancestry (Black)" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_DRACONIC_ANCESTRY_BLACKFLAME">
-		<supports>Draconic Ancestry</supports>
-		<description>
-			<div element="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY" />
-		</description>
-		<sheet alt="Black">
-			<description>Your draconic ancestry is {{draconic-ancestry}}. Your damage type is {{draconic-ancestry:damage type}}. Your breath weapon is {{draconic-ancestry:breath}}.</description>
-		</sheet>
-		<rules>
-			<stat inline="true" name="draconic-ancestry" value="Black Flame"/>
-			<stat inline="true" name="draconic-ancestry:damage type" value="necrotic" />
-			<stat inline="true" name="draconic-ancestry:breath" value="15 ft. cone (Dex. save)" />
-		</rules>
-	</element>
-</elements>
-
-
-
--->
