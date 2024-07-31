@@ -13,4 +13,5 @@
 			<stat inline="true" name="draconic-ancestry:damage type" value="Black Flame" />
 			<stat inline="true" name="draconic-ancestry:breath" value="5 by 30 ft. line (Dex. save)" />
 		</rules>
+	</element>
 </elements>
