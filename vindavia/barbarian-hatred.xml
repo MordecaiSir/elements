@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Path of the Hatred</name>
-		<update version="1.0.36">
+		<update version="1.0.37">
 			<file name="barbarian-hatred.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/barbarian-hatred.xml" />
 		</update>
 	</info>
@@ -12,7 +12,9 @@
 	<element name="Path of the Hatred" type="Archetype" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_BARBARIAN_PATH_OF_THE_HATRED">
 		<supports>Primal Path</supports>
 		<description>
-			<p>Barbarians who walk the Path of the Hatred draw their rage from a emotion burning within their souls.</p>
+			<p>Barbarians who walk the Path of Hatred are driven by an unrelenting fury, fueled by the wrongs they've endured and the desire to protect what remains dear to them. Their rage is not just an expression of emotion but a destructive force that bends their body and mind to a single purpose: the annihilation of those who stand in their way. Every strike, every wound, only serves to intensify their wrath, pushing them beyond the limits of pain and endurance.</p>
+            <p>These warriors care little for their own safety, throwing themselves into battle with reckless abandon. Their hatred manifests as a primal force, granting them brutal power, but at a terrible cost. They are relentless, driven by a single goal—eradication of their enemies at all costs. The pain they endure in battle only sharpens their focus, and their presence on the battlefield draws the attention of all who would dare to challenge them.</p>
+            <p>Barbarians on this path are the embodiment of vengeance and fury. Their rage is their shield, their weapon, and their curse, making them formidable foes and unyielding protectors of those they care about.</p>
 			<p class="indent">You can choose the reason of your hatred or determine it by rolling on the Origin of the Hatred table.</p>
 			<h5 class="caption">Origin of the Hatred</h5>
 			<table>
@@ -103,7 +105,8 @@
 	<element name="CONTINUE THE MASSACRE" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_PATH_OF_THE_HATRED_CONTINUE_THE_MASSACRE">
 		<description>
 			<p><em>14th-level Path of the Hatred feature</em></p>
-			<p>Starting at 14th level, The hatred that fuels your rage allows you to gain unimaginable toughness. While you're raging, when you kill a enemy you regain hit points equal to 5 + constitution modifier.</p>
+			<p>Starting at 14th level, The hatred that fuels your rage allows you to gain unimaginable toughness. While you're raging, when you kill a enemy you regain hit points equal to 5 + constitution modifier. </p>
+			<p>Also when you take damage from a creature that is within 5 feet of you, you can use your reaction to make a melee weapon attack against that creature.</p>
 		</description>
 		<sheet>
 			<description>
