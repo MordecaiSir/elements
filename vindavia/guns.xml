@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="1.0.38">
+			<file name="guns.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/guns.xml" />
+		</update>
+	</info>
+
+	<element name="Pistol of Fate" type="Weapon" source="Vindavia RPG" id="ID_MS_VRPG_WEAPON_PISTOL_OF_FATE">
+		<supports> ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED, ID_INTERNAL_WEAPON_PROPERTY_PRIMITIVEGUNS, ID_INTERNAL_DAMAGETYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_MISFIRE, ID_INTERNAL_WEAPON_PROPERTY_SIDEARMS</supports>
+		<description>
+			<p>Ammunition (range 30/90), Loading, Light, Misfire 2</p>
+		</description>
+		<setters>
+			<set name="category">Vindavia RPG</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="3">3 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">30/90</set>
+			<set name="damage" type="piercing">1d8</set>
+			<set name="misfire">2</set>
+			<set name="proficiency">ID_MS_VRPG_PROFICIENCY_WEAPON_PROFICIENCY_PISTOL_OF_FATE</set>
+		</setters>
+	</element>
+<element name="Rifle of Death" type="Weapon" source="Vindavia RPG" id="ID_MS_VRPG_WEAPON_RIFLE_OF_DEATH">
+		<supports> ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED, ID_INTERNAL_WEAPON_PROPERTY_PRIMITIVEGUNS, ID_INTERNAL_DAMAGETYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_MISFIRE, ID_INTERNAL_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description>
+			<p>Ammunition (range 70/200), Two-Handed, Loading, Misfire 2</p>
+		</description>
+		<setters>
+			<set name="category">Vindavia RPG</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="10">10 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">70/200</set>
+			<set name="damage" type="piercing">1d12</set>
+			<set name="misfire">2</set>
+			<set name="proficiency">ID_MS_VRPG_PROFICIENCY_WEAPON_PROFICIENCY_RIFLE_OF_DEATH</set>
+		</setters>
+	</element>
+
+
+
+
+
+</elements>
