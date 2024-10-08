@@ -556,8 +556,10 @@
 			</ul>
 		</description>
 		<sheet>
-			<description>You can use an action to lie in wait to take an action against any enemy that reveals itself. If a creature moves, makes a weapon attack, or casts a spell while within your firearm's range, you can use your reaction to make an attack against them.
-			Save DC {{overwatch:dc}}</description>
+			<description>You can use an action to lie in wait to take an action against any enemy that reveals itself. If a creature moves, makes a weapon attack, or casts a spell while within your firearm's range, you can use your reaction to make an attack against them. Save DC {{overwatch:dc}}
+			If the attack was triggered by the target's movement, it must make a Dexterity saving throw. On a failed save, its movement speed is reduced by half until the end of your next turn. On a successful save, their speed is only reduced by 10 until the end of your next turn.
+			If the attack was triggered by the creature making a weapon attack, it must make a Constitution saving throw. On a failed save, it has disadvantage on attack rolls until the start of your next turn. On a successful save, it only has disadvantage on the triggering attack.
+			If the attack was triggered by the creature casting a spell, it must make a Constitution save. On a failed save, the target(s) of the spell have advantage on the saving throw to resist the effects of the spell, in addition all targeted creatures gain resistance to the spells damage. If the spell requires a spell attack roll it would be made with disadvantage.</description>
 		</sheet>
 		<rules>
 			<stat name="overwatch:dc" value="8" />
