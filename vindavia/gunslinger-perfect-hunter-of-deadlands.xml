@@ -340,7 +340,7 @@
 		<supports> ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_MS_VRPG_WEAPON_PROPERTY_RELOAD_2, ID_MS_VRPG_WEAPON_PROPERTY_MISFIRE_1</supports>
 		<description />
 		<setters>
-			<set name="category">Vindavia RPG</set>
+			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="3">3 lb.</set>
 			<set name="slot">onehand</set>
@@ -354,7 +354,7 @@
 		<supports> ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_MS_VRPG_WEAPON_PROPERTY_RELOAD_2, ID_MS_VRPG_WEAPON_PROPERTY_MISFIRE_3, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
 		<description />
 		<setters>
-			<set name="category">Vindavia RPG</set>
+			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="10">10 lb.</set>
 			<set name="slot">twohand</set>
