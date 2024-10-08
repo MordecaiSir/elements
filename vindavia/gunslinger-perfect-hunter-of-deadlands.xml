@@ -2,7 +2,7 @@
 <elements>
 <info>
 		<name>Gunslinger</name>
-		<update version="1.0.42">
+		<update version="1.0.43">
 			<file name="gunslinger-perfect-hunter-of-deadlands.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/gunslinger-perfect-hunter-of-deadlands.xml" />
 		</update>
 	</info>
@@ -74,7 +74,6 @@
 			<set name="hd">d8</set>
 		</setters>
 		<rules>
-			<grant type="Grants" id="ID_MS_VRPG_GRANTS_ARCANEARTILLERY_REQUIREMENT" />
 
 			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_MS_VRPG_MULTICLASS_GUNSLINGER" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" requirements="!ID_MS_VRPG_MULTICLASS_GUNSLINGER" />
@@ -132,13 +131,13 @@
 			<p class="indent"><strong><em>Run ‘N Gun.</em></strong> You can use Dash as a bonus action.</p>
 			<p class="indent"><strong><em>Slinger’s Senses.</em></strong> You can make a Wisdom (Perception) check as a bonus action if you have a weapon drawn.</p>
 			<p class="indent"><strong><em>Stock Strike.</em></strong> When you make a melee weapon attack using a firearm on your turn, you use your choice of your Strength or Dexterity modifier for the attack and damage rolls. Additionally, if the attack hits, you can use your bonus action to not provoke opportunity attacks from the target of the attack until the end of your turn.</p>
-            <p class="indent"><strong><em>Fearless.</em></strong> When you reach 4th level. You can use an action to end one effect on yourself that is causing you to be frightened.</p>
+            Fearless.</em></strong> When you reach 4th level. You can use an action to end one effect on yourself that is causing you to be frightened.</p>
 		</description>
 		<sheet>
-			<description><p class="indent">Run ‘N Gun. You can use Dash as a bonus action.</p>
-			<p class="indent">Slinger’s Senses. You can make a Wisdom (Perception) check as a bonus action if you have a weapon drawn.</p>
-			<p class="indent">Stock Strike. When you make a melee weapon attack using a firearm on your turn, you use your choice of your Strength or Dexterity modifier for the attack and damage rolls. Additionally, if the attack hits, you can use your bonus action to not provoke opportunity attacks from the target of the attack until the end of your turn.</p>
-            <p class="indent" level="4">Fearless. You can use an action to end one effect on yourself that is causing you to be frightened. </p>
+			<description>Run ‘N Gun. You can use Dash as a bonus action.
+			Slinger’s Senses. You can make a Wisdom (Perception) check as a bonus action if you have a weapon drawn.
+			Stock Strike. When you make a melee weapon attack using a firearm on your turn, you use your choice of your Strength or Dexterity modifier for the attack and damage rolls. Additionally, if the attack hits, you can use your bonus action to not provoke opportunity attacks from the target of the attack until the end of your turn.
+            Fearless. You can use an action to end one effect on yourself that is causing you to be frightened.
 			</description>
 		</sheet>
 	</element>	
@@ -225,7 +224,7 @@
 
     <!-- Action Surge -->
 
-	<element name="Action Surge" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_FEATURE_ACTIONSURGE">
+	<element name="Action Surge" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_FEATURE_ACTION_SURGE">
 		<description>
 			<p>Starting at 2nd level, you can push yourself beyond your normal limits for a moment. On your turn, you can take one additional action on top of your regular action and a possible bonus action.</p>
 			<p class="indent">Once you use this feature, you must finish a short or long rest before you can use it again.</p>
