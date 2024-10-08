@@ -370,8 +370,8 @@
     <element name="Weapon Proficiency (Firearms)" type="Proficiency" source="Vindavia RPG" id="ID_MS_VRPG_PROFICIENCY_WEAPON_FIREARMS">
 		<requirements>ID_MS_VRPG_CLASS_GUNSLINGER</requirements>
 		<rules>
-			<grant type="Proficiency" id="ID_MS_VRPG_PROFICIENCY_WEAPON_PISTOL" />
-			<grant type="Proficiency" id="ID_MS_VRPG_PROFICIENCY_WEAPON_MUSKET" />
+			<grant type="Proficiency" id="ID_MS_VRPG_PROFICIENCY_WEAPON_THE_CURE_PISTOL" />
+			<grant type="Proficiency" id="ID_MS_VRPG_PROFICIENCY_WEAPON_PEACEMAKER_SNIPER" />
 		</rules>
 	</element>
 
