@@ -62,9 +62,9 @@
 			<div element="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_BULLET_TIME" />
 			<div element="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_VICIOUS_INTENT" />
 			<div element="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_SHOOTOUT_SENSE" />
-			<div element="ID_MS_VRPG_CLASS_FEATURE_RELENTLESS" />
+			<div element="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_RELENTLESS" />
 			<div element="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_SUPERIOR_VICIOUS_INTENT" />
-			<div element="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_GUNSLINGING_SUPREME" />
+			<div element="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_BURAYI_DOLDUR20" />
 		</description>
 		<sheet display="false">
 			<description>A master of firearms, showing their power with skill and style.</description>
@@ -99,9 +99,9 @@
 			<grant type="Class Feature" id="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_BULLET_TIME" level="6"/>
 			<grant type="Class Feature" id="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_VICIOUS_INTENT" level="9"/>
 			<grant type="Class Feature" id="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_SHOOTOUT_SENSE" level="11"/>
-			<grant type="Class Feature" id="ID_MS_VRPG_CLASS_FEATURE_RELENTLESS" level="13"/>
+			<grant type="Class Feature" id="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_RELENTLESS" level="13"/>
 			<grant type="Class Feature" id="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_SUPERIOR_VICIOUS_INTENT" level="14"/>
-			<grant type="Class Feature" id="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_BURAYI_DOLDUR17" level="17"/>	
+			<grant type="Class Feature" id="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_VIOLENT_SHOT" level="17"/>	
 			<grant type="Class Feature" id="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_BURAYI_DOLDUR20" level="20"/>	
 		</rules>
 		<multiclass id="ID_MS_VRPG_MULTICLASS_GUNSLINGER">
@@ -321,17 +321,16 @@
 
 	<element name="Shootout Sense" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_SHOOTOUT_SENSE">
 		<description>
-			<p>By 11th level, you are ready to react to danger at a moment's notice. You gain advantage on initiative rolls.</p>
-			<p class="indent">Additionally, you can't be surprised while you are conscious.</p>
+			<p>By 11th level, you are ready to react to danger at a moment's notice. You can't be surprised while you are conscious.</p>
 		</description>
 		<sheet>
-			<description>You gain advantage on initiative rolls and you can't be surprised while you are conscious.</description>
+			<description>You can't be surprised while you are conscious.</description>
 		</sheet>
 	</element>
 
     <!-- Relentless -->
 
-	<element name="Relentless" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_FEATURE_RELENTLESS">
+	<element name="Relentless" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_RELENTLESS">
 		<description>
 			<p>Upon reaching 13th level, whenever you score a critical hit on an attack with a firearm, the target additionally suffers half of the damage from the attack at the end of its next turn.</p>
 		</description>
@@ -348,6 +347,18 @@
 		</description>
 		<sheet>
 			<description>Firearm attacks score a critical hit on 18-20.</description>
+		</sheet>
+	</element>
+
+    <!-- Violent Shot -->
+
+	<element name="Violent Shot" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_VIOLENT_SHOT">
+		<description>
+			<p>Starting at 17th level, you’ve discovered ways to push your firearms past their intended potential at the peril of damaging them. You can spend 1 or more grit points before making an attack roll with a firearm. For each grit point spent, that attack gains +2 to the firearm’s misfire score.</p>
+			<p class="indent">If the attack hits. you can roll one additional weapon damage die per grit point spent when determining damage of the attack.</p>
+		</description>
+		<sheet>
+			<description>Spend Grit before making an attack roll with a firearm. For each Grit spent, the misfire score goes up +2, but on a hit, you roll one additional weapon die.</description>
 		</sheet>
 	</element>
 
@@ -391,7 +402,7 @@
 			<p class="indent">You also regain all spent grit points after finishing a short or long rest.</p>
 		</description>
 		<sheet>
-			<description>You have {{grit-points}} Grit points. You regain 1 when you score or a MS_VRPGical hit, or when you kill a significant threat.
+			<description>You have {{grit-points}} Grit points. You regain 1 when you score a critical hit, or when you kill a significant threat.
 			You also regain all spent grit points after finishing a short or long rest.</description>
 		</sheet>
 		<rules>
@@ -450,10 +461,10 @@
 		</description>
 		<sheet>
 			<description>Spend 1 Grit point to target a specific location on a target’s body.
-			Head: target makes a DC{{trick-shot:dc}} Constitution Saving Throw or has disadvantage on attack until end of its next turn.
-			Arms: target makes a DC{{trick-shot:dc}} Strength saving throw or drop 1 held item of your choice.
+			Head: target makes a DC {{trick-shot:dc}} Constitution Saving Throw or has disadvantage on attack until end of its next turn.
+			Arms: target makes a DC {{trick-shot:dc}} Strength saving throw or drop 1 held item of your choice.
 			Torso: target is pushed 10ft away from you.
-			Legs/Wings: target makes a DC{{trick-shot:dc}} Strength saving throw or is knocked prone.</description>
+			Legs/Wings: target makes a DC {{trick-shot:dc}} Strength saving throw or is knocked prone.</description>
 		</sheet>
 		<rules>
 			<stat name="trick-shot:dc" value="8" />
