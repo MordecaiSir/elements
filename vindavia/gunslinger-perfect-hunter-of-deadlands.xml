@@ -78,8 +78,8 @@
 			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_MS_VRPG_MULTICLASS_GUNSLINGER" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" requirements="!ID_MS_VRPG_MULTICLASS_GUNSLINGER" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" requirements="!ID_MS_VRPG_MULTICLASS_GUNSLINGER" />
-			<grant type="Proficiency" id="ID_MS_VRPG_PROFICIENCY_WEAPON_PROFICIENCY_PEACEMAKER_SNIPER" requirements="!ID_MS_VRPG_MULTICLASS_GUNSLINGER" />
-			<grant type="Proficiency" id="ID_MS_VRPG_PROFICIENCY_WEAPON_PROFICIENCY_THE_CURE_PISTOL" requirements="!ID_MS_VRPG_MULTICLASS_GUNSLINGER" />
+			<grant type="Proficiency" id="ID_MS_VRPG_WEAPON_PEACEMAKER_SNIPER" requirements="!ID_MS_VRPG_MULTICLASS_GUNSLINGER" />
+			<grant type="Proficiency" id="ID_MS_VRPG_WEAPON_THE_CURE_PISTOL" requirements="!ID_MS_VRPG_MULTICLASS_GUNSLINGER" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_MS_VRPG_MULTICLASS_GUNSLINGER"  />
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD" requirements="!ID_MS_VRPG_MULTICLASS_GUNSLINGER"  />
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SCIMITAR" requirements="!ID_MS_VRPG_MULTICLASS_GUNSLINGER"  />
@@ -116,8 +116,8 @@
 				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
 				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
 				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
-				<grant type="Proficiency" id="ID_MS_VRPG_PROFICIENCY_WEAPON_PROFICIENCY_PEACEMAKER_SNIPER" />
-				<grant type="Proficiency" id="ID_MS_VRPG_PROFICIENCY_WEAPON_PROFICIENCY_THE_CURE_PISTOL" />
+				<grant type="Proficiency" id="ID_MS_VRPG_WEAPON_PEACEMAKER_SNIPER" />
+				<grant type="Proficiency" id="ID_MS_VRPG_WEAPON_THE_CURE_PISTOL" />
 				<select type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS" />
 			</rules>
 		</multiclass>
