@@ -74,8 +74,6 @@
 			<set name="hd">d8</set>
 		</setters>
 		<rules>
-            <grant type="Grants" id="ID_MS_VRPG_GRANTS_WEAPONS_REQUIREMENT" />
-
 			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_MS_VRPG_MULTICLASS_GUNSLINGER" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" requirements="!ID_MS_VRPG_MULTICLASS_GUNSLINGER" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" requirements="!ID_MS_VRPG_MULTICLASS_GUNSLINGER" />
@@ -117,9 +115,8 @@
 				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
 				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
 				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
-				<grant type="Proficiency" id="ID_MS_VRPG_WEAPON_PEACEMAKER_SNIPER" />
-				<grant type="Proficiency" id="ID_MS_VRPG_PROFICIENCY_WEAPON_PROFICIENCY_THE_CURE_PISTOL" />
 				<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS" />
+                <grant type="Proficiency" id="ID_MS_VRPG_PROFICIENCY_WEAPON_FIREARMS" />
 			</rules>
 		</multiclass>
 	</element>
@@ -312,12 +309,12 @@
 	<element name="Grit" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_GRIT">
 		<description>
 			<p>Also starting at 3rd level, you gain a number of grit points equal to your Wisdom modifier (minimum of 1). You can spend grit points to perform various "shot" attacks with your firearms. An attack can only be affected by a single shot feature. You can regain spent Grit points in the following ways:</p>
-			<p class="indent"><b><em>Critical hit with a firearm.</em></b> Each time you score a critical hit with a firearm attack while in the heat of combat, you regain 1 spent grit point. Critical hits gained outside of die rolls (via enemy conditions) do not generate grit.</p>
+			<p class="indent"><b><em>MS_VRPGical hit with a firearm.</em></b> Each time you score a MS_VRPGical hit with a firearm attack while in the heat of combat, you regain 1 spent grit point. MS_VRPGical hits gained outside of die rolls (via enemy conditions) do not generate grit.</p>
 			<p class="indent"><b><em>Killing blow with a firearm.</em></b> Each time you reduce a dangerous creature of significant threat (DM’s discretion) to 0 hit points with a firearm attack, and kill them, you regain 1 spent grit point.</p>
 			<p class="indent">You also regain all spent grit points after finishing a short or long rest.</p>
 		</description>
 		<sheet>
-			<description>You have {{grit-points}} Grit points. You regain 1 when you score or a critical hit, or when you kill a significant threat.
+			<description>You have {{grit-points}} Grit points. You regain 1 when you score or a MS_VRPGical hit, or when you kill a significant threat.
 			You also regain all spent grit points after finishing a short or long rest.</description>
 		</sheet>
 		<rules>
@@ -339,46 +336,120 @@
 
 
 
+    <!-- Weapons -->
 
-
-<element name="The Cure (Pistol)" type="Weapon" source="Vindavia RPG" id="ID_MS_VRPG_WEAPON_THE_CURE_PISTOL">
-		<supports> ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED, ID_INTERNAL_WEAPON_PROPERTY_PRIMITIVEGUNS, ID_INTERNAL_DAMAGETYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_MISFIRE, ID_MS_VRPG_WEAPON_GROUP_THE_CURE_PISTOL, ID_INTERNAL_WEAPON_PROPERTY_SIDEARMS</supports>
-		<description>
-			<p>Ammunition (range 30/90), Loading, Light, Misfire 2</p>
-		</description>
+    <element name="The Cure (Pistol)" type="Weapon" source="Vindavia RPG" id="ID_MS_VRPG_WEAPON_THE_CURE_PISTOL">
+		<supports> ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_MS_VRPG_WEAPON_PROPERTY_RELOAD_2, ID_MS_VRPG_WEAPON_PROPERTY_MISFIRE_1</supports>
+		<description />
 		<setters>
 			<set name="category">Vindavia RPG</set>
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="3">3 lb.</set>
 			<set name="slot">onehand</set>
-			<set name="range">30/90</set>
+			<set name="range">30/100</set>
 			<set name="damage" type="piercing">1d8</set>
-			<set name="misfire">2</set>
-			<set name="proficiency">ID_MS_VRPG_WEAPON_PROFICIENCY_THE_CURE_PISTOL</set>
+			<!-- <set name="misfire">1</set> -->
+			<set name="proficiency">ID_MS_VRPG_PROFICIENCY_WEAPON_THE_CURE_PISTOL</set>
 		</setters>
 	</element>
-<element name="Peacemaker (Sniper)" type="Weapon" source="Vindavia RPG" id="ID_MS_VRPG_WEAPON_PEACEMAKER_SNIPER">
-		<supports> ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED, ID_INTERNAL_WEAPON_PROPERTY_PRIMITIVEGUNS, ID_INTERNAL_DAMAGETYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_MISFIRE, ID_MS_VRPG_WEAPON_GROUP_PEACEMAKER_SNIPER, ID_INTERNAL_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
-		<description>
-			<p>Ammunition (range 70/200), Two-Handed, Loading, Misfire 2</p>
-		</description>
+    <element name="Peacemaker (Sniper)" type="Weapon" source="Vindavia RPG" id="ID_MS_VRPG_WEAPON_PEACEMAKER_SNIPER">
+		<supports> ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_MS_VRPG_WEAPON_PROPERTY_RELOAD_2, ID_MS_VRPG_WEAPON_PROPERTY_MISFIRE_3, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description />
 		<setters>
 			<set name="category">Vindavia RPG</set>
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="10">10 lb.</set>
 			<set name="slot">twohand</set>
-			<set name="range">70/200</set>
+			<set name="range">100/400</set>
 			<set name="damage" type="piercing">1d12</set>
-			<set name="misfire">2</set>
-			<set name="proficiency">ID_MS_VRPG_WEAPON_PROFICIENCY_PEACEMAKER_SNIPER</set>
+			<!-- <set name="misfire">3</set> -->
+			<set name="proficiency">ID_MS_VRPG_PROFICIENCY_WEAPON_PEACEMAKER_SNIPER</set>
 		</setters>
 	</element>
 
-	<element name="The Cure (Pistol)" type="Proficiency" source="Vindavia RPG" id="ID_MS_VRPG_WEAPON_PROFICIENCY_THE_CURE_PISTOL">
-		<requirements>ID_MS_VRPG_GRANTS_WEAPONS_REQUIREMENT</requirements>
-	</element>
-	<element name="Peacemaker (Sniper)" type="Proficiency" source="Vindavia RPG" id="ID_MS_VRPG_WEAPON_PROFICIENCY_PEACEMAKER_SNIPER">
-		<requirements>ID_MS_VRPG_GRANTS_WEAPONS_REQUIREMENT</requirements>
+    <!-- Proficiencies (specific to this archetype) -->
+
+    <element name="Weapon Proficiency (Firearms)" type="Proficiency" source="Vindavia RPG" id="ID_MS_VRPG_PROFICIENCY_WEAPON_FIREARMS">
+		<requirements>ID_MS_VRPG_CLASS_GUNSLINGER</requirements>
+		<rules>
+			<grant type="Proficiency" id="ID_MS_VRPG_PROFICIENCY_WEAPON_PISTOL" />
+			<grant type="Proficiency" id="ID_MS_VRPG_PROFICIENCY_WEAPON_MUSKET" />
+		</rules>
 	</element>
 
+	<element name="The Cure (Pistol)" type="Proficiency" source="Vindavia RPG" id="ID_MS_VRPG_PROFICIENCY_WEAPON_THE_CURE_PISTOL">
+		<requirements>ID_MS_VRPG_CLASS_GUNSLINGER</requirements>
+	</element>
+	<element name="Peacemaker (Sniper)" type="Proficiency" source="Vindavia RPG" id="ID_MS_VRPG_PROFICIENCY_WEAPON_PEACEMAKER_SNIPER">
+		<requirements>ID_MS_VRPG_CLASS_GUNSLINGER</requirements>
+	</element>
+
+	<!-- Properties -->
+
+	<element name="Reload" type="Weapon Property" source="Vindavia RPG" id="ID_MS_VRPG_WEAPON_PROPERTY_RELOAD">
+		<description>
+			<p>The weapon can be fired a number of times equal to its Reload score before you must spend 1 attack or 1 action to reload. You must have one free hand to reload a firearm.</p>
+		</description>
+	</element>
+	<element name="Misfire" type="Weapon Property" source="Vindavia RPG" id="ID_MS_VRPG_WEAPON_PROPERTY_MISFIRE">
+		<description>
+			<p>Whenever you make an attack roll with a firearm, and the dice roll is equal to or lower than the weapon's Misfire score, the weapon misfires. The attack misses, and the weapon cannot be used again until you spend an action to try and repair it. To repair your firearm, you must make a successful Tinker's Tools check (DC equal to 8 + misfire score). If your check fails, the weapon is broken and must be repaired out of combat at half the cost of the firearm.</p>
+		</description>
+	</element>
+	<element name="Scatter" type="Weapon Property" source="Vindavia RPG" id="ID_MS_VRPG_WEAPON_PROPERTY_SCATTER">
+		<description>
+			<p>An attack is made against each creature within a 30 ft cone. These attacks are simultaneous. If an affected creature is adjacent to you, they suffer double damage on a hit. This attack cannot be affected by any of your shot features.</p>
+		</description>
+	</element>
+	<element name="Explosive" type="Weapon Property" source="Vindavia RPG" id="ID_MS_VRPG_WEAPON_PROPERTY_EXPLOSIVE">
+		<description>
+			<p>Upon a hit, everything within 5 ft of the target must make a Dexterity saving throw (DC equal to 8 + your proficiency bonus + your Dexterity modifier) or suffer 1d8 fire damage. If the weapon misses, the ammunition fails to detonate, or bounces away harmlessly before doing so.</p>
+		</description>
+	</element>
+
+    <!-- Temporary custom property elements -->
+
+    <element name="Misfire 1" type="Weapon Property" source="Vindavia RPG" id="ID_MS_VRPG_WEAPON_PROPERTY_MISFIRE_1">
+		<description>
+			<p>This misfires on a roll of 1 on the d20.</p>
+			<div element="ID_MS_VRPG_WEAPON_PROPERTY_MISFIRE" />
+		</description>
+	</element>
+	<element name="Misfire 2" type="Weapon Property" source="Vindavia RPG" id="ID_MS_VRPG_WEAPON_PROPERTY_MISFIRE_2">
+		<description>
+			<p>This misfires on a roll of 2 on the d20.</p>
+			<div element="ID_MS_VRPG_WEAPON_PROPERTY_MISFIRE" />
+		</description>
+	</element>
+	<element name="Misfire 3" type="Weapon Property" source="Vindavia RPG" id="ID_MS_VRPG_WEAPON_PROPERTY_MISFIRE_3">
+		<description>
+			<p>This misfires on a roll of 3 on the d20.</p>
+			<div element="ID_MS_VRPG_WEAPON_PROPERTY_MISFIRE" />
+		</description>
+	</element>
+
+	<element name="Reload 1" type="Weapon Property" source="Vindavia RPG" id="ID_MS_VRPG_WEAPON_PROPERTY_RELOAD_1">
+		<description>
+			<p>This weapon needs to be reloaded after 1 shot.</p>
+			<div element="ID_MS_VRPG_WEAPON_PROPERTY_RELOAD" />
+		</description>
+	</element>
+	<element name="Reload 2" type="Weapon Property" source="Vindavia RPG" id="ID_MS_VRPG_WEAPON_PROPERTY_RELOAD_2">
+		<description>
+			<p>This weapon needs to be reloaded after 2 shots.</p>
+			<div element="ID_MS_VRPG_WEAPON_PROPERTY_RELOAD" />
+		</description>
+	</element>
+	<element name="Reload 4" type="Weapon Property" source="Vindavia RPG" id="ID_MS_VRPG_WEAPON_PROPERTY_RELOAD_4">
+		<description>
+			<p>This weapon needs to be reloaded after 4 shots.</p>
+			<div element="ID_MS_VRPG_WEAPON_PROPERTY_RELOAD" />
+		</description>
+	</element>
+	<element name="Reload 6" type="Weapon Property" source="Vindavia RPG" id="ID_MS_VRPG_WEAPON_PROPERTY_RELOAD_6">
+		<description>
+			<p>This weapon needs to be reloaded after 6 shots.</p>
+			<div element="ID_MS_VRPG_WEAPON_PROPERTY_RELOAD" />
+		</description>
+	</element>
 </elements>
