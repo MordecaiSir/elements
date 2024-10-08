@@ -2,7 +2,7 @@
 <elements>
 <info>
 		<name>Gunslinger</name>
-		<update version="1.0.43">
+		<update version="1.0.44">
 			<file name="gunslinger-perfect-hunter-of-deadlands.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/gunslinger-perfect-hunter-of-deadlands.xml" />
 		</update>
 	</info>
@@ -131,7 +131,7 @@
 			<p class="indent"><strong><em>Run ‘N Gun.</em></strong> You can use Dash as a bonus action.</p>
 			<p class="indent"><strong><em>Slinger’s Senses.</em></strong> You can make a Wisdom (Perception) check as a bonus action if you have a weapon drawn.</p>
 			<p class="indent"><strong><em>Stock Strike.</em></strong> When you make a melee weapon attack using a firearm on your turn, you use your choice of your Strength or Dexterity modifier for the attack and damage rolls. Additionally, if the attack hits, you can use your bonus action to not provoke opportunity attacks from the target of the attack until the end of your turn.</p>
-            <p class="indent"><strong><em> Fearless.</em></strong> When you reach 4th level. You can use an action to end one effect on yourself that is causing you to be frightened.</p>
+            <p class="indent"><strong><em>Fearless.</em></strong> When you reach 4th level. You can use an action to end one effect on yourself that is causing you to be frightened.</p>
 		</description>
 		<sheet>
 			<description>Run ‘N Gun. You can use Dash as a bonus action.
