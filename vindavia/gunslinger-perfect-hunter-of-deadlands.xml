@@ -51,6 +51,7 @@
 				<li> <i>(a)</i> two simple weapons, <i>(b)</i> a flintlock pistol and 10 musketballs, or <i>(c)</i> a shield</li>
 				<li> <i>(a)</i>a dungeoneer's pack, <i>(b)</i> an explorer's pack, or <i>(c)</i> a scholar's pack</li>
 			</ul>
+			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_GUNSLINGER_FIREARM_PROFICIENCY" />
 			<div element="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_GUN_STUNTS" />
 			<div element="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_KNACK" />
 			<div element="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_FIGHTING_STYLE" />
@@ -88,6 +89,7 @@
 			
 			<select type="Proficiency" name="Skill Proficiency (Gunslinger)" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND|ID_PROFICIENCY_SKILL_STEALTH|ID_PROFICIENCY_SKILL_SURVIVAL" number="2"  requirements="!ID_MS_VRPG_MULTICLASS_GUNSLINGER" />
 			
+			<grant type="Class Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_GUNSLINGER_FIREARM_PROFICIENCY" level="1"/>
 			<grant type="Class Feature" id="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_GUN_STUNTS" level="1"/>
 			<grant type="Class Feature" id="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_KNACK" level="1"/>
 			<grant type="Class Feature" id="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_FIGHTING_STYLE" level="2"/>
@@ -107,16 +109,27 @@
 			<prerequisite>Dexterity 13, Wisdom 13</prerequisite>
 			<requirements>[dex:13],[wis:13]</requirements>
 			<setters>
-				<set name="multiclass proficiencies">Light armor, longarms, sidearms, and one vehicle of your choice</set>
+				<set name="multiclass proficiencies">Light armor, longarms, sidearms, and tinker's tools</set>
 			</setters>
 			<rules>
 				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
 				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
 				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
 				<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS" />
-                <grant type="Proficiency" id="ID_MS_VRPG_PROFICIENCY_WEAPON_FIREARMS" />
 			</rules>
 		</multiclass>
+	</element>
+
+	<!-- Firearm Proficiency -->
+
+	<element name="Firearm Proficiency" type="Archetype Feature" source="Critical Role" id="ID_MS_VRPG_ARCHETYPE_FEATURE_GUNSLINGER_FIREARM_PROFICIENCY">
+		<description>
+			<p>Starting when you choose this archetype at 1rd level, you gain proficiency with firearms, allowing you to add your proficiency bonus to attacks made with firearms.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_MS_VRPG_PROFICIENCY_WEAPON_FIREARMS" />
+		</rules>
 	</element>
 
     <!-- Gun Stunts -->
@@ -198,6 +211,9 @@
 		<sheet>
 			<description>You get a +2 bonus to attack rolls you make with martial and simple ranged weapons, as well as longarms which do not have the bulky or scatter property.</description>
 		</sheet>
+		<rules>
+			<stat name="ranged:attack" value="2" />
+		</rules>
 	</element>	
 	<element name="Dueling" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_FEATURE_FIGHTINGSTYLE_DUELING">
 		<supports>Fighting Style, Gunslinger, Fighter, Ranger</supports>
@@ -207,6 +223,9 @@
 		<sheet>
 			<description>When wielding a one-handed weapon in one hand and no other weapons, you get a +2 bonus to your damage rolls with these weapons. This additional damage only applies for ranged attacks made at creatures within 30 feet of you.</description>
 		</sheet>
+		<rules>
+			<!-- <stat name="ranged:damage" value="2" equipped="[primary:any],([secondary:none]||[shield:any])" /> -->
+		</rules>
 	</element>	
 	<element name="Sniper" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_FEATURE_FIGHTINGSTYLE_SNIPER">
 		<supports>Fighting Style, Gunslinger, Ranger</supports>
@@ -216,6 +235,9 @@
 		<sheet>
 			<description>You gain a +2 bonus to damage rolls if you attack a creature further than 30 feet away from you with a ranged weapon or a firearm that does not have the scatter property.</description>
 		</sheet>
+		<rules>
+			<!-- <stat name="ranged:damage" value="2" equipped="[primary:ranged],([secondary:none]||[shield:none])" /> -->
+		</rules>
 	</element>	
 
     <!-- Action Surge -->
@@ -336,7 +358,7 @@
 
     <!-- Weapons -->
 
-    <element name="The Cure (Pistol)" type="Weapon" source="Vindavia RPG" id="ID_MS_VRPG_WEAPON_THE_CURE_PISTOL">
+    <element name="The Cure (Pistol)" type="Weapon" source="Vindavia RPG" id="ID_MS_VRPG_WEAPON_CURE_PISTOL">
 		<supports> ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_MS_VRPG_WEAPON_PROPERTY_RELOAD_2, ID_MS_VRPG_WEAPON_PROPERTY_MISFIRE_1</supports>
 		<description />
 		<setters>
@@ -347,7 +369,7 @@
 			<set name="range">30/100</set>
 			<set name="damage" type="piercing">1d8</set>
 			<!-- <set name="misfire">1</set> -->
-			<set name="proficiency">ID_MS_VRPG_PROFICIENCY_WEAPON_THE_CURE_PISTOL</set>
+			<set name="proficiency">ID_MS_VRPG_PROFICIENCY_WEAPON_CURE_PISTOL</set>
 		</setters>
 	</element>
     <element name="Peacemaker (Sniper)" type="Weapon" source="Vindavia RPG" id="ID_MS_VRPG_WEAPON_PEACEMAKER_SNIPER">
@@ -370,12 +392,12 @@
     <element name="Weapon Proficiency (Firearms)" type="Proficiency" source="Vindavia RPG" id="ID_MS_VRPG_PROFICIENCY_WEAPON_FIREARMS">
 		<requirements>ID_MS_VRPG_CLASS_GUNSLINGER</requirements>
 		<rules>
-			<grant type="Proficiency" id="ID_MS_VRPG_PROFICIENCY_WEAPON_THE_CURE_PISTOL" />
+			<grant type="Proficiency" id="ID_MS_VRPG_PROFICIENCY_WEAPON_CURE_PISTOL" />
 			<grant type="Proficiency" id="ID_MS_VRPG_PROFICIENCY_WEAPON_PEACEMAKER_SNIPER" />
 		</rules>
 	</element>
 
-	<element name="The Cure (Pistol)" type="Proficiency" source="Vindavia RPG" id="ID_MS_VRPG_PROFICIENCY_WEAPON_THE_CURE_PISTOL">
+	<element name="The Cure (Pistol)" type="Proficiency" source="Vindavia RPG" id="ID_MS_VRPG_PROFICIENCY_WEAPON_CURE_PISTOL">
 		<requirements>ID_MS_VRPG_CLASS_GUNSLINGER</requirements>
 	</element>
 	<element name="Peacemaker (Sniper)" type="Proficiency" source="Vindavia RPG" id="ID_MS_VRPG_PROFICIENCY_WEAPON_PEACEMAKER_SNIPER">
