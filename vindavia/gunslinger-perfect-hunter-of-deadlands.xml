@@ -366,7 +366,7 @@
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="3">3 lb.</set>
 			<set name="slot">onehand</set>
-			<set name="range">30/100</set>
+			<set name="range">100/400</set>
 			<set name="damage" type="piercing">1d8</set>
 			<!-- <set name="misfire">1</set> -->
 			<set name="proficiency">ID_MS_VRPG_PROFICIENCY_WEAPON_CURE_PISTOL</set>
@@ -378,9 +378,9 @@
 		<setters>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">0</set>
-			<set name="weight" lb="10">10 lb.</set>
+			<set name="weight" lb="16">16 lb.</set>
 			<set name="slot">twohand</set>
-			<set name="range">100/400</set>
+			<set name="range">200/800</set>
 			<set name="damage" type="piercing">1d12</set>
 			<!-- <set name="misfire">3</set> -->
 			<set name="proficiency">ID_MS_VRPG_PROFICIENCY_WEAPON_PEACEMAKER_SNIPER</set>
