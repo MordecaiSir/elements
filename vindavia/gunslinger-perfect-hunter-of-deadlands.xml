@@ -121,7 +121,7 @@
 
 	<!-- Firearm Proficiency -->
 
-	<element name="Firearm Proficiency" type="Archetype Feature" source="Critical Role" id="ID_MS_VRPG_ARCHETYPE_FEATURE_GUNSLINGER_FIREARM_PROFICIENCY">
+	<element name="Firearm Proficiency" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_GUNSLINGER_FIREARM_PROFICIENCY">
 		<description>
 			<p>Starting when you choose this archetype at 1rd level, you gain proficiency with firearms, allowing you to add your proficiency bonus to attacks made with firearms.</p>
 		</description>
