@@ -4,7 +4,7 @@
 		<name>Vindavia RPG</name>
         	<description>Fantasy world of MordecaiSir</description>
 		<author url="https://github.com/MordecaiSir">MordecaiSir</author>
-		<update version="1.0.42">
+		<update version="1.0.43">
 			<file name="vindavia.index" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia.index" />
 		</update>
 	</info>
@@ -13,6 +13,5 @@
 		<file name="barbarian-hatred.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/barbarian-hatred.xml" />
         <file name="source.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/source.xml" />
 		<file name="gunslinger-perfect-hunter-of-deadlands.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/gunslinger-perfect-hunter-of-deadlands.xml" />
-		<file name="guns.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/guns.xml" />
 	</files>
 </index>
