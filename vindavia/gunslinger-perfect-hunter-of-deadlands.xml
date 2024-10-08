@@ -2,7 +2,7 @@
 <elements>
 <info>
 		<name>Gunslinger</name>
-		<update version="1.0.41">
+		<update version="1.0.42">
 			<file name="gunslinger-perfect-hunter-of-deadlands.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/gunslinger-perfect-hunter-of-deadlands.xml" />
 		</update>
 	</info>
@@ -171,7 +171,7 @@
 			<p>When wielding a one-handed weapon in one hand and no other weapons, you get a +2 bonus to your damage rolls with these weapons. This additional damage only applies for ranged attacks made at creatures within 30 feet of you.</p>
 			<h5>SNIPER</h5>
 			<p>You gain a +2 bonus to damage rolls if you attack a creature further than 30 feet away from you with a ranged weapon or a firearm that does not have the scatter property.</p>
-         </description>
+        </description>
 		<sheet/>
 		<rules>
 			<select type="Class Feature" name="Fighting Style" supports="Fighting Style, Gunslinger" level="1"/>

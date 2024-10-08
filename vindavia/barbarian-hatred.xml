@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Path of the Hatred</name>
-		<update version="1.0.41">
+		<update version="1.0.42">
 			<file name="barbarian-hatred.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/barbarian-hatred.xml" />
 		</update>
 	</info>
