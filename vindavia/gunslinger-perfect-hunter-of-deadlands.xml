@@ -2,7 +2,7 @@
 <elements>
 <info>
 		<name>Gunslinger</name>
-		<update version="1.0.44">
+		<update version="1.0.45">
 			<file name="gunslinger-perfect-hunter-of-deadlands.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/gunslinger-perfect-hunter-of-deadlands.xml" />
 		</update>
 	</info>
@@ -224,7 +224,7 @@
 
     <!-- Action Surge -->
 
-	<element name="Action Surge" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_FEATURE_ACTION_SURGE">
+	<element name="Action Surge" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_ACTION_SURGE">
 		<description>
 			<p>Starting at 2nd level, you can push yourself beyond your normal limits for a moment. On your turn, you can take one additional action on top of your regular action and a possible bonus action.</p>
 			<p class="indent">Once you use this feature, you must finish a short or long rest before you can use it again.</p>
