@@ -2,7 +2,7 @@
 <elements>
 <info>
 		<name>Gunslinger</name>
-		<update version="1.0.45">
+		<update version="1.0.46">
 			<file name="gunslinger-perfect-hunter-of-deadlands.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/gunslinger-perfect-hunter-of-deadlands.xml" />
 		</update>
 	</info>
@@ -78,8 +78,8 @@
 			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_MS_VRPG_MULTICLASS_GUNSLINGER" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" requirements="!ID_MS_VRPG_MULTICLASS_GUNSLINGER" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" requirements="!ID_MS_VRPG_MULTICLASS_GUNSLINGER" />
-			<grant type="Proficiency" id="ID_MS_VRPG_PROFICIENCY_WEAPON_PROFICIENCY_RIFLE_OF_DEATH" requirements="!ID_MS_VRPG_MULTICLASS_GUNSLINGER" />
-			<grant type="Proficiency" id="ID_MS_VRPG_PROFICIENCY_WEAPON_PROFICIENCY_PISTOL_OF_FATE" requirements="!ID_MS_VRPG_MULTICLASS_GUNSLINGER" />
+			<grant type="Proficiency" id="ID_MS_VRPG_PROFICIENCY_WEAPON_PROFICIENCY_PEACEMAKER_SNIPER" requirements="!ID_MS_VRPG_MULTICLASS_GUNSLINGER" />
+			<grant type="Proficiency" id="ID_MS_VRPG_PROFICIENCY_WEAPON_PROFICIENCY_THE_CURE_PISTOL" requirements="!ID_MS_VRPG_MULTICLASS_GUNSLINGER" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_MS_VRPG_MULTICLASS_GUNSLINGER"  />
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD" requirements="!ID_MS_VRPG_MULTICLASS_GUNSLINGER"  />
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SCIMITAR" requirements="!ID_MS_VRPG_MULTICLASS_GUNSLINGER"  />
