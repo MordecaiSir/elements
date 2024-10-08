@@ -393,9 +393,7 @@
             <div element="ID_MS_VRPG_ARCHETYPE_FEATURE_EVASION"/>
 			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_TRICKSHOT"/>
 			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_PIERCING_SHOT" />
-            <!-- BURAYI DOLDUR -->
-            <div element="ID_MS_VRPG_ARCHETYPE_FEATURE_BURAYI_DOLDUR" />
-            <!-- BURAYI DOLDUR -->
+            <div element="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_OVERWATCH" />
 		</description>
         <sheet>
 			<description>Perfection of the Deadlands.</description>
@@ -410,7 +408,7 @@
 			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_TRICKSHOT" level="10"/>
 			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_PIERCING_SHOT" level="15"/>
 			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_LIGHTNING_RELOAD" level="15"/>
-            <grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_BURAYI_DOLDUR18" level="18"/>
+            <grant type="Archetype Feature" id="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_OVERWATCH" level="18"/>
 		</rules>
     </element>
 
