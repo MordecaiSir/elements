@@ -52,9 +52,8 @@
 			<p style="text-indent: -1em; margin-left: 1em">You take extra damage all forms of attacks. 3rd +1, 6th +2, 10th +3, 14th +4. (spells, magic items etc.)</p>
 		</description>
 		<sheet>
-			<description>
-			<p>While you are raging Reckless Attack becomes Wild Strikes. Your attacks dealing extra 1d{{wild strikes:damage}} damage and you are taking extra {{wild strikes:extra}} damage. </p>
-			
+			<description>While you are raging Reckless Attack becomes Wild Strikes. 
+			Your attacks dealing extra 1d{{wild strikes:damage}} damage and you are taking extra {{wild strikes:extra}} damage.
 			</description>
 		</sheet>
 		<rules>
