@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="1.0.39">
+		<update version="1.0.40">
 			<file name="guns.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/guns.xml" />
 		</update>
 	</info>
 
-	<element name="Pistol of Fate" type="Weapon" source="Vindavia RPG" id="ID_MS_VRPG_WEAPON_PISTOL_OF_FATE">
+	<element name="The Cure (Pistol)" type="Weapon" source="Vindavia RPG" id="ID_MS_VRPG_WEAPON_THE_CURE_PISTOL">
 		<supports> ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED, ID_INTERNAL_WEAPON_PROPERTY_PRIMITIVEGUNS, ID_INTERNAL_DAMAGETYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_MISFIRE, ID_INTERNAL_WEAPON_PROPERTY_SIDEARMS</supports>
 		<description>
 			<p>Ammunition (range 30/90), Loading, Light, Misfire 2</p>
@@ -19,10 +19,10 @@
 			<set name="range">30/90</set>
 			<set name="damage" type="piercing">1d8</set>
 			<set name="misfire">2</set>
-			<set name="proficiency">ID_MS_VRPG_PROFICIENCY_WEAPON_PROFICIENCY_PISTOL_OF_FATE</set>
+			<set name="proficiency">ID_MS_VRPG_PROFICIENCY_WEAPON_PROFICIENCY_THE_CURE_PISTOL</set>
 		</setters>
 	</element>
-<element name="Rifle of Death" type="Weapon" source="Vindavia RPG" id="ID_MS_VRPG_WEAPON_RIFLE_OF_DEATH">
+<element name="Peacemaker (Sniper)" type="Weapon" source="Vindavia RPG" id="ID_MS_VRPG_WEAPON_PEACEMAKER_SNIPER">
 		<supports> ID_INTERNAL_WEAPON_CATEGORY_FIREARM,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_PROPERTY_RANGED, ID_INTERNAL_WEAPON_PROPERTY_PRIMITIVEGUNS, ID_INTERNAL_DAMAGETYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_MISFIRE, ID_INTERNAL_WEAPON_PROPERTY_LONGARMS,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
 		<description>
 			<p>Ammunition (range 70/200), Two-Handed, Loading, Misfire 2</p>
@@ -35,7 +35,7 @@
 			<set name="range">70/200</set>
 			<set name="damage" type="piercing">1d12</set>
 			<set name="misfire">2</set>
-			<set name="proficiency">ID_MS_VRPG_PROFICIENCY_WEAPON_PROFICIENCY_RIFLE_OF_DEATH</set>
+			<set name="proficiency">ID_MS_VRPG_PROFICIENCY_WEAPON_PROFICIENCY_PEACEMAKER_SNIPER</set>
 		</setters>
 	</element>
 

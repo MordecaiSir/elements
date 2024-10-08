@@ -2,12 +2,13 @@
 <elements>
 <info>
 		<name>Gunslinger</name>
-		<update version="1.0.39">
+		<update version="1.0.40">
 			<file name="gunslinger-perfect-hunter-of-deadlands.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/gunslinger-perfect-hunter-of-deadlands.xml" />
 		</update>
 	</info>
 
-    <!-- gunslinger -->
+    <!-- Gunslinger -->
+
 	<element name="Gunslinger" type="Class" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_GUNSLINGER">
 		<description>
 			<p>A Human finishes loading rounds into her gun and and runs straight into a pack of angry kobolds that are threatening her town. She tumbles and spins, her weapon burping out salvo after salvo of hot lead against the poorly armed draconians with naught but simple spears to use against her.</p>
@@ -50,13 +51,11 @@
 				<li> <i>(a)</i> two simple weapons, <i>(b)</i> a flintlock pistol and 10 musketballs, or <i>(c)</i> a shield</li>
 				<li> <i>(a)</i>a dungeoneer's pack, <i>(b)</i> an explorer's pack, or <i>(c)</i> a scholar's pack</li>
 			</ul>
-			<div element="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_THE_TONGUE" />
-			<div element="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_QUICKDRAW" />
 			<div element="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_GUN_STUNTS" />
 			<div element="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_KNACK" />
 			<div element="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_FIGHTING_STYLE" />
-			<div element="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_SLINGERS_TRAIL" />
-			<div element="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_LUCKY_ITEM" />
+			<div element="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_ACTION_SURGE" />
+			<div element="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_ARCHETYPE" />
 			<div element="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_ABILITYSCOREIMPROVEMENT" />
 			<div element="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_EXTRA_ATTACK" />
 			<div element="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_BULLET_TIME" />
@@ -80,29 +79,24 @@
 			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_MS_VRPG_MULTICLASS_GUNSLINGER" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" requirements="!ID_MS_VRPG_MULTICLASS_GUNSLINGER" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" requirements="!ID_MS_VRPG_MULTICLASS_GUNSLINGER" />
-			<grant type="Proficiency" id="ID_MS_VRPG_PROFICIENCY_WEAPON_PROFICIENCY_LONGARMS" requirements="!ID_MS_VRPG_MULTICLASS_GUNSLINGER" />
-			<grant type="Proficiency" id="ID_MS_VRPG_PROFICIENCY_WEAPON_PROFICIENCY_SIDEARMS" requirements="!ID_MS_VRPG_MULTICLASS_GUNSLINGER" />
+			<grant type="Proficiency" id="ID_MS_VRPG_PROFICIENCY_WEAPON_PROFICIENCY_RIFLE_OF_DEATH" requirements="!ID_MS_VRPG_MULTICLASS_GUNSLINGER" />
+			<grant type="Proficiency" id="ID_MS_VRPG_PROFICIENCY_WEAPON_PROFICIENCY_PISTOL_OF_FATE" requirements="!ID_MS_VRPG_MULTICLASS_GUNSLINGER" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_MS_VRPG_MULTICLASS_GUNSLINGER"  />
-			<grant type="Proficiency" id="ID_INTERNAL_PROFICIENCY_GROUP_CROSSBOWS" requirements="!ID_MS_VRPG_MULTICLASS_GUNSLINGER"  />
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD" requirements="!ID_MS_VRPG_MULTICLASS_GUNSLINGER"  />
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SCIMITAR" requirements="!ID_MS_VRPG_MULTICLASS_GUNSLINGER"  />
-			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_RAPIER" requirements="!ID_MS_VRPG_MULTICLASS_GUNSLINGER"  />
-			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_WHIP" requirements="!ID_MS_VRPG_MULTICLASS_GUNSLINGER"  />
 			
 			<select type="Proficiency" name="Tool Proficiency (Gunslinger)" supports="(Tool,Vehicles)||Musical Instrument" number="1" requirements="!ID_MS_VRPG_MULTICLASS_GUNSLINGER"  />
 			
 			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" requirements="!ID_MS_VRPG_MULTICLASS_GUNSLINGER"  />
-			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA"  requirements="!ID_MS_VRPG_MULTICLASS_GUNSLINGER" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM"  requirements="!ID_MS_VRPG_MULTICLASS_GUNSLINGER" />
 			
-			<select type="Proficiency" name="Skill Proficiency (Gunslinger)" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_ANIMALHANDLING|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_PERFORMANCE|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND|ID_PROFICIENCY_SKILL_SURVIVAL" number="2"  requirements="!ID_MS_VRPG_MULTICLASS_GUNSLINGER" />
+			<select type="Proficiency" name="Skill Proficiency (Gunslinger)" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND|ID_PROFICIENCY_SKILL_STEALTH|ID_PROFICIENCY_SKILL_SURVIVAL" number="2"  requirements="!ID_MS_VRPG_MULTICLASS_GUNSLINGER" />
 			
-			<grant type="Class Feature" id="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_THE_TONGUE" level="1"/>
-			<grant type="Class Feature" id="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_QUICKDRAW" level="1"/>
 			<grant type="Class Feature" id="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_GUN_STUNTS" level="1"/>
-			<grant type="Class Feature" id="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_KNACK" level="2"/>
+			<grant type="Class Feature" id="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_KNACK" level="1"/>
 			<grant type="Class Feature" id="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_FIGHTING_STYLE" level="2"/>
-			<grant type="Class Feature" id="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_SLINGERS_TRAIL" level="3"/>
-			<grant type="Class Feature" id="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_LUCKY_ITEM" level="3"/>
+            <grant type="Class Feature" id="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_ACTION_SURGE" level="2"/>
+			<grant type="Class Feature" id="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_ARCHETYPE" level="3"/>
 			<grant type="Class Feature" id="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_ABILITYSCOREIMPROVEMENT" level="4"/>
 			<grant type="Class Feature" id="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_EXTRA_ATTACK" level="5"/>
 			<grant type="Class Feature" id="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_BULLET_TIME" level="6"/>
@@ -123,26 +117,224 @@
 				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
 				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
 				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
-				<grant type="Proficiency" id="ID_MS_VRPG_PROFICIENCY_WEAPON_PROFICIENCY_RIFLE_OF_DEATH" />
-				<grant type="Proficiency" id="ID_MS_VRPG_PROFICIENCY_WEAPON_PROFICIENCY_PISTOL_OF_FATE" />
+				<grant type="Proficiency" id="ID_MS_VRPG_PROFICIENCY_WEAPON_PROFICIENCY_PEACEMAKER_SNIPER" />
+				<grant type="Proficiency" id="ID_MS_VRPG_PROFICIENCY_WEAPON_PROFICIENCY_THE_CURE_PISTOL" />
 				<select type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS" />
 			</rules>
 		</multiclass>
 	</element>
 
+    <!-- Gun Stunts -->
+
+	<element name="Gun Stunts" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_GUN_STUNTS">
+		<description>
+			<p>Starting at 1st level, you have developed a set of stunts you can use to give you an edge in combat. You gain the following options:</p>
+			<p class="indent"><strong><em>Run ‘N Gun.</em></strong> You can use Dash as a bonus action.</p>
+			<p class="indent"><strong><em>Slinger’s Senses.</em></strong> You can make a Wisdom (Perception) check as a bonus action if you have a weapon drawn.</p>
+			<p class="indent"><strong><em>Stock Strike.</em></strong> When you make a melee weapon attack using a firearm on your turn, you use your choice of your Strength or Dexterity modifier for the attack and damage rolls. Additionally, if the attack hits, you can use your bonus action to not provoke opportunity attacks from the target of the attack until the end of your turn.</p>
+            <p class="indent"><strong><em>Fearless.</em></strong> When you reach 4th level. You can use an action to end one effect on yourself that is causing you to be frightened.</p>
+		</description>
+		<sheet>
+			<description><p class="indent">Run ‘N Gun. You can use Dash as a bonus action.</p>
+			<p class="indent">Slinger’s Senses. You can make a Wisdom (Perception) check as a bonus action if you have a weapon drawn.</p>
+			<p class="indent">Stock Strike. When you make a melee weapon attack using a firearm on your turn, you use your choice of your Strength or Dexterity modifier for the attack and damage rolls. Additionally, if the attack hits, you can use your bonus action to not provoke opportunity attacks from the target of the attack until the end of your turn.</p>
+            <p class="indent" level="4">Fearless. You can use an action to end one effect on yourself that is causing you to be frightened. </p>
+			</description>
+		</sheet>
+	</element>	
+
+    <!-- Knack -->
+
+	<element name="Knack" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_KNACK">
+		<description>
+			<p>At 2nd level, choose a skill or tool you are proficient in. Double your proficiency bonus to checks you make with those skills. When you reach 10th level, you can choose an additional skill or tool proficiency to gain this benefit.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			 <select type="Class Feature" name="Knack (Gunslinger)" level="2" number="1" supports="ID_INTERNAL_SUPPORT_EXPERTISE"/>
+			 <select type="Class Feature" name="Knack (Gunslinger)" level="10" number="1" supports="ID_INTERNAL_SUPPORT_EXPERTISE"/>
+		</rules>
+	</element>	
+
+    <!-- Fighting Style -->
+
+	<element name="Fighting Style" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_FIGHTING_STYLE">
+		<description>
+			<p>At 2nd level, you adopt a particular style of fighting. Choose one of the following options. You cannot choose the same fighting style twice, even if you get to choose again.</p>
+			<h5>AKIMBO SHOOTING</h5>
+			<p>When you take the attack action with a light weapon, you can use a bonus action to make an attack with a light ranged weapon you are holding. You do not add your ability score modifier to the damage of this attack, unless that modifier is negative.</p>
+			<h5>LUCKY SHOT</h5>
+			<p>When you hit with a ranged attack roll, you roll a 1 or 2 on the damage die, you can reroll the damage die and must take the new roll, even if the number is a 1 or a 2. The weapon must have the two-handed property in order to gain this benefit.</p>
+			<h5>DEADEYE</h5>
+			<p>You get a +2 bonus to attack rolls you make with martial and simple ranged weapons, as well as longarms which do not have the bulky or scatter property.</p>
+			<h5>DUELING</h5>
+			<p>When wielding a one-handed weapon in one hand and no other weapons, you get a +2 bonus to your damage rolls with these weapons. This additional damage only applies for ranged attacks made at creatures within 30 feet of you.</p>
+			<h5>SNIPER</h5>
+			<p>You gain a +2 bonus to damage rolls if you attack a creature further than 30 feet away from you with a ranged weapon or a firearm that does not have the scatter property.</p>
+		<sheet/>
+		<rules>
+			<select type="Class Feature" name="Fighting Style" supports="Fighting Style, Gunslinger" level="1"/>
+		</rules>
+	</element>	
+	<element name="Akimbo Shooting" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_FEATURE_FIGHTINGSTYLE_AKIMBO_SHOOTING">
+		<supports>Fighting Style, Gunslinger, Ranger</supports>
+		<description>
+			<p>When you take the attack action with a light weapon, you can use a bonus action to make an attack with a light ranged weapon you are holding. You do not add your ability score modifier to the damage of this attack, unless that modifier is negative.</p>
+		</description>
+		<sheet>
+			<description>When you take the attack action with a light weapon, you can use a bonus action to make an attack with a light ranged weapon you are holding. You do not add your ability score modifier to the damage of this attack, unless that modifier is negative.</description>
+		</sheet>
+	</element>	
+	<element name="Lucky Shot" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_FEATURE_FIGHTINGSTYLE_LUCKY_SHOT">
+		<supports>Fighting Style, Gunslinger, Fighter</supports>
+		<description>
+			<p>When you hit with a ranged attack roll, you roll a 1 or 2 on the damage die, you can reroll the damage die and must take the new roll, even if the number is a 1 or a 2. The weapon must have the two-handed property in order to gain this benefit.</p>
+		</description>
+		<sheet>
+			<description>When you hit with a ranged attack roll, you roll a 1 or 2 on the damage die, you can reroll the damage die and must take the new roll, even if the number is a 1 or a 2. The weapon must have the two-handed property in order to gain this benefit.</description>
+		</sheet>
+	</element>	
+	<element name="Deadeye" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_FEATURE_FIGHTINGSTYLE_DEADEYE">
+		<supports>Fighting Style, Gunslinger, Fighter, Ranger</supports>
+		<description>
+			<p>You get a +2 bonus to attack rolls you make with martial and simple ranged weapons, as well as longarms which do not have the bulky or scatter property.</p>
+		</description>
+		<sheet>
+			<description>You get a +2 bonus to attack rolls you make with martial and simple ranged weapons, as well as longarms which do not have the bulky or scatter property.</description>
+		</sheet>
+	</element>	
+	<element name="Dueling" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_FEATURE_FIGHTINGSTYLE_DUELING">
+		<supports>Fighting Style, Gunslinger, Fighter, Ranger</supports>
+		<description>
+			<p>When wielding a one-handed weapon in one hand and no other weapons, you get a +2 bonus to your damage rolls with these weapons. This additional damage only applies for ranged attacks made at creatures within 30 feet of you.</p>
+		</description>
+		<sheet>
+			<description>When wielding a one-handed weapon in one hand and no other weapons, you get a +2 bonus to your damage rolls with these weapons. This additional damage only applies for ranged attacks made at creatures within 30 feet of you.</description>
+		</sheet>
+	</element>	
+	<element name="Sniper" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_FEATURE_FIGHTINGSTYLE_SNIPER">
+		<supports>Fighting Style, Gunslinger, Ranger</supports>
+		<description>
+			<p>You gain a +2 bonus to damage rolls if you attack a creature further than 30 feet away from you with a ranged weapon or a firearm that does not have the scatter property.</p>
+		</description>
+		<sheet>
+			<description>You gain a +2 bonus to damage rolls if you attack a creature further than 30 feet away from you with a ranged weapon or a firearm that does not have the scatter property.</description>
+		</sheet>
+	</element>	
+
+    <!-- Action Surge -->
+
+	<element name="Action Surge" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_FEATURE_ACTIONSURGE">
+		<description>
+			<p>Starting at 2nd level, you can push yourself beyond your normal limits for a moment. On your turn, you can take one additional action on top of your regular action and a possible bonus action.</p>
+			<p class="indent">Once you use this feature, you must finish a short or long rest before you can use it again.</p>
+		</description>
+		<sheet usage="1/Short Rest">
+			<description>On your turn, you can take one additional action on top of your regular action.</description>
+		</sheet>
+	</element>
+    
+    <!-- Gunslinger Archetype -->
+    	<element name="Gunslinger Archetype" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_ARCHETYPE">
+		<description>
+			<p>At 3rd level, you choose an archetype that you strive to emulate in your combat styles and techniques. Your archetype grants you features at 3rd level and again at 7th, 10th, 15th, and 18th level.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype" name="Gunslinger Archetype" supports="Gunslinger Archetype" level="3" />
+		</rules>
+	</element>	
 
 
+    <!-- Ability Score Improvement -->
+    
+	<element name="Ability Score Improvement (Gunslinger)" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_ABILITYSCOREIMPROVEMENT">
+		<description>
+			<p>When you reach 4th level, and again at 8th level, 12th level, 16th level, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As usual, you can’t increase an ability score above 20 using this feature.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Improvement Option (Gunslinger 4)" supports="Improvement Option,Gunslinger,4" level="4" />
+            <select type="Class Feature" name="Improvement Option (Gunslinger 8)" supports="Improvement Option,Gunslinger,8" level="8" />
+            <select type="Class Feature" name="Improvement Option (Gunslinger 12)" supports="Improvement Option,Gunslinger,12" level="12" />
+            <select type="Class Feature" name="Improvement Option (Gunslinger 16)" supports="Improvement Option,Gunslinger,16" level="16" />
+            <select type="Class Feature" name="Improvement Option (Gunslinger 19)" supports="Improvement Option,Gunslinger,19" level="19" />
+		</rules>
+	</element>	
+    <!-- Extra Attack -->
+
+	<element name="Extra Attack (Gunslinger)" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_EXTRA_ATTACK">
+		<description>
+			<p>At 5th level, you can attack twice, instead of once when you take the attack action on your turn.</p><p class="indent">Additionally, when you take the Attack action on your turn, you can forgo one of your attacks to reload your weapon.</p>
+		</description>
+		<sheet>
+			<description>You can attack twice, instead of once when you take the attack action on your turn. You can forgo one of your attacks to reload your weapon.</description>
+		</sheet>
+		<rules>
+			<stat name="extra attack:count" value="2" level="5" bonus="extra attack" />
+		</rules>
+	</element>	
 
 
+    <!-- Gunslinger Archetype -->
 
+    <element name="Perfect Hunter of Deadlands" type="Archetype" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_PERFECT_HUNTER_OF_DEADLANDS">     
+     <supports>Gunslinger Archetype</supports>
+        <description>
+			<p>Perfection of the Deadlands. A successful test subject from the Deadlands.</p>
+			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_GRIT"/>
+			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_DEADEYE_SHOT"/>
+			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_QUICKDRAW"/>
+            <div element="ID_MS_VRPG_ARCHETYPE_FEATURE_EVASION"/>
+			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_TRICKSHOT"/>
+			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_PIERCING_SHOT" />
+            <!-- BURAYI DOLDUR -->
+            <div element="ID_MS_VRPG_ARCHETYPE_FEATURE_BURAYI_DOLDUR" />
+            <!-- BURAYI DOLDUR -->
+		</description>
+        <sheet>
+			<description>Perfection of the Deadlands.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_GRIT" level="3"/>
+			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_DEADEYE_SHOT" level="3"/>       
+			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_QUICKDRAW" level="7"/>
+            <grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_EVASION" level="7"/>
+			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_TRICKSHOT" level="10"/>
+			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_PIERCING_SHOT" level="15"/>
+            <grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_BURAYI_DOLDUR" level="18"/>
+		</rules>
+    </element>
 
+    <!-- Grit --> 
 
+	<element name="Grit" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_GRIT">
+		<description>
+			<p>Also starting at 3rd level, you gain a number of grit points equal to your Wisdom modifier (minimum of 1). You can spend grit points to perform various "shot" attacks with your firearms. An attack can only be affected by a single shot feature. You can regain spent Grit points in the following ways:</p>
+			<p class="indent"><b><em>Critical hit with a firearm.</em></b> Each time you score a critical hit with a firearm attack while in the heat of combat, you regain 1 spent grit point. Critical hits gained outside of die rolls (via enemy conditions) do not generate grit.</p>
+			<p class="indent"><b><em>Killing blow with a firearm.</em></b> Each time you reduce a dangerous creature of significant threat (DM’s discretion) to 0 hit points with a firearm attack, and kill them, you regain 1 spent grit point.</p>
+			<p class="indent">You also regain all spent grit points after finishing a short or long rest.</p>
+		</description>
+		<sheet>
+			<description>You have {{grit-points}} Grit points. You regain 1 when you score or a critical hit, or when you kill a significant threat.
+			You also regain all spent grit points after finishing a short or long rest.</description>
+		</sheet>
+		<rules>
+			<stat name="grit-points" value="1" bonus="base" />
+			<stat name="grit-points" value="wisdom:modifier" bonus="base" />
+		</rules>
+	</element>
 
+    <!-- Deadeye Shot --> 
 
-
-
-
-
+	<element name="Deadeye Shot" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_DEADEYE_SHOT">
+		<description>
+			<p>Beginning at 3rd level, you can spend 1 grit point to gain advantage on the next attack roll you make with a firearm this round.</p>
+		</description>
+		<sheet>
+			<description>Spend 1 Grit to gain advantage on the next attack with a firearm.</description>
+		</sheet>
+	</element>
 
 
 
