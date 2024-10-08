@@ -2,7 +2,7 @@
 <elements>
 <info>
 		<name>Gunslinger</name>
-		<update version="1.0.49">
+		<update version="1.0.50">
 			<file name="gunslinger-perfect-hunter-of-deadlands.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/gunslinger-perfect-hunter-of-deadlands.xml" />
 		</update>
 	</info>
@@ -74,6 +74,7 @@
 			<set name="hd">d8</set>
 		</setters>
 		<rules>
+            <grant type="Grants" id="ID_MS_VRPG_GRANTS_WEAPONS_REQUIREMENT" />
 
 			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_MS_VRPG_MULTICLASS_GUNSLINGER" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" requirements="!ID_MS_VRPG_MULTICLASS_GUNSLINGER" />
@@ -118,7 +119,7 @@
 				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
 				<grant type="Proficiency" id="ID_MS_VRPG_WEAPON_PEACEMAKER_SNIPER" />
 				<grant type="Proficiency" id="ID_MS_VRPG_PROFICIENCY_WEAPON_PROFICIENCY_THE_CURE_PISTOL" />
-				<select type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS" />
 			</rules>
 		</multiclass>
 	</element>
@@ -353,7 +354,7 @@
 			<set name="range">30/90</set>
 			<set name="damage" type="piercing">1d8</set>
 			<set name="misfire">2</set>
-			<set name="proficiency">ID_MS_VRPG_PROFICIENCY_WEAPON_PROFICIENCY_THE_CURE_PISTOL</set>
+			<set name="proficiency">ID_MS_VRPG_WEAPON_PROFICIENCY_THE_CURE_PISTOL</set>
 		</setters>
 	</element>
 <element name="Peacemaker (Sniper)" type="Weapon" source="Vindavia RPG" id="ID_MS_VRPG_WEAPON_PEACEMAKER_SNIPER">
@@ -369,7 +370,15 @@
 			<set name="range">70/200</set>
 			<set name="damage" type="piercing">1d12</set>
 			<set name="misfire">2</set>
-			<set name="proficiency">ID_MS_VRPG_PROFICIENCY_WEAPON_PROFICIENCY_PEACEMAKER_SNIPER</set>
+			<set name="proficiency">ID_MS_VRPG_WEAPON_PROFICIENCY_PEACEMAKER_SNIPER</set>
 		</setters>
 	</element>
+
+	<element name="The Cure (Pistol)" type="Proficiency" source="Vindavia RPG" id="ID_MS_VRPG_WEAPON_PROFICIENCY_THE_CURE_PISTOL">
+		<requirements>ID_MS_VRPG_GRANTS_WEAPONS_REQUIREMENT</requirements>
+	</element>
+	<element name="Peacemaker (Sniper)" type="Proficiency" source="Vindavia RPG" id="ID_MS_VRPG_WEAPON_PROFICIENCY_PEACEMAKER_SNIPER">
+		<requirements>ID_MS_VRPG_GRANTS_WEAPONS_REQUIREMENT</requirements>
+	</element>
+
 </elements>
