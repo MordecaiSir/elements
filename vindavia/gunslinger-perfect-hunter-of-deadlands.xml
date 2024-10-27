@@ -2,7 +2,7 @@
 <elements>
 <info>
 		<name>Gunslinger</name>
-		<update version="1.0.81">
+		<update version="1.0.82">
 			<file name="gunslinger-perfect-hunter-of-deadlands.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/gunslinger-perfect-hunter-of-deadlands.xml" />
 		</update>
 	</info>
@@ -422,7 +422,7 @@
 	<element name="Grit" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_GRIT">
 		<description>
 			<p>Also starting at 3rd level, you gain a number of grit points equal to your Wisdom modifier (minimum of 1). You can spend grit points to perform various "shot" attacks with your firearms. An attack can only be affected by a single shot feature. You can regain spent Grit points in the following ways:</p>
-			<p class="indent"><b><em>MS_VRPGical hit with a firearm.</em></b> Each time you score a MS_VRPGical hit with a firearm attack while in the heat of combat, you regain 1 spent grit point. MS_VRPGical hits gained outside of die rolls (via enemy conditions) do not generate grit.</p>
+			<p class="indent"><b><em>Critical hit with a firearm.</em></b> Each time you score a MS_VRPGical hit with a firearm attack while in the heat of combat, you regain 1 spent grit point. MS_VRPGical hits gained outside of die rolls (via enemy conditions) do not generate grit.</p>
 			<p class="indent"><b><em>Killing blow with a firearm.</em></b> Each time you reduce a dangerous creature of significant threat (DM’s discretion) to 0 hit points with a firearm attack, and kill them, you regain 1 spent grit point.</p>
 			<p class="indent">You also regain all spent grit points after finishing a short or long rest.</p>
 		</description>
