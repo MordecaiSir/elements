@@ -10,7 +10,7 @@
 	<!-- Subclass description -->
 
 	<element name="The Ancient Scribe" type="Archetype" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_WARLOCK_ANCIENT_SCRIBE">
-		<supports>Primal Path</supports>
+		<supports>Otherworldly Patron</supports>
 		<description>
 			<p>CLASS ACIKLAMASI LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM </p>
 			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_ANCIENT_SCRIBE_SPELLCASTING" />
