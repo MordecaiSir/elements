@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>The Ancient Scribe</name>
+		<update version="1.0.80">
+			<file name="warlock-ancient-scribe.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/warlock-ancient-scribe.xml" />
+		</update>
+	</info>
+	
+	<!-- Subclass description -->
+
+	<element name="The Ancient Scribe" type="Archetype" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_WARLOCK_ANCIENT_SCRIBE">
+		<supports>Primal Path</supports>
+		<description>
+			<p>CLASS ACIKLAMASI LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM </p>
+			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_ANCIENT_SCRIBE_SPELLCASTING" />
+            <div element="ID_MS_VRPG_ARCHETYPE_FEATURE_PATH_OF_THE_HATRED_HATRED" />
+			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_PATH_OF_THE_HATRED_UNTIL_LAST_ENEMY_DIES" />
+			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_PATH_OF_THE_HATRED_MONSTER_IN_FRONT_OF_ME" />
+			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_PATH_OF_THE_HATRED_CONTINUE_THE_MASSACRE" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_ANCIENT_SCRIBE_SPELLCASTING" level="1" />
+            <grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_PATH_OF_THE_HATRED_HATRED" level="1" />
+			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_PATH_OF_THE_HATRED_UNTIL_LAST_ENEMY_DIES" level="6" />
+			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_PATH_OF_THE_HATRED_MONSTER_IN_FRONT_OF_ME" level="10" />
+			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_PATH_OF_THE_HATRED_CONTINUE_THE_MASSACRE" level="14" />
+		</rules>
+	</element>
+
+	<!-- SPELLCASTING -->
+
+	<element name="SPELLCASTING LIST LOREM IPSUM" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_ANCIENT_SCRIBE_SPELLCASTING">
+		<description>
+			<p><em>1st-level The Ancient Scribe feature</em></p>
+			<p>You can choose spells from sorcerer spell list.</p>
+		</description>
+		<sheet display="false" />
+        <spellcasting name="The Ancient Scribe" ability="Charisma" allowReplace="true">
+			<list>Sorcerer</list>
+		</spellcasting>
+	</element>
+
+	<!-- UNTIL LAST ENEMY DIES-->
+
+	<element name="UNTIL LAST ENEMY DIES" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_PATH_OF_THE_HATRED_UNTIL_LAST_ENEMY_DIES">
+		<description>
+			<p><em>6th-level Path of the Hatred feature</em></p>
+			<p>Starting at 6th level, You can use your bonus action to move up to your speed and make an attack.</p>
+			<p>You can’t be charmed or frightened while raging. If you are charmed or frightened when you enter your rage, the effect is suspended for the duration of the rage.</p>
+		</description>
+		<sheet>
+			<description>
+			<p>You can use your bonus action to move up to your speed and make an attack. You can’t be charmed or frightened while raging. If you are charmed or frightened when you enter your rage, the effect is suspended for the duration of the rage.</p>
+			
+			</description>
+		</sheet>
+	</element>
+	
+    <!-- MONSTER IN FRONT OF ME-->
+
+	<element name="MONSTER IN FRONT OF ME" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_PATH_OF_THE_HATRED_MONSTER_IN_FRONT_OF_ME">
+		<description>
+			<p><em>10th-level Path of the Hatred feature</em></p>
+			<p>Starting at 10th level, You pose too much danger to your enemy. Your enemies around you are prioritizing killing you first. While you're raging, if any enemies are within 30 ft. will prioritize attacking you. If the creature cannot attack you, then the target will not prioritize you. You also gain resistance to all types of damage (except extra damage from Wild Strikes).</p>
+		</description>
+		<sheet>
+			<description>
+			<p>While you're raging, if any enemies are within 30 ft. will prioritize attacking you. If the creature cannot attack you, then the target will not prioritize you. You also gain resistance to all types of damage (except Wild Strikes extra damage).</p>
+			
+			</description>
+		</sheet>
+	</element>
+
+    <!-- CONTINUE THE MASSACRE-->
+
+	<element name="CONTINUE THE MASSACRE" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_PATH_OF_THE_HATRED_CONTINUE_THE_MASSACRE">
+		<description>
+			<p><em>14th-level Path of the Hatred feature</em></p>
+			<p>Starting at 14th level, The hatred that fuels your rage allows you to gain unimaginable toughness. While you're raging, when you kill a enemy you regain hit points equal to 5 + constitution modifier. </p>
+			<p>Also when you take damage from a creature that is within 5 feet of you, you can use your reaction to make a melee weapon attack against that creature.</p>
+		</description>
+		<sheet>
+			<description>
+			<p>While you're raging, when you kill a enemy you regain {{massacre:hp}} hit points.</p>
+			
+			</description>
+		</sheet>
+		<rules>
+			<stat name="massacre:hp" value="5" />
+			<stat name="massacre:hp" value="constitution:modifier" />
+		</rules>
+	</element>
+
+</elements>
