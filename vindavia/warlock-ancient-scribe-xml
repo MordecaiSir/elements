@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>The Ancient Scribe</name>
-		<update version="1.0.80">
+		<update version="1.0.81">
 			<file name="warlock-ancient-scribe.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/warlock-ancient-scribe.xml" />
 		</update>
 	</info>
