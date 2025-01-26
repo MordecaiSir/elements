@@ -14,32 +14,59 @@
 		<description>
 			<p>CLASS ACIKLAMASI LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM </p>
 			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_ANCIENT_SCRIBE_SPELLCASTING" />
-            <div element="ID_MS_VRPG_ARCHETYPE_FEATURE_PATH_OF_THE_HATRED_HATRED" />
-			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_PATH_OF_THE_HATRED_UNTIL_LAST_ENEMY_DIES" />
+       <!-- <div element="ID_MS_VRPG_ARCHETYPE_FEATURE_PATH_OF_THE_HATRED_HATRED" /> -->
+			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_ANCIENT_SCRIBE_SEALS" />
 			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_PATH_OF_THE_HATRED_MONSTER_IN_FRONT_OF_ME" />
 			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_PATH_OF_THE_HATRED_CONTINUE_THE_MASSACRE" />
 		</description>
 		<sheet display="false" />
 		<rules>
 			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_ANCIENT_SCRIBE_SPELLCASTING" level="1" />
-            <grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_PATH_OF_THE_HATRED_HATRED" level="1" />
-			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_PATH_OF_THE_HATRED_UNTIL_LAST_ENEMY_DIES" level="6" />
+       <!-- <grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_PATH_OF_THE_HATRED_HATRED" level="1" /> -->
+			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_ANCIENT_SCRIBE_SEALS" level="6" />
 			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_PATH_OF_THE_HATRED_MONSTER_IN_FRONT_OF_ME" level="10" />
 			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_PATH_OF_THE_HATRED_CONTINUE_THE_MASSACRE" level="14" />
 		</rules>
 	</element>
 
-	<!-- SPELLCASTING -->
+	<!-- Spell Knowledge -->
+	<!--$(spellcasting:list) -->
 
-	<element name="SPELLCASTING LIST LOREM IPSUM" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_ANCIENT_SCRIBE_SPELLCASTING">
+	<element name="Spell Knowledge" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_ANCIENT_SCRIBE_SPELLCASTING">
 		<description>
 			<p><em>1st-level The Ancient Scribe feature</em></p>
-			<p>You can choose spells from sorcerer spell list.</p>
+			<p>You can choose spells from sorcerer and wizard spell list.</p>
 		</description>
 		<sheet display="false" />
-        <spellcasting name="The Ancient Scribe" ability="Charisma" allowReplace="true">
-			<list>Sorcerer</list>
+        <spellcasting name="Warlock" extend="true">
+			<extend>Sorcerer</extend>
+			<extend>Wizard</extend>
 		</spellcasting>
+		<rules>
+
+		</rules>
+	</element>
+
+    <!-- Seals of Knowledge -->
+
+	<element name="Seals of Knowledge" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_ANCIENT_SCRIBE_SEALS">
+		<description>
+			<p><em>1st-level The Ancient Scribe feature</em></p>
+			<p>At 6th level, you gain the ability to inscribe powerful seals onto creatures, marking them with the weight of cosmic knowledge. You can place a Seal of Judgment or a Seal of Truth on a creature as a bonus action. A creature can only have one seal at a time, and a seal lasts for 1 minute or until it is triggered.</p>
+			<p>Seal of Judgment: When the marked creature targets you with an attack or harmful ability, you can use your reaction to detonate the seal, dealing 2d8 psychic damage to the creature.</p>
+			<p>Seal of Truth: The marked creature must make a Charisma saving throw against your spell save DC. On a failed save, for the next 10 minutes, the creature cannot knowingly lie. Unlike Zone of Truth, this does not create an aura; it only affects the marked creature, and the creature is aware of the effect.</p>
+			<p>You can use this feature a number of times equal to your proficiency bonus, and you regain all uses after a long rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="{{proficiency}}/Long Rest">
+          <description>As a bonus action, you can place a Seal of Judgment or Seal of Truth on a creature that you cast magic or interacted. A creature can only have one seal at a time, and it lasts for 1 minute or until triggered.
+            
+			Seal of Judgment: If the marked creature targets you with an attack or harmful ability, you can use your reaction to deal 2d8 psychic damage to it.
+
+            Seal of Truth: The marked creature must succeed on a Charisma saving throw (DC {{warlock:spellcasting:dc}}) or be unable to knowingly lie for 10 minutes.</description>
+		</sheet>
+		<rules>
+
+		</rules>
 	</element>
 
 </elements>
