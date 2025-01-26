@@ -71,12 +71,12 @@
 
 		<!-- Ink of Renewal -->
 
-	<element name="Seals of Knowledge" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_ANCIENT_SCRIBE_INK">
+	<element name="Ink of Renewal" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_ANCIENT_SCRIBE_INK">
 		<description>
 			<p><em>10th-level The Ancient Scribe feature</em></p>
 			<p>At 10th level, When you fail a saving throw, you can reroll the save, potentially changing the outcome. You must use the new roll. This feature can be used once per short or long rest. </p>
 		</description>
-		<sheet usage="{{proficiency}}/Short or Long Rest">
+		<sheet usage="1/Short or Long Rest">
           <description>When you fail a saving throw, you can reroll the save, potentially changing the outcome. You must use the new roll. This feature can be used once per short or long rest.</description>
 		</sheet>
 		<rules>
