@@ -12,6 +12,7 @@
 		<obsolete name="sources.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/sources.xml"/>
 		<file name="barbarian-hatred.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/barbarian-hatred.xml"/>
         <file name="source.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/source.xml"/>
+		<file name="source.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/class-street-fighter.xml"/>
 		<file name="gunslinger-perfect-hunter-of-deadlands.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/gunslinger-perfect-hunter-of-deadlands.xml"/>
 		<file name="warlock-ancient-scribe.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/warlock-ancient-scribe.xml"/>
 	</files>

@@ -7,7 +7,7 @@
 		</update>
 	</info>
 
-    <!-- Gunslinger -->
+ <!-- Gunslinger -->
 
 	<element name="Gunslinger" type="Class" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_GUNSLINGER">
 		<description>
@@ -119,7 +119,7 @@
 		</multiclass>
 	</element>
 
-	<!-- Firearm Proficiency -->
+ <!-- Firearm Proficiency -->
 
 	<element name="Firearm Proficiency" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_GUNSLINGER_FIREARM_PROFICIENCY">
 		<description>
@@ -131,7 +131,7 @@
 		</rules>
 	</element>
 
-    <!-- Gun Stunts -->
+ <!-- Gun Stunts -->
 
 	<element name="Gun Stunts" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_GUN_STUNTS">
 		<description>
@@ -150,7 +150,7 @@
 		</sheet>
 	</element>	
 
-    <!-- Knack -->
+ <!-- Knack -->
 
 	<element name="Knack" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_KNACK">
 		<description>
@@ -163,7 +163,7 @@
 		</rules>
 	</element>	
 
-    <!-- Fighting Style -->
+ <!-- Fighting Style -->
 
 	<element name="Fighting Style" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_FIGHTING_STYLE">
 		<description>
@@ -253,7 +253,7 @@
 	
 	-->
     
-    <!-- Gunslinger Archetype -->
+ <!-- Gunslinger Archetype -->
     	<element name="Gunslinger Archetype" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_ARCHETYPE">
 		<description>
 			<p>At 3rd level, you choose an archetype that you strive to emulate in your combat styles and techniques. Your archetype grants you features at 3rd level and again at 7th, 10th, 15th, and 18th level.</p>
@@ -264,7 +264,7 @@
 		</rules>
 	</element>	
 
-    <!-- Ability Score Improvement -->
+ <!-- Ability Score Improvement -->
     
 	<element name="Ability Score Improvement (Gunslinger)" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_ABILITYSCOREIMPROVEMENT">
 		<description>
@@ -280,7 +280,7 @@
 		</rules>
 	</element>	
 
-    <!-- Extra Attack -->
+ <!-- Extra Attack -->
 
 	<element name="Extra Attack (Gunslinger)" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_EXTRA_ATTACK">
 		<description>
@@ -297,7 +297,7 @@
 		</rules>
 	</element>	
 
-	<!-- Bullet Time -->
+ <!-- Bullet Time -->
 
 	<element name="Bullet Time" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_BULLET_TIME">
 		<description>
@@ -311,7 +311,7 @@
 		</rules>
 	</element>	
 
-	<!-- Vicious Intent -->
+ <!-- Vicious Intent -->
 
 	<element name="Vicious Intent" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_VICIOUS_INTENT">
 		<description>
@@ -322,7 +322,7 @@
 		</sheet>
 	</element>
 
-	<!-- Shootout Sense -->
+ <!-- Shootout Sense -->
 
 	<element name="Shootout Sense" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_SHOOTOUT_SENSE">
 		<description>
@@ -333,7 +333,7 @@
 		</sheet>
 	</element>
 
-    <!-- Relentless -->
+ <!-- Relentless -->
 
 	<element name="Relentless" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_RELENTLESS">
 		<description>
@@ -344,7 +344,7 @@
 		</sheet>
 	</element>
 
-    <!-- Superior Vicious Intent -->
+ <!-- Superior Vicious Intent -->
 
 	<element name="Superior Vicious Intent" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_SUPERIOR_VICIOUS_INTENT">
 		<description>
@@ -355,7 +355,7 @@
 		</sheet>
 	</element>
 
-    <!-- Violent Shot -->
+ <!-- Violent Shot -->
 
 	<element name="Violent Shot" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_VIOLENT_SHOT">
 		<description>
@@ -367,7 +367,7 @@
 		</sheet>
 	</element>
 
-    <!-- Gunslining Supreme -->
+ <!-- Gunslining Supreme -->
 
 	<element name="Gunslinging Supreme" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_GUNSLINGING_SUPREME">
 		<description>
@@ -417,7 +417,7 @@
 		</rules>
     </element>
 
-    <!-- Grit --> 
+  <!-- Grit --> 
 
 	<element name="Grit" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_GRIT">
 		<description>
@@ -436,7 +436,7 @@
 		</rules>
 	</element>
 
-    <!-- Deadeye Shot --> 
+  <!-- Deadeye Shot --> 
 
 	<element name="Deadeye Shot" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_DEADEYE_SHOT">
 		<description>
@@ -447,7 +447,7 @@
 		</sheet>
 	</element>
 
-	<!-- Warning Attack --> 
+  <!-- Warning Attack --> 
 
 	<element name="Warning Attack" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_WARNINGATTACK" >
 		<description>
@@ -458,7 +458,7 @@
 		</sheet>
 	</element>	
 
-	<!-- Intercept --> 
+  <!-- Intercept --> 
 
 	<element name="Intercept" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_INTERCEPT" >
 		<description>
@@ -469,7 +469,7 @@
 		</sheet>
 	</element>	
 
-	<!-- Quickdraw -->
+  <!-- Quickdraw -->
 
 	<element name="Quickdraw" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_QUICKDRAW">
 		<description>
@@ -483,7 +483,7 @@
 		</rules>
 	</element>
 
-    <!-- Evasion -->
+  <!-- Evasion -->
 
 	<element name="Evasion" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_EVASION">
 		<description>
@@ -494,7 +494,7 @@
 		</sheet>
 	</element>	
 
-    <!-- Trick Shot -->
+  <!-- Trick Shot -->
 
 	<element name="Trick Shot" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_TRICKSHOT">
 		<description>
@@ -520,7 +520,7 @@
 		</rules>
 	</element>
 
-    <!-- Piercing Shot -->
+  <!-- Piercing Shot -->
 
 	<element name="Piercing Shot" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_PIERCING_SHOT">
 		<description>
@@ -531,7 +531,7 @@
 		</sheet>
 	</element>
 
-    <!-- Lightning Reload -->
+  <!-- Lightning Reload -->
 
 	<element name="Lightning Reload" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_LIGHTNING_RELOAD">
 		<description>
@@ -542,7 +542,7 @@
 		</sheet>
 	</element>
 
-    <!-- Overwatch-->
+  <!-- Overwatch-->
 
 	<element name="Overwatch" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_OVERWATCH">
 		<description>
