@@ -141,7 +141,6 @@
 			<stat name="ac:tough skin street fighter" value="ac:tough skin street fighter:base" />
 			<stat name="ac:tough skin street fighter" value="ac:tough skin street fighter:dexterity" />
 			<stat name="ac:tough skin street fighter" value="ac:tough skin street fighter:constitution" />
-            <stat name="ac:tough skin street fighter extra" value="2" bonus="armor" level="3" />
 
 			<stat name="ac:calculation" value="ac:tough skin street fighter" bonus="calculation" equipped="[armor:none],[shield:none]" alt="Tough Skin (Street Fighter)" />
 		</rules>
