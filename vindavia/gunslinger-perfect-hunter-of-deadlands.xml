@@ -254,7 +254,7 @@
 	-->
     
  <!-- Gunslinger Archetype -->
-    	<element name="Gunslinger Archetype" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_ARCHETYPE">
+    <element name="Gunslinger Archetype" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_ARCHETYPE">
 		<description>
 			<p>At 3rd level, you choose an archetype that you strive to emulate in your combat styles and techniques. Your archetype grants you features at 3rd level and again at 7th, 10th, 15th, and 18th level.</p>
 		</description>
