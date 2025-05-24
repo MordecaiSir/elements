@@ -67,6 +67,7 @@
 			<set name="hd">d10</set>
 		</setters>
 		<rules>
+		    <grant type="Proficiency" id="ID_MS_VRPG_PROFICIENCY_IMPROVISED_WEAPONS" requirements="!ID_MS_VRPG_MULTICLASS_STREET_FIGHTER"/>
 			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_MS_VRPG_MULTICLASS_STREET_FIGHTER" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_MS_VRPG_MULTICLASS_STREET_FIGHTER"  />
        <!-- <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_IMPROVISED_WEAPONS" requirements="!ID_MS_VRPG_MULTICLASS_STREET_FIGHTER"  /> WONT WORK PROBABLY -->
@@ -348,6 +349,9 @@
 
 
 
+    <element name="Weapon Proficiency (Improvised Weapons)" type="Proficiency" source="Vindavia RPG" id="ID_MS_VRPG_PROFICIENCY_IMPROVISED_WEAPONS">
+		<requirements>ID_MS_VRPG_CLASS_STREET_FIGHTER</requirements>
+	</element>
 
 
 
