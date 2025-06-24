@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Rune Carver</name>
-		<update version="0.0.1">
+		<update version="1.0.3">
 			<file name="fighter-rune-carver.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/fighter-rune-carver.xml" />
 		</update>
 	</info>
@@ -16,7 +16,7 @@
 			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_RUNEGUARD_MASTER_RUNES" />
 			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_RUNEGUARD_RUNECRAFT" />
 			<!-- <div element="ID_MS_VRPG_ARCHETYPE_FEATURE_RUNEGUARD_RUNESCRIPT" /> -->
-			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_RUNEGUARD_EYES_OF_THE_ANCIENT_RUNE_GUARDIAN" />
+			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_RUNEGUARD_EYES_OF_THE_RUNE_GUARDIAN" />
             <div element="ID_MS_VRPG_ARCHETYPE_FEATURE_RUNEGUARD_RUNE_MASTERY" />
 			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_RUNE_CARVER_ANCIENT_RUNES" />
 			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_RUNEGUARD_RUNIC_MASTERY" />
@@ -28,7 +28,7 @@
 			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_RUNEGUARD_MASTER_RUNES" level="3" />
 			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_RUNEGUARD_RUNECRAFT" level="3" />
 			<!--<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_RUNEGUARD_RUNESCRIPT" level="3" />-->
-			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_RUNEGUARD_EYES_OF_THE_ANCIENT_RUNE_GUARDIAN" level="7" />
+			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_RUNEGUARD_EYES_OF_THE_RUNE_GUARDIAN" level="7" />
             <grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_RUNEGUARD_RUNE_MASTERY" level="7" />
 			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_RUNE_CARVER_ANCIENT_RUNES" level="10" />
 			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_RUNEGUARD_RUNIC_MASTERY" level="18" />
@@ -109,14 +109,14 @@
 		</rules>
 	</element> -->
 
-   <!-- EYES OF THE ANCIENT RUNE GUARDIAN -->
+   <!-- EYES OF THE RUNE GUARDIAN -->
 
-	<element name="Eyes of the Rune Guardian" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_RUNEGUARD_EYES_OF_THE_ANCIENT_RUNE_GUARDIAN">
+	<element name="Eyes of the Rune Guardian" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_RUNEGUARD_EYES_OF_THE_RUNE_GUARDIAN">
 		<description>
-			<p>Starting at 7th level, when you activate this feature, you roll perception and insight checks to detect illusions with advantage. You can use this feature a number of times equal to your proficiency bonus. You regain the uses of this feature when you complete a or long rest.</p>
+			<p>Starting at 7th level, when you activate this feature, you roll perception and insight checks to detect illusions with advantage for 1 minute. You can use this feature a number of times equal to your proficiency bonus. You regain the uses of this feature when you complete a or long rest.</p>
 		</description>
 		<sheet usage="{{proficiency}}/Long Rest">
-			<description>When you activate this feature, you roll perception and insight checks to detect illusions with advantage.</description>
+			<description>When you activate this feature, you roll perception and insight checks to detect illusions with advantage for 1 minute.</description>
 		</sheet>
 	</element>
 
