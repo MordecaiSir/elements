@@ -441,6 +441,6 @@
 		<sheet action="Bonus Action">
 			<description>The person who activates this rune doubles their speed. They can take Dash Actions as bonus actions.</description>
 		</sheet>
-
+    </element>
 
 </elements>
