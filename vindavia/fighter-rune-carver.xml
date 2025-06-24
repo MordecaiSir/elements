@@ -16,7 +16,7 @@
 			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_RUNEGUARD_MASTER_RUNES" />
 			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_RUNEGUARD_RUNECRAFT" />
 			<!-- <div element="ID_MS_VRPG_ARCHETYPE_FEATURE_RUNEGUARD_RUNESCRIPT" /> -->
-			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_RUNEGUARD_EYES_OF_THE_ARCANIST" />
+			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_RUNEGUARD_EYES_OF_THE_ANCIENT_RUNE_GUARDIAN" />
             <div element="ID_MS_VRPG_ARCHETYPE_FEATURE_RUNEGUARD_RUNE_MASTERY" />
 			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_RUNE_CARVER_ANCIENT_RUNES" />
 			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_RUNEGUARD_RUNIC_MASTERY" />
@@ -28,7 +28,7 @@
 			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_RUNEGUARD_MASTER_RUNES" level="3" />
 			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_RUNEGUARD_RUNECRAFT" level="3" />
 			<!--<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_RUNEGUARD_RUNESCRIPT" level="3" />-->
-			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_RUNEGUARD_EYES_OF_THE_ARCANIST" level="7" />
+			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_RUNEGUARD_EYES_OF_THE_ANCIENT_RUNE_GUARDIAN" level="7" />
             <grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_RUNEGUARD_RUNE_MASTERY" level="7" />
 			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_RUNE_CARVER_ANCIENT_RUNES" level="10" />
 			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_RUNEGUARD_RUNIC_MASTERY" level="18" />
@@ -111,7 +111,7 @@
 
    <!-- EYES OF THE ANCIENT RUNE GUARDIAN -->
 
-	<element name="Eyes of the Rune Guardian" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_RUNEGUARD_EYES_OF_THE_ARCANIST">
+	<element name="Eyes of the Rune Guardian" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_RUNEGUARD_EYES_OF_THE_ANCIENT_RUNE_GUARDIAN">
 		<description>
 			<p>Starting at 7th level, when you activate this feature, you roll perception and insight checks to detect illusions with advantage. You can use this feature a number of times equal to your proficiency bonus. You regain the uses of this feature when you complete a or long rest.</p>
 		</description>
@@ -122,7 +122,7 @@
 
     <!-- RUNE MASTERY -->
 
-    <element name="Rune Mastery" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_RUNEGUARD_EYES_OF_THE_ARCANIST">
+    <element name="Rune Mastery" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_RUNEGUARD_RUNE_MASTERY">
 		<description>
 			<p>Starting at 7th level, you can concentrate two runes at once.</p>
 		</description>
