@@ -460,7 +460,7 @@
 			<set name="short">Utility Augmentation</set>
 		</setters>
 		<sheet action="Bonus Action">
-			<description>Double your speed. Can Dash Actions as bonus actions while this rune active.</description>
+			<description>Double your speed and Can Dash Actions as bonus actions.</description>
 		</sheet>
     </element>
 
