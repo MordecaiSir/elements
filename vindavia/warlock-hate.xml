@@ -2,8 +2,8 @@
 <elements>
 	<info>
 		<name>The Ancient Scribe</name>
-		<update version="1.0.1">
-			<file name="warlock-ancient-scribe.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/warlock-ancient-scribe.xml" />
+		<update version="1.0.0">
+			<file name="warlock-hate.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/warlock-hate.xml" />
 		</update>
 	</info>
 	
