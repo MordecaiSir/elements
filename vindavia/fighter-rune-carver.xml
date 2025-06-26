@@ -454,13 +454,14 @@
 		<description>
 			<p><em>Utility Augmentation</em></p>
 			<p>You can activate this rune with bonus action. This rune must be inscribed on your body to be activated.</p>
-			<p class="indent"><strong><em>Leiptr.</em></strong> The person who activates this rune doubles their speed. They can take Dash Actions as bonus actions.</p>
+			<p class="indent"><strong><em>Leiptr.</em></strong> The person who activates this rune doubles their speed. They can take Dash Actions as bonus actions. When an attack is about to hit you, you can use your reaction to dodge it with a sudden burst of speed. </p>
 		</description>
 		<setters>
 			<set name="short">Utility Augmentation</set>
 		</setters>
 		<sheet action="Bonus Action">
-			<description>Double your speed and Can Dash Actions as bonus actions.</description>
+			<description>Double your speed and Can Dash Actions as bonus actions. 
+			You can use your reaction to dodge a attack that about to hit you.</description>
 		</sheet>
     </element>
 
