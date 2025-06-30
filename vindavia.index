@@ -17,5 +17,7 @@
 		<file name="class-street-fighter.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/class-street-fighter.xml" />
 		<file name="fighter-rune-carver.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/fighter-rune-carver.xml"/>
 		<file name="warlock-hate.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/warlock-hate.xml"/>
+		<file name="vindavia-languages.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/vindavia-languages.xml"/>
+		<file name="vindavia-hauntedone.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/vindavia-hauntedone.xml"/>
 	</files>
 </index>

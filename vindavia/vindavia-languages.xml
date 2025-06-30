@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Languages</name>
+		<update version="1.0.0">
+			<file name="vindavia-languages.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/vindavia-languages.xml" />
+		</update>
+	</info>
+
+<element name="Unknown" type="Language" source="Vindavia RPG" id="ID_MS_VRPG_LANGUAGE_UNKNOWN">
+		<supports>Secret</supports>
+		<description>
+			<p>Unknown language.</p>
+		</description>
+		<setters>
+			<set name="secret">true</set>
+			<set name="speakers">Haunted Ones</set>
+		</setters>
+</element>
+</elements>
