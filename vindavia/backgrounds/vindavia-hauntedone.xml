@@ -3,7 +3,7 @@
     <info>
         <name>Haunted One</name>
         <update version="1.0.0">
-            <file name="vindavia-hauntedone.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/vindavia-hauntedone.xml" />
+            <file name="vindavia-hauntedone.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/backgrounds/vindavia-hauntedone.xml" />
         </update>
     </info>
     <element name="Haunted One" type="Background" source="Vindavia RPG" id="ID_MS_VRPG_BACKGROUND_HAUNTED_ONE">

@@ -9,15 +9,40 @@
 		</update>
 	</info>
 	<files>
+	 <!-- Classes -->
+
+	    <file name="class-street-fighter.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/classes/class-street-fighter.xml" />
+	    <file name="gunslinger-perfect-hunter-of-deadlands.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/classes/gunslinger-perfect-hunter-of-deadlands.xml"/>
+
+	 <!-- Subclasses -->
+
+        <file name="barbarian-hatred.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/subclasses/barbarian-hatred.xml"/>
+		<file name="fighter-rune-carver.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/subclasses/fighter-rune-carver.xml"/>
+	    <file name="warlock-ancient-scribe.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/subclasses/warlock-ancient-scribe.xml"/>
+	    <file name="warlock-hate.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/subclasses/warlock-hate.xml"/>
+
+	 <!-- Backgrounds -->
+
+	 <file name="vindavia-hauntedone.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/backgrounds/vindavia-hauntedone.xml" />
+
+	 <!-- Items -->
+
+
+
+	 <!-- Feats -->
+
+
+
+	 <!-- Races -->
+
+
+
+	 <!-- Languages -->
+
+        <file name="vindavia-languages.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/languages/vindavia-languages.xml"/>
+
+	 <!-- Source -->
 		<obsolete name="sources.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/sources.xml"/>
 		<file name="source.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/source.xml"/>
-		<file name="barbarian-hatred.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/barbarian-hatred.xml"/>
-		<file name="gunslinger-perfect-hunter-of-deadlands.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/gunslinger-perfect-hunter-of-deadlands.xml"/>
-		<file name="warlock-ancient-scribe.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/warlock-ancient-scribe.xml"/>
-		<file name="class-street-fighter.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/class-street-fighter.xml" />
-		<file name="fighter-rune-carver.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/fighter-rune-carver.xml"/>
-		<file name="warlock-hate.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/warlock-hate.xml"/>
-		<file name="vindavia-languages.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/vindavia-languages.xml"/>
-		<file name="vindavia-hauntedone.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/vindavia-hauntedone.xml"/>
 	</files>
 </index>

@@ -3,7 +3,7 @@
 <info>
 		<name>Street Fighter</name>
 		<update version="1.0.0">
-			<file name="class-street-fighter.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/class-street-fighter.xml" />
+			<file name="class-street-fighter.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/classes/class-street-fighter.xml" />
 		</update>
 	</info>
 
