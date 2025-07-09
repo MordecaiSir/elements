@@ -3,7 +3,7 @@
 	<info>
 		<name>Languages</name>
 		<update version="1.0.0">
-			<file name="vindavia-languages.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/languages/vindavia-languages.xml" />
+			<file name="vindavia-languages.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/vindavia-languages.xml" />
 		</update>
 	</info>
 

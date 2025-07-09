@@ -3,7 +3,7 @@
 <info>
 		<name>Gunslinger</name>
 		<update version="1.0.83">
-			<file name="gunslinger-perfect-hunter-of-deadlands.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/classes/gunslinger-perfect-hunter-of-deadlands.xml" />
+			<file name="class-gunslinger.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/class-gunslinger.xml" />
 		</update>
 	</info>
 
