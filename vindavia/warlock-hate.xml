@@ -12,76 +12,132 @@
 	<element name="Hate" type="Archetype" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_WARLOCK_HATE">
 		<supports>Otherworldly Patron</supports>
 		<description>
-			<p>CLASS ACIKLAMASI LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM </p>
-			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_ANCIENT_SCRIBE_SPELLCASTING" />
-       <!-- <div element="ID_MS_VRPG_ARCHETYPE_FEATURE_PATH_OF_THE_HATRED_HATRED" /> -->
-			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_ANCIENT_SCRIBE_SEALS" />
-			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_ANCIENT_SCRIBE_INK" />
-			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_PATH_OF_THE_HATRED_CONTINUE_THE_MASSACRE" />
+			<p>Your patron is not a demon, god, or fey—but Hate incarnate. It simply exists, as the purest reaction to injustice, betrayal, and divine silence. Those who serve Hate do not beg for power. They demand it.</p>
+			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_HATE_EXPANDED_SPELL_LIST" />
+            <div element="ID_MS_VRPG_ARCHETYPE_FEATURE_HATE_WRATH_FUELED_SOUL" />
+			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_HATE_HATRED_TO_DIVINE" />
+			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_HATE_INTIMIDATING_HATRED" />
+			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_HATE_DEFIANCE_INCARNATE" />
+			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_HATE_CONTINUE_THE_MASSACRE" />
 		</description>
 		<sheet display="false" />
 		<rules>
-			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_ANCIENT_SCRIBE_SPELLCASTING" level="1" />
-       <!-- <grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_PATH_OF_THE_HATRED_HATRED" level="1" /> -->
-			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_ANCIENT_SCRIBE_SEALS" level="6" />
-			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_ANCIENT_SCRIBE_INK" level="10" />
-			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_PATH_OF_THE_HATRED_CONTINUE_THE_MASSACRE" level="14" />
+			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_HATE_EXPANDED_SPELL_LIST" level="1" />
+            <grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_HATE_WRATH_FUELED_SOUL" level="1" />
+			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_HATE_HATRED_TO_DIVINE" level="6" />
+			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_HATE_INTIMIDATING_HATRED" level="6" />
+			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_HATE_DEFIANCE_INCARNATE" level="10" />
+			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_HATE_CONTINUE_THE_MASSACRE" level="14" />
 		</rules>
 	</element>
 
 	<!-- Spell Knowledge -->
 	<!--$(spellcasting:list) -->
 
-	<element name="Spell Knowledge" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_ANCIENT_SCRIBE_SPELLCASTING">
+	<element name="Expanded Spell List" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_HATE_EXPANDED_SPELL_LIST">
 		<description>
-			<p><em>1st-level The Ancient Scribe feature</em></p>
+			<p><em>1st-level Hate feature</em></p>
 			<p>You can choose spells from sorcerer and wizard spell list.</p>
 		</description>
 		<sheet display="false" />
         <spellcasting name="Warlock" extend="true">
-			<extend>Sorcerer</extend>
-			<extend>Wizard</extend>
+			<extend>ID_PHB_SPELL_MAGIC_MISSILE</extend>
+			<extend>ID_PHB_SPELL_COMMAND</extend>
+			<extend>ID_PHB_SPELL_SCORCHING_RAY</extend>
+			<extend>ID_PHB_SPELL_ZONE_OF_TRUTH</extend>
+			<extend>ID_PHB_SPELL_FIREBALL</extend>
+			<extend>ID_PHB_SPELL_BESTOW_CURSE</extend>
+			<extend>ID_PHB_SPELL_FIRE_SHIELD</extend>
+			<extend>ID_PHB_SPELL_LOCATE_CREATURE</extend>
+			<extend>ID_PHB_SPELL_FLAME_STRIKE</extend>
+			<extend>ID_PHB_SPELL_DESTRUCTIVE_WAVE</extend>
 		</spellcasting>
-		<rules>
-
-		</rules>
 	</element>
 
-    <!-- Seals of Knowledge -->
+   <!-- Wrath Fueled Soul -->
 
-	<element name="Seals of Knowledge" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_ANCIENT_SCRIBE_SEALS">
+
+	<element name="Wrath-Fueled Soul" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_HATE_WRATH_FUELED_SOUL">
 		<description>
-			<p><em>6th-level The Ancient Scribe feature</em></p>
-			<p>At 6th level, you gain the ability to inscribe powerful seals onto creatures, marking them with the weight of cosmic knowledge. You can place a Seal of Judgment or a Seal of Truth on a creature as a bonus action. A creature can only have one seal at a time, and a seal lasts for 1 minute or until it is triggered.</p>
-			<p>Seal of Judgment: When the marked creature targets you with an attack or harmful ability, you can use your reaction to detonate the seal, dealing 2d8 psychic damage to the creature.</p>
-			<p>Seal of Truth: The marked creature must make a Charisma saving throw against your spell save DC. On a failed save, for the next 10 minutes, the creature cannot knowingly lie. Unlike Zone of Truth, this does not create an aura; it only affects the marked creature, and the creature is aware of the effect.</p>
-			<p>You can use this feature a number of times equal to your proficiency bonus, and you regain all uses after a long rest.</p>
+			<p><em>1st-level Hate feature</em></p>
+			<p>When your spell reduces a creature to 0 hit points, you spread fear around with the hatred you unleashed. 
+			Use your Bonus action to force a creature of your choice up to Charisma modifier within 10 feet of the slain target to make a Wisdom saving throw (DC = 8 + your proficiency bonus + your Charisma modifier). On a fail, they are frightened of you until the end of your next turn. 
+			You can use this feature a number of times equal to your proficiency bonus per short or long rest. 
+			Additionally, all your damaging spells or melee attacks count as dealing Force damage instead of their original damage type when hitting Clerics, Paladins, or Creatures with a Divine or Cosmic origin.</p>
 		</description>
-		<sheet action="Bonus Action" usage="{{proficiency}}/Long Rest">
-          <description>As a bonus action, you can place a Seal of Judgment or Seal of Truth on a creature that you cast magic or interacted. A creature can only have one seal at a time, and it lasts for 1 minute or until triggered.
-            
-			Seal of Judgment: If the marked creature targets you with an attack or harmful ability, you can use your reaction to deal 2d8 psychic damage to it.
-
-            Seal of Truth: The marked creature must succeed on a Charisma saving throw (DC {{warlock:spellcasting:dc}}) or be unable to knowingly lie for 10 minutes.</description>
+		<sheet action="Bonus Action" usage="{{proficiency}}/Short Rest">
+          <description>Force a creature of your choice up to Charisma modifier within 10 feet of the slain target to make a DC {{wrath fueled soul:dc}} Wisdom saving throw. On a fail, they are frightened of you until the end of your next turn.
+		  
+		  Additionally, all your damaging spells or melee attacks count as dealing Force damage instead of their original damage type when hitting Clerics, Paladins, or Creatures with a Divine or Cosmic origin.</description>
 		</sheet>
 		<rules>
-
+          <stat name="wrath fueled soul:dc" value="8"/>
+		  <stat name="wrath fueled soul:dc" value="proficiency"/>
+		  <stat name="wrath fueled soul:dc" value="charisma:modifier"/> {{wrath fueled soul:dc}}
 		</rules>
 	</element>
 
-		<!-- Ink of Renewal -->
+   <!-- Hatred to Divine -->
 
-	<element name="Ink of Renewal" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_ANCIENT_SCRIBE_INK">
+	<element name="Hatred to Divine" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_HATE_HATRED_TO_DIVINE">
 		<description>
-			<p><em>10th-level The Ancient Scribe feature</em></p>
-			<p>At 10th level, When you fail a saving throw, you can reroll the save, potentially changing the outcome. You must use the new roll. This feature can be used once per short or long rest. </p>
+			<p><em>6th-level Hate feature</em></p>
+			<p>At 6th level, Your weapon and spell attacks score a critical hit on a roll of 19 or 20 against Divine or Cosmic related creatures this range is 18-20. Starting at 14th level, this range increases to 18–20 and for Divine or Cosmic related creatures 17-20.</p>
 		</description>
-		<sheet usage="1/Short or Long Rest">
-          <description>When you fail a saving throw, you can reroll the save, potentially changing the outcome. You must use the new roll. This feature can be used once per short or long rest.</description>
+		<sheet>
+          <description level="6">Your weapon and spell attacks score a critical hit on a roll of 19 or 20 against Divine or Cosmic related creatures this is 18-20.</description>
+		  <description level="14">Your weapon and spell attacks score a critical hit on a roll of 18-20 against Divine or Cosmic related creatures 17-20.</description>
 		</sheet>
-		<rules>
+	</element>
 
+   <!-- Intimidating Hatred -->
+
+	<element name="Intimidating Hatred" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_HATE_INTIMIDATING_HATRED">
+		<description>
+			<p><em>6th-level Hate feature</em></p>
+			<p>You gain proficiency in the Intimidation skill. If you are already proficient in the skill, you add double your proficiency bonus to checks you make with it.</p>
+		</description>
+		<sheet display="false" />
+		<rules> 
+		
 		</rules>
 	</element>
+
+   <!-- Defiance Incarnate -->
+
+	<element name="Defiance Incarnate" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_HATE_DEFIANCE_INCARNATE">
+		<description>
+			<p><em>10th-level Hate feature</em></p>
+			<p>At 10th level, You can no longer be easily silenced or snuffed out.
+			You gain resistance to radiant damage and fire damage and have advantage on saving throws against being charmed or frightened. You cannot be frightened by Cosmic or Divine origin creatures.
+			If you fail a saving throw, you can choose to reroll it once. You must take the new result. Once per long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+          <description>Reroll a saving throw that you failed. You must use the new roll.</description>
+		</sheet>
+	</element>
+
+   <!-- Hatred Made Flesh -->
+
+	<element name="Hatred Made Flesh" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_HATE_HATRED_MADE_FLESH">
+		<description>
+			<p><em>14th-level Hate feature</em></p>
+			<p>At 10th level, You manifest the raw presence of Hate. As an action, you unleash your true form for 1 minute. You get 1 level of exhaustion when this presence ends.
+			When you deal force damage, you ignore resistance and immunity acts as resistance. Cosmic or Divine origin creatures are considered vulnerable to this damage type if they have no resistance or immunity.
+			Each turn one of yours can deal extra 2d8 force damage.
+			Enemies of Divine or Cosmic origin creatures have disadvantage on attack rolls against you while within 15 feet.
+			If you reduce such a creature to 0 HP during this state, you can choose to frighten all creatures of your choice within 30 feet with DC (spell save dc) Wisdom Saving Throw. Divine or Cosmic origin creatures dont roll. and drop 1 HP instead. But you gain 1 level of exhaustion.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+          <description>As an action manifest raw presence of Hate for 1 minute. You get 1 level of exhaustion when this presence ends.
+		  
+		  You ignore Resistance to Force Damage and Immunities act as resistance. Cosmic or Divine origin creatures are considered vulnerable to this damage type if they have no resistance or immunity.
+		  Once per turn your attacks can deal extra 2d8 force damage.
+		  Enemies of Divine or Cosmic origin creatures have disadvantage on attack rolls against you while within 15 feet.
+		  When reduced to 0 HP, you can choose to frighten all creatures of your choice within 30 feet with DC {{spell save:dc}} Wisdom Saving Throw. Divine or Cosmic origin creatures dont roll. and drop 1 HP instead. But you gain 1 level of exhaustion.</description>
+		</sheet>
+	</element>
+
+
 
 </elements>
