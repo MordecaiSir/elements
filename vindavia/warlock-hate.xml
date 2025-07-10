@@ -152,6 +152,51 @@
 		</sheet>
 	</element>
 
+   <!-- Pact of the Hammer-->
 
+	<element name="Pact of the Hammer" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_FEATURE_WARLOCK_HATE_PACT_BOON_PACT_OF_THE_BLADE">
+		<supports>Pact Boon</supports>
+		<requirements>ID_MS_VRPG_ARCHETYPE_WARLOCK_HATE</requirements>
+		<prerequisite>Hate patron</prerequisite>
+		<description>
+		 <p>Your patron grants you a weapon of pure, unrelenting hate—a warhammer forged from cosmic spite and divine betrayal. You can summon this hammer as an action, and it disappears if it is more than 5 feet away from you for 1 minute or more. You are proficient with this weapon while wielding it.</p>
+		 <p class="indent">It deals 1d4 bludgeoning and 1d4 force damage when wielded in one hand, or 1d4 bludgeoning and 1d6 force damage when wielded in two hands. When a creature takes damage from this hammer, it cannot make opportunity attacks until the end of your next turn. The bludgeoning damage dealt by this hammer ignores resistance to nonmagical bludgeoning damage; it is treated as magical for the purpose of overcoming resistance and immunity. This weapon counts as a Pact weapon for you and can be summoned or dismissed at will as part of your pact.</p>
+		</description>
+		<sheet usage="Action">
+		 <description>Create a hammer in your empty hand. This weapon counts as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.
+		 Your pact weapon disappears if it is more than 5 feet away from you for 1 minute or more. It also disappears if you use this feature again, if you dismiss the weapon (no action required), or if you die.
+		 It deals 1d4 bludgeoning and 1d4 force damage when wielded in one hand, or 1d4 bludgeoning and 1d6 force damage when wielded in two hands.</description>
+		</sheet>
+	</element>
+
+   <!-- Eldritch Invocations -->
+
+    <element name="Hammer’s Echo" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_FEATURE_ELDRITCH_INVOCATION_HAMMERS_ECHO">
+        <supports>Eldritch Invocation</supports>
+        <requirements>[level:5],ID_MS_VRPG_CLASS_FEATURE_WARLOCK_HATE_PACT_BOON_PACT_OF_THE_BLADE</requirements>
+        <prerequisite>5th level, Pact of Hammer feature</prerequisite>
+        <description>
+            <p>Your hatred strikes not just the body, but the soul. When you hit a creature with your Pact Hammer, you may force it to make a Wisdom saving throw (DC = your spell save DC). On a failed save, the target becomes Haunted by the echo of your blow until the end of your next turn. While Haunted:</p>
+			<p class="indent">The target has disadvantage on the next saving throw it makes. If it misses you with an attack, it takes force damage equal to your Charisma modifier (minimum 1).</p>
+			<p>You can use this effect a number of times equal to your proficiency bonus per long rest. </p>
+        </description>
+        <sheet usage="{{proficiency}}/Long Rest">
+            <description>When you hit a creature with your Pact Hammer, you may force it to make a DC {{warlock:spellcasting:dc}} Wisdom saving throw. On a failed save, the target becomes Haunted by the echo of your blow until the end of your next turn. While Haunted:
+			The target has disadvantage on the next saving throw it makes.
+			If it misses you with an attack, it takes force damage equal to your {{charisma:modifier}}.</description>
+        </sheet>
+    </element>
+
+	<element name="Crush the Weak" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_FEATURE_ELDRITCH_INVOCATION_CRUSH_THE_WEAK">
+        <supports>Eldritch Invocation</supports>
+        <requirements>ID_MS_VRPG_ARCHETYPE_WARLOCK_HATE</requirements>
+        <prerequisite>Hate patron</prerequisite>
+        <description>
+            <p>Your Warlock spells and weapon attacks deal an additional 1d4 force damage to frightened creatures.</p>
+        </description>
+        <sheet>
+            <description>Your Warlock spells and weapon attacks deal an additional 1d4 force damage to frightened creatures.</description>
+        </sheet>
+    </element>
 
 </elements>
