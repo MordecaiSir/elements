@@ -18,7 +18,7 @@
 			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_HATE_HATRED_TO_DIVINE" />
 			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_HATE_INTIMIDATING_HATRED" />
 			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_HATE_DEFIANCE_INCARNATE" />
-			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_HATE_CONTINUE_THE_MASSACRE" />
+			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_HATE_HATRED_MADE_FLESH" />
 		</description>
 		<sheet display="false" />
 		<rules>
@@ -27,7 +27,7 @@
 			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_HATE_HATRED_TO_DIVINE" level="6" />
 			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_HATE_INTIMIDATING_HATRED" level="6" />
 			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_HATE_DEFIANCE_INCARNATE" level="10" />
-			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_HATE_CONTINUE_THE_MASSACRE" level="14" />
+			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_HATE_HATRED_MADE_FLESH" level="14" />
 		</rules>
 	</element>
 
@@ -60,20 +60,17 @@
 	<element name="Wrath-Fueled Soul" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_HATE_WRATH_FUELED_SOUL">
 		<description>
 			<p><em>1st-level Hate feature</em></p>
-			<p>When your spell reduces a creature to 0 hit points, you spread fear around with the hatred you unleashed. 
-			Use your Bonus action to force a creature of your choice up to Charisma modifier within 10 feet of the slain target to make a Wisdom saving throw (DC = 8 + your proficiency bonus + your Charisma modifier). On a fail, they are frightened of you until the end of your next turn. 
-			You can use this feature a number of times equal to your proficiency bonus per short or long rest. 
-			Additionally, all your damaging spells or melee attacks count as dealing Force damage instead of their original damage type when hitting Clerics, Paladins, or Creatures with a Divine or Cosmic origin.</p>
+			<p>When your spell reduces a creature to 0 hit points, you spread fear around with the hatred you unleashed. Use your Bonus action to force a creature of your choice up to Charisma modifier within 15 feet of the slain target to make a Wisdom saving throw (DC = 8 + your proficiency bonus + your Charisma modifier). On a fail, they are frightened of you until the end of your next turn. You can use this feature a number of times equal to your proficiency bonus per short or long rest. Additionally, all your damaging spells or melee attacks count as dealing Force damage instead of their original damage type when hitting Clerics, Paladins, or Creatures with a Divine or Cosmic origin.</p>
 		</description>
 		<sheet action="Bonus Action" usage="{{proficiency}}/Short Rest">
-          <description>Force a creature of your choice up to Charisma modifier within 10 feet of the slain target to make a DC {{wrath fueled soul:dc}} Wisdom saving throw. On a fail, they are frightened of you until the end of your next turn.
-		  
-		  Additionally, all your damaging spells or melee attacks count as dealing Force damage instead of their original damage type when hitting Clerics, Paladins, or Creatures with a Divine or Cosmic origin.</description>
+          <description>Force a creature of your choice up to {{charisma:modifier}} within 15 feet of the slain target to make a DC {{wrath fueled soul:dc}} Wisdom saving throw. On a fail, they are frightened of you until the end of your next turn.
+
+		Additionally, all your damaging spells or melee attacks count as dealing Force damage instead of their original damage type when hitting Clerics, Paladins, or Creatures with a Divine or Cosmic origin.</description>
 		</sheet>
 		<rules>
           <stat name="wrath fueled soul:dc" value="8"/>
 		  <stat name="wrath fueled soul:dc" value="proficiency"/>
-		  <stat name="wrath fueled soul:dc" value="charisma:modifier"/> {{wrath fueled soul:dc}}
+		  <stat name="wrath fueled soul:dc" value="charisma:modifier"/>
 		</rules>
 	</element>
 
@@ -85,8 +82,8 @@
 			<p>At 6th level, Your weapon and spell attacks score a critical hit on a roll of 19 or 20 against Divine or Cosmic related creatures this range is 18-20. Starting at 14th level, this range increases to 18–20 and for Divine or Cosmic related creatures 17-20.</p>
 		</description>
 		<sheet>
-          <description level="6">Your weapon and spell attacks score a critical hit on a roll of 19 or 20 against Divine or Cosmic related creatures this is 18-20.</description>
-		  <description level="14">Your weapon and spell attacks score a critical hit on a roll of 18-20 against Divine or Cosmic related creatures 17-20.</description>
+          <description level="6">Your weapon and spell attacks score a critical hit on a roll of 19 or 20. Against Divine or Cosmic related creatures this is 18-20.</description>
+		  <description level="14">Your weapon and spell attacks score a critical hit on a roll of 18-20. Against Divine or Cosmic related creatures 17-20.</description>
 		</sheet>
 	</element>
 
@@ -113,8 +110,12 @@
 			If you fail a saving throw, you can choose to reroll it once. You must take the new result. Once per long rest.</p>
 		</description>
 		<sheet usage="1/Long Rest">
-          <description>Reroll a saving throw that you failed. You must use the new roll.</description>
+          <description>You can reroll a saving throw that you failed. You must use the new roll. You have Advantage on Saving Throws against beign Charmed and Frightened. You cannot be Frightened by Cosmic or Divine origin creatures.</description>
 		</sheet>
+		<rules> 
+		<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE"/>
+		<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT"/>
+		</rules>
 	</element>
 
    <!-- Hatred Made Flesh -->
@@ -124,7 +125,7 @@
 			<p><em>14th-level Hate feature</em></p>
 			<p>At 10th level, You manifest the raw presence of Hate. As an action, you unleash your true form for 1 minute. You get 1 level of exhaustion when this presence ends.
 			When you deal force damage, you ignore resistance and immunity acts as resistance. Cosmic or Divine origin creatures are considered vulnerable to this damage type if they have no resistance or immunity.
-			Each turn one of yours can deal extra 2d8 force damage.
+			Each turn one of your attacks can deal extra 2d8 force damage.
 			Enemies of Divine or Cosmic origin creatures have disadvantage on attack rolls against you while within 15 feet.
 			If you reduce such a creature to 0 HP during this state, you can choose to frighten all creatures of your choice within 30 feet with DC (spell save dc) Wisdom Saving Throw. Divine or Cosmic origin creatures dont roll. and drop 1 HP instead. But you gain 1 level of exhaustion.</p>
 		</description>
@@ -132,9 +133,12 @@
           <description>As an action manifest raw presence of Hate for 1 minute. You get 1 level of exhaustion when this presence ends.
 		  
 		  You ignore Resistance to Force Damage and Immunities act as resistance. Cosmic or Divine origin creatures are considered vulnerable to this damage type if they have no resistance or immunity.
-		  Once per turn your attacks can deal extra 2d8 force damage.
+		  
+		  Once per turn, when you hit a creature with a weapon or spell attack, the creature takes an extra 2d8 force damage.
+		  
 		  Enemies of Divine or Cosmic origin creatures have disadvantage on attack rolls against you while within 15 feet.
-		  When reduced to 0 HP, you can choose to frighten all creatures of your choice within 30 feet with DC {{spell save:dc}} Wisdom Saving Throw. Divine or Cosmic origin creatures dont roll. and drop 1 HP instead. But you gain 1 level of exhaustion.</description>
+		  
+		  When reduced to 0 HP, you can choose to frighten all creatures of your choice within 30 feet with DC {{warlock:spellcasting:dc}} Wisdom Saving Throw (Divine or Cosmic origin creatures dont roll). And drop 1 HP instead. But you gain 1 level of exhaustion.</description>
 		</sheet>
 	</element>
 
