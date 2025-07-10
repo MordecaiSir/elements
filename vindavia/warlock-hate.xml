@@ -99,7 +99,7 @@
 		</description>
 		<sheet display="false" />
 		<rules> 
-		
+		<grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_INTIMIDATION" />
 		</rules>
 	</element>
 
