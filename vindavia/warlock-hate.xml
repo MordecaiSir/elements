@@ -36,8 +36,18 @@
 
 	<element name="Expanded Spell List" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_HATE_EXPANDED_SPELL_LIST">
 		<description>
-			<p><em>1st-level Hate feature</em></p>
-			<p>You can choose spells from sorcerer and wizard spell list.</p>
+			<p>Hate lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
+			<h5 class="caption">HATE EXPANDED SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Spell Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>command, magic missile</em></td></tr>
+				<tr><td>2nd</td><td><em>scorching ray, zone of truth</em></td></tr>
+				<tr><td>3rd</td><td><em>bestow curse, fireball</em></td></tr>
+				<tr><td>4th</td><td><em>fire shield, locate creature</em></td></tr>
+				<tr><td>5th</td><td><em>destructive wave, flame strike</em></td></tr>
+			</table>
 		</description>
 		<sheet display="false" />
         <spellcasting name="Warlock" extend="true">
