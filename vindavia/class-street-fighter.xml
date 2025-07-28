@@ -2,7 +2,7 @@
 <elements>
 <info>
 		<name>Street Fighter</name>
-		<update version="1.0.0">
+		<update version="1.0.1">
 			<file name="class-street-fighter.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/class-street-fighter.xml" />
 		</update>
 	</info>
@@ -241,7 +241,7 @@
             <div element="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_OVERWATCH" />
 		</description>
         <sheet>
-			<description>Brutal, terrifying, and savage.</description>
+			<description>Brutal, terrifying, and savage. You are a walking beast shape of a Human.</description>
 		</sheet>
 		<rules>
 			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_BLOOD_STAINS" level="3"/>
