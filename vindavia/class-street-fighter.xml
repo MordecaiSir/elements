@@ -2,7 +2,7 @@
 <elements>
 <info>
 		<name>Street Fighter</name>
-		<update version="1.0.1">
+		<update version="1.0.2">
 			<file name="class-street-fighter.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/class-street-fighter.xml" />
 		</update>
 	</info>
@@ -240,7 +240,7 @@
 			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_PIERCING_SHOT" />
             <div element="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_OVERWATCH" />
 		</description>
-        <sheet>
+        <sheet display="false">
 			<description>Brutal, terrifying, and savage. You are a walking beast shape of a Human.</description>
 		</sheet>
 		<rules>
@@ -283,6 +283,17 @@
 			<stat name="iron fists:dice" value="12" bonus="iron fists" level="11" />
             <stat name="iron fists:dice" value="8" bonus="iron fists" level="17" />
 		</rules>
+	</element>
+
+<!--Fighting Style, Beast, Crush the Coward-->
+
+	<element name="Crush the Coward" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_CRUSH_THE_COWARD">
+		<description>
+			<p>You have advantage on attack rolls against frigtened creatures.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on attack rolls against frigtened creatures.</description>
+		</sheet>
 	</element>
 
 <!--Threats-->
