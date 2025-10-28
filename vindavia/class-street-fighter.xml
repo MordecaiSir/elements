@@ -2,7 +2,7 @@
 <elements>
 <info>
 		<name>Street Fighter</name>
-		<update version="1.0.2">
+		<update version="1.0.3">
 			<file name="class-street-fighter.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/class-street-fighter.xml" />
 		</update>
 	</info>
@@ -83,7 +83,6 @@
             <grant type="Class Feature" id="ID_MS_VRPG_CLASS_FEATURE_STREET_FIGHTER_THREAT_MOVES" level="3"/>
 			<grant type="Class Feature" id="ID_MS_VRPG_CLASS_FEATURE_STREET_FIGHTER_ABILITYSCOREIMPROVEMENT" level="4"/>
 			<grant type="Class Feature" id="ID_MS_VRPG_CLASS_FEATURE_STREET_FIGHTER_EXTRA_ATTACK" level="5"/>
-			<grant type="Class Feature" id="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_BULLET_TIME" level="6"/>
 			<grant type="Class Feature" id="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_VICIOUS_INTENT" level="9"/>
 			<grant type="Class Feature" id="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_SHOOTOUT_SENSE" level="11"/>
 			<grant type="Class Feature" id="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_RELENTLESS" level="13"/>
