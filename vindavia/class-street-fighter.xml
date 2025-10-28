@@ -2,7 +2,7 @@
 <elements>
 <info>
 		<name>Street Fighter</name>
-		<update version="1.0.3">
+		<update version="1.0.4">
 			<file name="class-street-fighter.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/class-street-fighter.xml" />
 		</update>
 	</info>
@@ -245,7 +245,7 @@
 		<rules>
 			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_BLOOD_STAINS" level="3"/>
 			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_BEAST_WITHIN" level="3"/>      
-			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_WARNINGATTACK" level="6"/>
+			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_CRUSH_THE_COWARD" level="6"/>
 			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_TRICKSHOT" level="10"/>
 			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_PIERCING_SHOT" level="15"/>
             <grant type="Archetype Feature" id="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_OVERWATCH" level="18"/>
