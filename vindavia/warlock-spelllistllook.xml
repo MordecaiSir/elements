@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<name>The Ancient Scribe</name>
+		<name>FOR ONLY SPELL LIST LOOKING</name>
 		<update version="1.0.2">
-			<file name="warlock-ancient-scribe.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/warlock-ancient-scribe.xml" />
+			<file name="warlock-spellistlook.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/warlock-spellistlook.xml"/>
 		</update>
 	</info>
 	
@@ -33,12 +33,17 @@
 	<element name="Spell Knowledge" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_ANCIENT_SCRIBE_SPELLCASTING">
 		<description>
 			<p><em>1st-level The Ancient Scribe feature</em></p>
-			<p>You can choose spells from sorcerer and wizard spell list.</p>
+			<p>You can choose spells from sorcerer, wizard, cleric, bard, paladin, druid and ranger spell list.</p>
 		</description>
 		<sheet display="false" />
         <spellcasting name="Warlock" extend="true">
 			<extend>Sorcerer</extend>
 			<extend>Wizard</extend>
+			<extend>Cleric</extend>
+			<extend>Bard</extend>
+			<extend>Paladin</extend>
+			<extend>Druid</extend>
+			<extend>Ranger</extend>
 		</spellcasting>
 		<rules>
 

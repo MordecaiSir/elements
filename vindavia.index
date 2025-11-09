@@ -23,7 +23,7 @@
 
 	 <!-- Backgrounds -->
 
-	 <file name="background-hauntedone.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/background-hauntedone.xml" />
+	    <file name="background-hauntedone.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/background-hauntedone.xml" />
 
 	 <!-- Items -->
 
@@ -44,5 +44,9 @@
 	 <!-- Source -->
 		<obsolete name="sources.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/sources.xml"/>
 		<file name="source.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/source.xml"/>
+
+	 <!-- TEST SUBCLASS -->
+	    <file name="warlock-spellistlook.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/warlock-spellistlook.xml"/>
+
 	</files>
 </index>
