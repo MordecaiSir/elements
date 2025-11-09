@@ -2,27 +2,27 @@
 <elements>
 	<info>
 		<name>FOR ONLY SPELL LIST LOOKING</name>
-		<update version="1.0.2">
+		<update version="1.0.3">
 			<file name="warlock-spellistlook.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/warlock-spellistlook.xml"/>
 		</update>
 	</info>
 	
 	<!-- Subclass description -->
 
-	<element name="The Ancient Scribe" type="Archetype" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_WARLOCK_ANCIENT_SCRIBE">
+	<element name="FOR ONLY SPELL LIST LOOKING" type="Archetype" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_WARLOCK_SPELLLIST_LOOK">
 		<supports>Otherworldly Patron</supports>
 		<description>
 			<p>CLASS ACIKLAMASI LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM </p>
-			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_ANCIENT_SCRIBE_SPELLCASTING" />
-			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_ANCIENT_SCRIBE_SEALS" />
-			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_ANCIENT_SCRIBE_INK" />
+			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_SPELLLIST_LOOK_SPELLCASTING" />
+			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_SPELLLIST_LOOK_SEALS" />
+			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_SPELLLIST_LOOK_INK" />
 			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_PATH_OF_THE_HATRED_CONTINUE_THE_MASSACRE" />
 		</description>
 		<sheet display="false" />
 		<rules>
-			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_ANCIENT_SCRIBE_SPELLCASTING" level="1" />
-			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_ANCIENT_SCRIBE_SEALS" level="6" />
-			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_ANCIENT_SCRIBE_INK" level="10" />
+			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_SPELLLIST_LOOK_SPELLCASTING" level="1" />
+			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_SPELLLIST_LOOK_SEALS" level="6" />
+			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_SPELLLIST_LOOK_INK" level="10" />
 			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_PATH_OF_THE_HATRED_CONTINUE_THE_MASSACRE" level="14" />
 		</rules>
 	</element>
@@ -30,7 +30,7 @@
 	<!-- Spell Knowledge -->
 	<!--$(spellcasting:list) -->
 
-	<element name="Spell Knowledge" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_ANCIENT_SCRIBE_SPELLCASTING">
+	<element name="Spell Knowledge" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_SPELLLIST_LOOK_SPELLCASTING">
 		<description>
 			<p><em>1st-level The Ancient Scribe feature</em></p>
 			<p>You can choose spells from sorcerer, wizard, cleric, bard, paladin, druid and ranger spell list.</p>
@@ -52,7 +52,7 @@
 
     <!-- Seals of Knowledge -->
 
-	<element name="Seals of Knowledge" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_ANCIENT_SCRIBE_SEALS">
+	<element name="Seals of Knowledge" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_SPELLLIST_LOOK_SEALS">
 		<description>
 			<p><em>6th-level The Ancient Scribe feature</em></p>
 			<p>At 6th level, you gain the ability to inscribe powerful seals onto creatures, marking them with the weight of cosmic knowledge. You can place a Seal of Judgment or a Seal of Truth on a creature as a bonus action. A creature can only have one seal at a time, and a seal lasts for 1 minute or until it is triggered.</p>
@@ -74,7 +74,7 @@
 
 		<!-- Ink of Renewal -->
 
-	<element name="Ink of Renewal" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_ANCIENT_SCRIBE_INK">
+	<element name="Ink of Renewal" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_SPELLLIST_LOOK_INK">
 		<description>
 			<p><em>10th-level The Ancient Scribe feature</em></p>
 			<p>At 10th level, When you fail a saving throw, you can reroll the save, potentially changing the outcome. You must use the new roll. This feature can be used once per short or long rest. </p>
