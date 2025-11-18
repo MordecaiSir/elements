@@ -2,7 +2,7 @@
 <elements>
 <info>
 		<name>Gunslinger</name>
-		<update version="1.0.83">
+		<update version="1.0.84">
 			<file name="class-gunslinger.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/class-gunslinger.xml" />
 		</update>
 	</info>
@@ -451,10 +451,10 @@
 
 	<element name="Warning Attack" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_WARNINGATTACK" >
 		<description>
-			<p>At the level 5, When you miss a creature with a weapon attack, you can expend a superiority die to attempt to frighten the target as the shot whizzes past them. The target must make a Wisdom saving throw. Subtract the result of your superiority die from their roll. On a failed save, it is frightened of you until the end of your next turn.</p>
+			<p>At the level 5, When you miss a creature with a weapon attack, you can expend 1 grit point to attempt to frighten the target as the shot whizzes past them. The target must make a Wisdom saving throw. Subtract the result of your superiority die from their roll. On a failed save, it is frightened of you until the end of your next turn.</p>
 		</description>
 		<sheet>
-			<description>When you miss a creature with a weapon attack, you can expend a superiority die to attempt to frighten the target as the shot whizzes past them. The target must make a Wisdom saving throw. Subtract the result of your superiority die from their roll. On a failed save, it is frightened of you until the end of your next turn.</description>
+			<description>When you miss a creature with a weapon attack, you can expend 1 grit point to attempt to frighten the target as the shot whizzes past them. The target must make a Wisdom saving throw. Subtract the result of your superiority die from their roll. On a failed save, it is frightened of you until the end of your next turn.</description>
 		</sheet>
 	</element>	
 
