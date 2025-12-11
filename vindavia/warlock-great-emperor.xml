@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Great Emperor of Tartarus</name>
-		<update version="1.0.0">
+		<update version="1.0.1">
 			<file name="warlock-great-emperor.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/warlock-great-emperor.xml" />
 		</update>
 	</info>
@@ -209,7 +209,7 @@
         </description>
         <sheet usage="1/Short Rest">
             <description>Action. Choose a creature within 60 feet of you, creature needs to succeed DC {{spell save:dc}} or it gets drained and heal your self 1d10 + charisma modifier.
-			Bonus Action. Creatures withing 30 feet of you needs to succeed< DC {{spell save:dc}} or you gain 3 Temporary HP for every creature that gets drained. </description>
+			Bonus Action. Creatures withing 30 feet of you needs to succeed DC {{spell save:dc}} or you gain 3 Temporary HP for every creature that gets drained. </description>
         </sheet>
     </element>
 
