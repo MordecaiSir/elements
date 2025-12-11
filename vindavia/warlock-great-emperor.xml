@@ -148,7 +148,7 @@
 			<p><em>10th-level Great Emperor of Tartarus feature</em></p>
 			<p>Karatur’s might suffuses your body with the unyielding will of an emperor forged in war.
 			
-			You gain resistance to necrotic, bludgeoning, piercing, and slashing damage from nonmagical weapons.
+			You gain resistance to necrotic.
 			
 			“He did not fall when pierced, nor when burned — he fell only when the world itself refused to stand with him.”</p>
 		</description>
@@ -157,7 +157,6 @@
 		</sheet>
 		<rules> 
 		<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC"/>
-		<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NONMAGICAL_PHYSICAL"/>
 		</rules>
 	</element>
 
@@ -208,8 +207,8 @@
 			If you use your bonus action, creatures that you choose within 30 feet of you must succeed Constitution Saving Throw equal to your Spell Save DC or you feed upon their souls and gain 3 Temporary Hit Points for every creature that gets drained.</p>
         </description>
         <sheet usage="1/Short Rest">
-            <description>Action. Choose a creature within 60 feet of you, creature needs to succeed DC {{spellsave:dc}} or it gets drained and heal your self 1d10 + charisma modifier.
-			Bonus Action. Creatures withing 30 feet of you needs to succeed DC {{spellsave:dc}} or you gain 3 Temporary HP for every creature that gets drained. </description>
+            <description>Action. Choose a creature within 60 feet of you, creature needs to succeed DC {{warlock:spellcasting:dc}} or it gets drained and heal your self 1d10 + charisma modifier.
+			Bonus Action. Creatures withing 30 feet of you needs to succeed DC {{warlock:spellcasting:dc}} or you gain 3 Temporary HP for every creature that gets drained. </description>
         </sheet>
     </element>
 
