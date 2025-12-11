@@ -80,7 +80,7 @@
 		<sheet display="false" />
 		<rules>
           <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR"/>
-		  <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PROFICIENCY_INTIMIDATION"/>
+		  <grant type="Proficiency" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_INTIMIDATION"/>
 		</rules>
 	</element>
 
