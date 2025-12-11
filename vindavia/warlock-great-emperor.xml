@@ -104,9 +104,9 @@
                “When he entered the battlefield, silence itself bowed to his will.”</p>
 		</description>
 		<sheet>
-          <description level="8">You can say Tremble. Targeted creature rolls a Wisdom Saving Throw, on a failed save the creature is frigthened until end of his turn.</description>
-		  <description level="10">You can say Rot. Targeted creature rolls a Constitution Saving Throw on a failed save the creature takes 1d6 necrotic damage.</description>
-		  <description level="14">You can say Crumble. Targets AC reduced by -2 until end of your next turn.</description>
+          <description level="8">You can say Tremble for your Command spell.</description>
+		  <description level="10">You can say Rot for your Command spell.</description>
+		  <description level="14">You can say Crumble for your Command spell.</description>
 		</sheet>
 		<rules>
           <grant type="Spell" id="ID_PHB_SPELL_COMMAND"/>
@@ -208,8 +208,8 @@
 			If you use your bonus action, creatures that you choose within 30 feet of you must succeed Constitution Saving Throw equal to your Spell Save DC or you feed upon their souls and gain 3 Temporary Hit Points for every creature that gets drained.</p>
         </description>
         <sheet usage="1/Short Rest">
-            <description>Action. Choose a creature within 60 feet of you, creature needs to succeed DC {{spell save:dc}} or it gets drained and heal your self 1d10 + charisma modifier.
-			Bonus Action. Creatures withing 30 feet of you needs to succeed DC {{spell save:dc}} or you gain 3 Temporary HP for every creature that gets drained. </description>
+            <description>Action. Choose a creature within 60 feet of you, creature needs to succeed DC {{spellsave:dc}} or it gets drained and heal your self 1d10 + charisma modifier.
+			Bonus Action. Creatures withing 30 feet of you needs to succeed DC {{spellsave:dc}} or you gain 3 Temporary HP for every creature that gets drained. </description>
         </sheet>
     </element>
 
