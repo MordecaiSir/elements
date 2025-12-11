@@ -4,7 +4,7 @@
 		<name>Vindavia RPG</name>
         	<description>Fantasy world of MordecaiSir</description>
 		<author url="https://github.com/MordecaiSir">MordecaiSir</author>
-		<update version="1.0.85">
+		<update version="1.0.86">
 			<file name="vindavia.index" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia.index" />
 		</update>
 	</info>
@@ -20,6 +20,7 @@
 		<file name="fighter-rune-carver.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/fighter-rune-carver.xml"/>
 	    <file name="warlock-ancient-scribe.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/warlock-ancient-scribe.xml"/>
 	    <file name="warlock-hate.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/warlock-hate.xml"/>
+		<file name="warlock-great-emperor.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/warlock-great-emperor.xml"/>
 
 	 <!-- Backgrounds -->
 

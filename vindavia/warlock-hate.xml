@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>The Ancient Scribe</name>
-		<update version="1.0.0">
+		<update version="1.0.1">
 			<file name="warlock-hate.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/warlock-hate.xml" />
 		</update>
 	</info>
@@ -133,7 +133,7 @@
 	<element name="Hatred Made Flesh" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_HATE_HATRED_MADE_FLESH">
 		<description>
 			<p><em>14th-level Hate feature</em></p>
-			<p>At 10th level, You manifest the raw presence of Hate. As an action, you unleash your true form for 1 minute. You get 1 level of exhaustion when this presence ends.
+			<p>At 14th level, You manifest the raw presence of Hate. As an action, you unleash your true form for 1 minute. You get 1 level of exhaustion when this presence ends.
 			When you deal force damage, you ignore resistance and immunity acts as resistance. Cosmic or Divine origin creatures are considered vulnerable to this damage type if they have no resistance or immunity.
 			Each turn one of your attacks can deal extra 2d8 force damage.
 			Enemies of Divine or Cosmic origin creatures have disadvantage on attack rolls against you while within 15 feet.
@@ -154,7 +154,7 @@
 
    <!-- Pact of the Hammer-->
 
-	<element name="Pact of the Hammer" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_FEATURE_WARLOCK_HATE_PACT_BOON_PACT_OF_THE_BLADE">
+	<element name="Pact of the Hammer" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_FEATURE_WARLOCK_HATE_PACT_BOON_PACT_OF_THE_HAMMER">
 		<supports>Pact Boon</supports>
 		<requirements>ID_MS_VRPG_ARCHETYPE_WARLOCK_HATE</requirements>
 		<prerequisite>Hate patron</prerequisite>
@@ -173,7 +173,7 @@
 
     <element name="Hammer’s Echo" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_FEATURE_ELDRITCH_INVOCATION_HAMMERS_ECHO">
         <supports>Eldritch Invocation</supports>
-        <requirements>[level:5],ID_MS_VRPG_CLASS_FEATURE_WARLOCK_HATE_PACT_BOON_PACT_OF_THE_BLADE</requirements>
+        <requirements>[level:5],ID_MS_VRPG_CLASS_FEATURE_WARLOCK_HATE_PACT_BOON_PACT_OF_THE_HAMMER</requirements>
         <prerequisite>5th level, Pact of Hammer feature</prerequisite>
         <description>
             <p>Your hatred strikes not just the body, but the soul. When you hit a creature with your Pact Hammer, you may force it to make a Wisdom saving throw (DC = your spell save DC). On a failed save, the target becomes Haunted by the echo of your blow until the end of your next turn. While Haunted:</p>

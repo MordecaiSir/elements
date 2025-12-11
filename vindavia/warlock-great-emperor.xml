@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Great Emperor of Tartarus</name>
+		<update version="1.0.0">
+			<file name="warlock-great-emperor.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/warlock-great-emperor.xml" />
+		</update>
+	</info>
+	
+	<!-- Subclass description -->
+
+	<element name="Great Emperor of Tartarus" type="Archetype" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_WARLOCK_GREAT_EMPEROR_OF_TARTARUS">
+		<supports>Otherworldly Patron</supports>
+		<description>
+			<p>Your patron is Karatur Akgar — the Immortal Warlord, the Great Emperor of Tartarus. Once a mortal commander who united the world under his iron will. Those who form a pact with him inherit his indomitable presence, his command over restless souls, and his unbreakable discipline in battle.</p>
+			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_GREAT_EMPEROR_EXPANDED_SPELL_LIST" />
+            <div element="ID_MS_VRPG_ARCHETYPE_FEATURE_GREAT_EMPEROR_TYRANTS_POISE" />
+			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_GREAT_EMPEROR_ENFORCING_ORDER" />
+			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_GREAT_EMPEROR_SPIRIT_LEGION" />
+			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_GREAT_EMPEROR_IRON_SOVEREIGN" />
+			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_HATE_DEFIANCE_INCARNATE" />
+			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_GREAT_EMPEROR_IMPERIAL_ASCENSION" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_GREAT_EMPEROR_EXPANDED_SPELL_LIST" level="1" />
+            <grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_GREAT_EMPEROR_TYRANTS_POISE" level="1" />
+			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_GREAT_EMPEROR_ENFORCING_ORDER" level="1" />
+			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_GREAT_EMPEROR_SPIRIT_LEGION" level="6" />
+			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_GREAT_EMPEROR_IRON_SOVEREIGN" level="10" />
+			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_GREAT_EMPEROR_IMPERIAL_ASCENSION" level="14" />
+		</rules>
+	</element>
+
+	<!-- Spell Knowledge -->
+	<!--$(spellcasting:list) -->
+
+	<element name="Expanded Spell List" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_GREAT_EMPEROR_EXPANDED_SPELL_LIST">
+		<description>
+			<p>Great Emperor Karatur Akgar lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
+			<h5 class="caption">GREAT EMPEROR OF TARTARU-S EXPANDED SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Spell Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>inflict wounds, compelled duel</em></td></tr>
+				<tr><td>2nd</td><td><em>hold person, silence</em></td></tr>
+				<tr><td>3rd</td><td><em>speak with dead, spirit guardians</em></td></tr>
+				<tr><td>4th</td><td><em>aura of death, soul soldiers</em></td></tr>
+				<tr><td>5th</td><td><em>hold soul, dominate soul</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+        <spellcasting name="Warlock" extend="true">
+			<extend>ID_PHB_SPELL_INFLICT_WOUNDS</extend>
+			<extend>ID_PHB_SPELL_COMPELLED_DUEL</extend>
+			<extend>ID_PHB_SPELL_HOLD_PERSON</extend>
+			<extend>ID_PHB_SPELL_SILENCE</extend>
+			<extend>ID_PHB_SPELL_SPEAK_WITH_DEAD</extend>
+			<extend>ID_PHB_SPELL_SPIRIT_GUARDIANS</extend>
+			<extend>aura of death</extend>
+			<extend>soul soldiers</extend>
+			<extend>hold soul</extend>
+			<extend>dominate soul</extend>
+		</spellcasting>
+	</element>
+
+   <!-- Tyrant’s Poise  -->
+
+
+	<element name="Tyrant’s Poise" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_GREAT_EMPEROR_TYRANTS_POISE">
+		<description>
+			<p><em>1st-level Great Emperor of Tartarus feature</em></p>
+			<p>When you take this pact, the unyielding discipline and commanding aura of Karatur Akgar flow through you. Your posture carries the weight of an emperor who has led legions into war, and your gaze strikes with the precision of a seasoned general.
+
+			   You gain proficiency in Intimidation and Heavy Armor.
+
+               “When he entered a hall, even kings straightened their backs.”</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+          <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR"/>
+		  <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PROFICIENCY_INTIMIDATION"/>
+		</rules>
+	</element>
+
+   <!-- Enforcing Order  -->
+
+	<element name="Enforcing Order" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_GREAT_EMPEROR_ENFORCING_ORDER">
+		<description>
+			<p><em>1st-level Great Emperor of Tartarus feature</em></p>
+			<p>Your voice carries the weight of an emperor whose words once commanded armies and bent the will of nations. When you speak, the air itself trembles in obedience.
+
+               You learn the Command spell. It counts as a Warlock spell for you, and you can cast it without expending a spell slot. When you cast Command, you can do so as a bonus action.
+
+               When a creature fails its saving throw against your Command, your authority crushes its resistance — you deal extra damage equal to your Charisma modifier to that creature. The damage type is the same as your pact weapon or spell.
+
+               At 8th level, you can say Tremble. Targeted creature rolls a Wisdom Saving Throw, on a failed save the creature is frigthened until end of his turn.
+
+               At 10th level, you can say Rot. Targeted creature rolls a Constitution Saving Throw on a failed save the creature takes 1d6 necrotic damage.
+
+               At 14th level, you can say Crumble. Targets AC reduced by -2 until end of your next turn.
+
+               “When he entered the battlefield, silence itself bowed to his will.”</p>
+		</description>
+		<sheet>
+          <description level="8">You can say Tremble. Targeted creature rolls a Wisdom Saving Throw, on a failed save the creature is frigthened until end of his turn.</description>
+		  <description level="10">You can say Rot. Targeted creature rolls a Constitution Saving Throw on a failed save the creature takes 1d6 necrotic damage.</description>
+		  <description level="14">You can say Crumble. Targets AC reduced by -2 until end of your next turn.</description>
+		</sheet>
+		<rules>
+          <grant type="Spell" id="ID_PHB_SPELL_COMMAND"/>
+		</rules>
+	</element>
+
+   <!-- The Spirit Legion  -->
+
+	<element name="The Spirit Legion" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_GREAT_EMPEROR_SPIRIT_LEGION">
+		<description>
+			<p><em>6th-level Great Emperor of Tartarus feature</em></p>
+			<p>You have learned to command the souls that Karatur once bent to his cause.
+
+               When you take damage, you can use your reaction to summon spectral soldiers that intercept the attack. You reduce the damage taken by 1d6 + your Charisma modifier + half of your Warlock level.
+
+               Once per turn when you cast a Warlock spell that targets a creature, you can summon a Spirit Legionnaire in an unoccupied space within 10 feet of that creature. The Legionnaire is a spectral warrior with AC 13 + your Charisma modifier and HP equal to twice your Warlock level.
+
+               The Legionnaire takes the Help action automatically if you don't order to attack a creature on your turn, aiding your next attack and giving it an advantage.
+
+               The Legionnaire's attacks deal 1d8 necrotic damage per spell slot level. If the spell is a cantrip it deals 1d6.
+
+               The Legionnaire lasts for 1 minute or until it is reduced to 0 HP.
+
+               “The souls of his army do not rest; they await his command in the dark.”</p>
+		</description>
+		<sheet>
+          <description>When you take damage, you can use your reaction to summon spectral soldiers that intercept the attack. You reduce the damage taken by 1d8- + your Charisma modifier + half of your Warlock level.
+		  Once per turn when you cast a Warlock spell that targets a creature, you can summon a Spirit Legionnaire in an unoccupied space within 10 feet of that creature. The Legionnaire is a spectral warrior with AC 13 + your Charisma modifier and HP equal to twice your Warlock level.
+          The Legionnaire takes the Help action automatically if you don't order to attack a creature on your turn, aiding your next melee weapon attack and giving it an advantage.
+		  The Legionnaire's attacks deal 1d8 necrotic damage per spell slot level. If the spell is a cantrip it deals 1d6.
+		  The Legionnaire lasts for 1 minute or until it is reduced to 0 HP.</description>
+		</sheet>
+	</element>
+
+   <!-- Iron Sovereign -->
+
+	<element name="Iron Sovereign" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_GREAT_EMPEROR_IRON_SOVEREIGN">
+		<description>
+			<p><em>10th-level Great Emperor of Tartarus feature</em></p>
+			<p>Karatur’s might suffuses your body with the unyielding will of an emperor forged in war.
+			
+			You gain resistance to necrotic, bludgeoning, piercing, and slashing damage from nonmagical weapons.
+			
+			“He did not fall when pierced, nor when burned — he fell only when the world itself refused to stand with him.”</p>
+		</description>
+		<sheet>
+          <description>You can reroll a saving throw that you failed. You must use the new roll. You have Advantage on Saving Throws against beign Charmed and Frightened. You cannot be Frightened by Cosmic or Divine origin creatures.</description>
+		</sheet>
+		<rules> 
+		<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC"/>
+		<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NONMAGICAL_PHYSICAL"/>
+		</rules>
+	</element>
+
+   <!-- Imperial Ascension -->
+
+	<element name="Imperial Ascension" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_GREAT_EMPEROR_IMPERIAL_ASCENSION">
+		<description>
+			<p><em>14th-level Great Emperor of Tartarus feature</em></p>
+			<p>Years of command and unbroken resolve have forged your presence into something undeniable. You no longer need to shout to be obeyed — your mere stance carries the weight of command. In your presence, battle lines falter and loyalty hardens; the difference between ally and enemy becomes painfully clear.
+			As a bonus action, you can unleash your Emperor’s Dominion for 1 minute. While active:
+			
+			Hostile creatures of your choice within 15 feet must make a Wisdom saving throw against your spell save DC or be Frightened for 1 minute. Creatures can reroll the saving throw at the end of their turn.
+			
+			Allies within 30 feet of you gain temporary hit points equal to your Charisma modifier + your Warlock level, and advantage on saving throws against being charmed or frightened.
+			
+			You can use this feature a number of times equal to your proficiency bonus, regaining all uses after a long rest.
+			
+			“In that moment, even gods dared not speak his name aloud.”</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest">
+          <description>As a bonus action, you can unleash your Emperor’s Dominion for 1 minute. While active:
+		  Hostile creatures of your choice within 15 feet must make a Wisdom saving throw against your spell save DC or be Frightened for 1 minute. Creatures can reroll the saving throw at the end of their turn.
+		  Allies within 30 feet of you gain temporary hit points equal to your Charisma modifier + your Warlock level, and advantage on saving throws against being charmed or frightened.</description>
+		</sheet>
+	</element>
+
+   <!-- Eldritch Invocations -->
+
+    <element name="Spiriturgy Mastery" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_FEATURE_ELDRITCH_INVOCATION_SPIRITURGY_MASTERY">
+        <supports>Eldritch Invocation</supports>
+        <requirements>[level:3],ID_MS_VRPG_ARCHETYPE_WARLOCK_GREAT_EMPEROR_OF_TARTARUS</requirements>
+        <prerequisite>3th level, Great Emperor of Tartarus patron</prerequisite>
+        <description>
+            <p>If you deal a necrotic damage or deal damage with your eldritch blast beam, you can change damage to Spiritual Damage which almost no one have resistance to it. You can use this feature equal to your charisma modifier and after a short or long rest regain all uses. Each Eldritch Blast beam takes 1 usage.</p>
+        </description>
+        <sheet usage="{{charisma:modifier}}/Short Rest">
+            <description>If you deal Necrotic Damage or hit with a Eldritch Blast you change their damage to Spiritual Damage. Each Eldritch Blast beam takes 1 usage.</description>
+        </sheet>
+    </element>
+
+	<element name="Feed Upon Their Souls" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_FEATURE_ELDRITCH_INVOCATION_FEED_UPON_THEIR_SOULS">
+        <supports>Eldritch Invocation</supports>
+        <requirements>[level:8],ID_MS_VRPG_ARCHETYPE_WARLOCK_GREAT_EMPEROR_OF_TARTARUS</requirements>
+        <prerequisite>6th level, Great Emperor of Tartarus patron</prerequisite>
+        <description>
+            <p>You can use your action or bonus action to feed upon a soul of creature if creature have any. You can use this feature once per short or long rest. 
+			If you use your action, choose a creature within 60 feet of you it must succeed on a Constitution Saving Throw equal to your Spell Save DC or it gets drained and heal your self 1d10 + charisma modifier. 
+			If you use your bonus action, creatures that you choose within 30 feet of you must succeed Constitution Saving Throw equal to your Spell Save DC or you feed upon their souls and gain 3 Temporary Hit Points for every creature that gets drained.</p>
+        </description>
+        <sheet usage="1/Short Rest">
+            <description>Action. Choose a creature within 60 feet of you, creature needs to succeed DC {{spell save:dc}} or it gets drained and heal your self 1d10 + charisma modifier.
+			Bonus Action. Creatures withing 30 feet of you needs to succeed< DC {{spell save:dc}} or you gain 3 Temporary HP for every creature that gets drained. </description>
+        </sheet>
+    </element>
+
+</elements>
