@@ -18,7 +18,6 @@
 		</setters>
 </element>
 <element name="Urtgan" type="Language" source="Vindavia RPG" id="ID_MS_VRPG_LANGUAGE_URTGAN">
-		<supports>Kingdom</supports>
 		<description>
 			<p>Language of Hergans.</p>
 		</description>
