@@ -104,9 +104,13 @@
                “When he entered the battlefield, silence itself bowed to his will.”</p>
 		</description>
 		<sheet>
-          <description level="8">You can say Tremble for your Command spell.</description>
-		  <description level="10">You can say Rot for your Command spell.</description>
-		  <description level="14">You can say Crumble for your Command spell.</description>
+		  <p>You can cast Command with your bonus action and without expending a spell slot.</p>
+          <p level="8">You can cast Command with your bonus action and without expending a spell slot.
+		  You can say Tremble for your Command spell.</p>
+		  <p level="10">You can cast Command with your bonus action and without expending a spell slot.
+		  You can say Tremble and Rot for your Command spell.</p>
+		  <p level="14">You can cast Command with your bonus action and without expending a spell slot.
+		  You can say Tremble, Rot and Crumble for your Command spell.</p>
 		</sheet>
 		<rules>
           <grant type="Spell" id="ID_PHB_SPELL_COMMAND"/>
