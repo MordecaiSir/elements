@@ -21,5 +21,9 @@
 		<description>
 			<p>Language of Hergans.</p>
 		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="script">Tartarus</set>
+		</setters>
 </element>
 </elements>
