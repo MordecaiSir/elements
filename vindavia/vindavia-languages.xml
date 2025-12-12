@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Languages</name>
-		<update version="1.0.0">
+		<update version="1.0.1">
 			<file name="vindavia-languages.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/vindavia-languages.xml" />
 		</update>
 	</info>
@@ -16,5 +16,11 @@
 			<set name="secret">true</set>
 			<set name="speakers">Haunted Ones</set>
 		</setters>
+</element>
+<element name="Urtgan" type="Language" source="Vindavia RPG" id="ID_MS_VRPG_LANGUAGE_URTGAN">
+		<supports>Kingdom</supports>
+		<description>
+			<p>Language of Hergans.</p>
+		</description>
 </element>
 </elements>
