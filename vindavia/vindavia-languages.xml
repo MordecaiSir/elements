@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Languages</name>
-		<update version="1.0.1">
+		<update version="1.0.2">
 			<file name="vindavia-languages.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/vindavia-languages.xml" />
 		</update>
 	</info>
@@ -17,6 +17,57 @@
 			<set name="speakers">Haunted Ones</set>
 		</setters>
 </element>
+
+<element name="Riedran" type="Language" source="Vindavia RPG" id="ID_MS_VRPG_LANGUAGE_RIEDRAN">
+		<description>
+			<p>Language of Kaliran.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="script">Tartarus</set>
+		</setters>
+</element>
+
+<element name="Qor" type="Language" source="Vindavia RPG" id="ID_MS_VRPG_LANGUAGE_QOR">
+		<description>
+			<p>Language of Quixar.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="script">Qorza</set>
+		</setters>
+</element>
+
+<element name="Qofs" type="Language" source="Vindavia RPG" id="ID_MS_VRPG_LANGUAGE_QOFS">
+		<description>
+			<p>Language of Inaria.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="script">Qorza</set>
+		</setters>
+</element>
+
+<element name="Vedalken" type="Language" source="Vindavia RPG" id="ID_MS_VRPG_LANGUAGE_VEDALKEN">
+		<description>
+			<p>Language of Vengar.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="script">Vrenza</set>
+		</setters>
+</element>
+
+<element name="Sutr" type="Language" source="Vindavia RPG" id="ID_MS_VRPG_LANGUAGE_SUTR">
+		<description>
+			<p>Language of Turtus.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="script">Tartarus</set>
+		</setters>
+</element>
+
 <element name="Urtgan" type="Language" source="Vindavia RPG" id="ID_MS_VRPG_LANGUAGE_URTGAN">
 		<description>
 			<p>Language of Hergans.</p>
@@ -24,6 +75,36 @@
 		<setters>
 			<set name="standard">true</set>
 			<set name="script">Tartarus</set>
+		</setters>
+</element>
+
+<element name="Tarsalk" type="Language" source="Vindavia RPG" id="ID_MS_VRPG_LANGUAGE_TARSALK">
+		<description>
+			<p>Language of Hergans.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="script">Tartarus</set>
+		</setters>
+</element>
+
+<element name="Feran" type="Language" source="Vindavia RPG" id="ID_MS_VRPG_LANGUAGE_FERAN">
+		<description>
+			<p>Language of Freria.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="script">Yerrvasia</set>
+		</setters>
+</element>
+
+<element name="Aka-ur" type="Language" source="Vindavia RPG" id="ID_MS_VRPG_LANGUAGE_AKAUR">
+		<description>
+			<p>Language of Yuntar.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="script">Cascara</set>
 		</setters>
 </element>
 </elements>
