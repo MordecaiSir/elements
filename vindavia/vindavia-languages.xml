@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Languages</name>
-		<update version="1.0.2">
+		<update version="1.0.3">
 			<file name="vindavia-languages.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/vindavia-languages.xml" />
 		</update>
 	</info>
@@ -80,7 +80,7 @@
 
 <element name="Tarsalk" type="Language" source="Vindavia RPG" id="ID_MS_VRPG_LANGUAGE_TARSALK">
 		<description>
-			<p>Language of Hergans.</p>
+			<p>Language of Spartans.</p>
 		</description>
 		<setters>
 			<set name="standard">true</set>
