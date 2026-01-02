@@ -4,7 +4,7 @@
 		<name>Vindavia RPG</name>
         	<description>Fantasy world of MordecaiSir</description>
 		<author url="https://github.com/MordecaiSir">MordecaiSir</author>
-		<update version="1.0.87">
+		<update version="1.0.88">
 			<file name="vindavia.index" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia.index" />
 		</update>
 	</info>
@@ -36,7 +36,7 @@
 
 	 <!-- Races -->
 
-
+	    <file name="race-dragonborn.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/race-dragonborn.xml"/>
 
 	 <!-- Languages -->
 
