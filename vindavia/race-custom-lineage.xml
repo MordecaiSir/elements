@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Dragonborn</name>
-		<update version="0.1.0">
+		<update version="0.1.1">
 			<file name="race-custom-lineage.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/race-custom-lineage.xml" />
 		</update>
 	</info>
@@ -25,7 +25,7 @@
 		<rules>
 			<select type="Racial Trait" name="Size" supports="Custom Race Size" />
             <select type="Racial Trait" name="Variable Trait" supports="Custom Race Variable Trait" />
-            <select type="Racial Trait" name="Optional Feature" supports="Custom Race Optional Feature" />
+            <select type="Racial Trait" name="Racial Feature" supports="Custom Race Optional Feature" optional="true" />
 			<select type="Ability Score Improvement" name="Ability Score Improvement +2 (Custom Lineage)" supports="Custom Race ASI" />
 			<select type="Feat" name="Feat (Custom Lineage)" />
 			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_MS_VRPG_OPTION_CUSTOMIZED_LANGUAGE" />
@@ -33,7 +33,6 @@
 			<select type="Language" name="Language (Custom Lineage)" supports="Standard||Exotic" />
 		</rules>
 	</element>
-
 
 	<!-- Size -->
 

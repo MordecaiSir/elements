@@ -194,7 +194,7 @@
 		</sheet>
 	</element>	
 	<element name="Lucky Shot" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_FEATURE_FIGHTINGSTYLE_LUCKY_SHOT">
-		<supports>Fighting Style, Gunslinger, Fighter</supports>
+		<supports>Fighting Style, Gunslinger, Ranger</supports>
 		<description>
 			<p>When you hit with a ranged attack roll, you roll a 1 or 2 on the damage die, you can reroll the damage die and must take the new roll, even if the number is a 1 or a 2. The weapon must have the two-handed property in order to gain this benefit.</p>
 		</description>
@@ -203,7 +203,7 @@
 		</sheet>
 	</element>	
 	<element name="Deadeye" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_FEATURE_FIGHTINGSTYLE_DEADEYE">
-		<supports>Fighting Style, Gunslinger, Fighter, Ranger</supports>
+		<supports>Fighting Style, Gunslinger, Ranger</supports>
 		<description>
 			<p>You get a +2 bonus to attack rolls you make with martial and simple ranged weapons, as well as longarms which do not have the bulky or scatter property.</p>
 		</description>
@@ -215,7 +215,7 @@
 		</rules>
 	</element>	
 	<element name="Dueling" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_FEATURE_FIGHTINGSTYLE_DUELING">
-		<supports>Fighting Style, Gunslinger, Fighter, Ranger</supports>
+		<supports>Fighting Style, Gunslinger</supports>
 		<description>
 			<p>When wielding a one-handed weapon in one hand and no other weapons, you get a +2 bonus to your damage rolls with these weapons. This additional damage only applies for ranged attacks made at creatures within 30 feet of you.</p>
 		</description>

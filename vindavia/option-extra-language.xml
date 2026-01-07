@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<name>Dragonborn</name>
-		<update version="0.1.0">
+		<name>Vindavia Homeland Option</name>
+		<update version="0.1.1">
 			<file name="race-custom-lineage.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/race-custom-lineage.xml" />
 		</update>
 	</info>
