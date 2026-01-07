@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Dragonborn</name>
+		<update version="0.1.0">
+			<file name="race-custom-lineage.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/race-custom-lineage.xml" />
+		</update>
+	</info>
+
+    <element name="Vindavia Homeland" type="Option" source="Vindavia RPG" id="ID_MS_VRPG_VINDAVIA_HOMELAND_OPTION">
+        <description>
+            <p>This option lets you choose extra language from Vindavia.</p>
+        </description>
+        <setters>
+            <set name="short">This option lets you choose extra language from Vindavia.</set>
+        </setters>
+        <rules>
+	        <select type="Language" name="Language (Vindavia)" supports="Vindavia Languages"/>
+        </rules>
+    </element>
+</elements>

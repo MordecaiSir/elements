@@ -8,7 +8,7 @@
 	</info>
 
 <element name="Unknown" type="Language" source="Vindavia RPG" id="ID_MS_VRPG_LANGUAGE_UNKNOWN">
-		<supports>Secret</supports>
+		<supports>Secret, Secret Vindavia Languages</supports>
 		<description>
 			<p>Unknown language.</p>
 		</description>
@@ -18,7 +18,8 @@
 		</setters>
 </element>
 
-<element name="Riedran" type="Language" source="Vindavia RPG" id="ID_MS_VRPG_LANGUAGE_RIEDRAN">
+<element name="Ilar" type="Language" source="Vindavia RPG" id="ID_MS_VRPG_LANGUAGE_ILARAN">
+		<supports>Vindavia Languages</supports>
 		<description>
 			<p>Language of Kaliran.</p>
 		</description>
@@ -28,27 +29,30 @@
 		</setters>
 </element>
 
-<element name="Qor" type="Language" source="Vindavia RPG" id="ID_MS_VRPG_LANGUAGE_QOR">
+<element name="Qixari" type="Language" source="Vindavia RPG" id="ID_MS_VRPG_LANGUAGE_QIXARI">
+		<supports>Vindavia Languages</supports>
 		<description>
 			<p>Language of Quixar.</p>
 		</description>
 		<setters>
 			<set name="standard">true</set>
-			<set name="script">Qorza</set>
+			<set name="script">Xer'ru</set>
 		</setters>
 </element>
 
-<element name="Qofs" type="Language" source="Vindavia RPG" id="ID_MS_VRPG_LANGUAGE_QOFS">
+<element name="Narii" type="Language" source="Vindavia RPG" id="ID_MS_VRPG_LANGUAGE_NARII">
+		<supports>Vindavia Languages</supports>
 		<description>
 			<p>Language of Inaria.</p>
 		</description>
 		<setters>
 			<set name="standard">true</set>
-			<set name="script">Qorza</set>
+			<set name="script">Xer'ru</set>
 		</setters>
 </element>
 
-<element name="Vedalken" type="Language" source="Vindavia RPG" id="ID_MS_VRPG_LANGUAGE_VEDALKEN">
+<element name="Vedar" type="Language" source="Vindavia RPG" id="ID_MS_VRPG_LANGUAGE_VEDAR">
+		<supports>Vindavia Languages</supports>
 		<description>
 			<p>Language of Vengar.</p>
 		</description>
@@ -59,6 +63,7 @@
 </element>
 
 <element name="Sutr" type="Language" source="Vindavia RPG" id="ID_MS_VRPG_LANGUAGE_SUTR">
+		<supports>Vindavia Languages</supports>
 		<description>
 			<p>Language of Turtus.</p>
 		</description>
@@ -69,6 +74,7 @@
 </element>
 
 <element name="Urtgan" type="Language" source="Vindavia RPG" id="ID_MS_VRPG_LANGUAGE_URTGAN">
+		<supports>Vindavia Languages</supports>
 		<description>
 			<p>Language of Hergans.</p>
 		</description>
@@ -79,6 +85,7 @@
 </element>
 
 <element name="Tarsalk" type="Language" source="Vindavia RPG" id="ID_MS_VRPG_LANGUAGE_TARSALK">
+		<supports>Vindavia Languages</supports>
 		<description>
 			<p>Language of Spartans.</p>
 		</description>
@@ -89,6 +96,7 @@
 </element>
 
 <element name="Feran" type="Language" source="Vindavia RPG" id="ID_MS_VRPG_LANGUAGE_FERAN">
+		<supports>Vindavia Languages</supports>
 		<description>
 			<p>Language of Freria.</p>
 		</description>
@@ -99,6 +107,7 @@
 </element>
 
 <element name="Aka-ur" type="Language" source="Vindavia RPG" id="ID_MS_VRPG_LANGUAGE_AKAUR">
+		<supports>Vindavia Languages</supports>
 		<description>
 			<p>Language of Yuntar.</p>
 		</description>
