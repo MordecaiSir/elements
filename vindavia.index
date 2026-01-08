@@ -9,6 +9,10 @@
 		</update>
 	</info>
 	<files>
+	 <!-- Quality of Life -->
+
+	    <file name="quality-of-life-changes-and-additions.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/quality-of-life-changes-and-additions.xml" />
+
 	 <!-- Classes -->
 
 	    <file name="class-street-fighter.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/class-street-fighter.xml" />
