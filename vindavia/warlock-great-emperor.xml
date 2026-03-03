@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Great Emperor of Tartarus</name>
-		<update version="1.0.2">
+		<update version="1.0.3">
 			<file name="warlock-great-emperor.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/warlock-great-emperor.xml" />
 		</update>
 	</info>
@@ -18,7 +18,6 @@
 			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_GREAT_EMPEROR_ENFORCING_ORDER" />
 			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_GREAT_EMPEROR_SPIRIT_LEGION" />
 			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_GREAT_EMPEROR_IRON_SOVEREIGN" />
-			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_HATE_DEFIANCE_INCARNATE" />
 			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_GREAT_EMPEROR_IMPERIAL_ASCENSION" />
 		</description>
 		<sheet display="false" />
