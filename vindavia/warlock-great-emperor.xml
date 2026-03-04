@@ -151,13 +151,11 @@
 			<p><em>10th-level Great Emperor of Tartarus feature</em></p>
 			<p>Karatur’s might suffuses your body with the unyielding will of an emperor forged in war.
 			
-			You gain resistance to necrotic.
+			You gain resistance to necrotic and spirit damage.
 			
 			“He did not fall when pierced, nor when burned — he fell only when the world itself refused to stand with him.”</p>
 		</description>
-		<sheet>
-          <description>You can reroll a saving throw that you failed. You must use the new roll. You have Advantage on Saving Throws against beign Charmed and Frightened. You cannot be Frightened by Cosmic or Divine origin creatures.</description>
-		</sheet>
+		<sheet display="false">
 		<rules> 
 		<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC"/>
 		</rules>
