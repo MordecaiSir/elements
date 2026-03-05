@@ -2,7 +2,7 @@
 <elements>
 <info>
 		<name>Street Fighter</name>
-		<update version="1.0.4">
+		<update version="1.0.5">
 			<file name="class-street-fighter.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/class-street-fighter.xml" />
 		</update>
 	</info>
@@ -52,8 +52,8 @@
 			<div element="ID_MS_VRPG_CLASS_FEATURE_STREET_FIGHTER_THREAT_MOVES" />
 			<div element="ID_MS_VRPG_CLASS_FEATURE_STREET_FIGHTER_ABILITYSCOREIMPROVEMENT" />
 			<div element="ID_MS_VRPG_CLASS_FEATURE_STREET_FIGHTER_EXTRA_ATTACK" />
-			<div element="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_BULLET_TIME" />
-			<div element="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_VICIOUS_INTENT" />
+			<div element="ID_MS_VRPG_CLASS_FEATURE_STREET_FIGHTER_EXPERIENCE_FROM_STREETS" />
+			<div element="ID_MS_VRPG_CLASS_FEATURE_STREET_FIGHTER_BATTLE_HONED_SENSES" />
 			<div element="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_SHOOTOUT_SENSE" />
 			<div element="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_RELENTLESS" />
 			<div element="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_SUPERIOR_VICIOUS_INTENT" />
@@ -83,8 +83,9 @@
             <grant type="Class Feature" id="ID_MS_VRPG_CLASS_FEATURE_STREET_FIGHTER_THREAT_MOVES" level="3"/>
 			<grant type="Class Feature" id="ID_MS_VRPG_CLASS_FEATURE_STREET_FIGHTER_ABILITYSCOREIMPROVEMENT" level="4"/>
 			<grant type="Class Feature" id="ID_MS_VRPG_CLASS_FEATURE_STREET_FIGHTER_EXTRA_ATTACK" level="5"/>
-			<grant type="Class Feature" id="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_VICIOUS_INTENT" level="9"/>
-			<grant type="Class Feature" id="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_SHOOTOUT_SENSE" level="11"/>
+			<grant type="Class Feature" id="ID_MS_VRPG_CLASS_FEATURE_STREET_FIGHTER_EXPERIENCE_FROM_STREETS" level="7"/>
+			<grant type="Class Feature" id="ID_MS_VRPG_CLASS_FEATURE_STREET_FIGHTER_BATTLE_HONED_SENSES" level="7"/>
+			<grant type="Class Feature" id="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_SHOOTOUT_SENSE" level="9"/>
 			<grant type="Class Feature" id="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_RELENTLESS" level="13"/>
 			<grant type="Class Feature" id="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_SUPERIOR_VICIOUS_INTENT" level="14"/>
 			<grant type="Class Feature" id="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_VIOLENT_SHOT" level="17"/>	
@@ -209,7 +210,7 @@
 		</rules>
 	</element>
 
- <!-- Extra Attack -->
+<!-- Extra Attack -->
 
 	<element name="Extra Attack (Street Fighter)" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_FEATURE_STREET_FIGHTER_EXTRA_ATTACK">
 		<description>
@@ -226,6 +227,28 @@
 		</rules>
 	</element>
 
+<!-- Experience from streets -->
+
+	<element name="Experience from streets" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_FEATURE_STREET_FIGHTER_EXPERIENCE_FROM_STREETS">
+		<description>
+			<p>At 7th level, If you spend at least 1 minute observing or interacting with another creature outside combat, you can learn certain information about its capabilities compared to your own. The DM tells you if the creature is your equal, superior, or inferior in regard to two of the following characteristics of your choice: Strength score, Dexterity score, Constitution score, Armor Class, Current hit points or Encounter difficulty if it's an encounter.</p>
+		</description>
+		<sheet>
+			<description> If you spend at least 1 minute observing or interacting with another creature outside combat, you can learn certain information about its capabilities compared to your own. The DM tells you if the creature is your equal, superior, or inferior in regard to two of the following characteristics of your choice: Strength score, Dexterity score, Constitution score, Armor Class, Current hit points or Encounter difficulty if it's an encounter.</description>
+		</sheet>
+	</element>
+
+<!-- Battle-honed Senses -->
+
+	<element name="Battle-honed Senses" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_FEATURE_STREET_FIGHTER_BATTLE_HONED_SENSES">
+		<description>
+			<p>At 7th level, you can add your proficiency bonus to your initiative.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="initiative" value="proficiency" />
+		</rules>
+	</element>
 
 <!--Fighting Style, Beast-->
 
