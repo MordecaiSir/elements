@@ -155,7 +155,7 @@
 			
 			“He did not fall when pierced, nor when burned — he fell only when the world itself refused to stand with him.”</p>
 		</description>
-		<sheet display="false">
+		<sheet display="false" />
 		<rules> 
 		<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC"/>
 		</rules>
