@@ -258,6 +258,7 @@
 			<p>Brutal, terrifying, and savage.</p>
 			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_BLOOD_STAINS"/>
 			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_BEAST_WITHIN"/>
+			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_MARK_OF_VIOLENCE"/>
 			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_TRICKSHOT"/>
 			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_PIERCING_SHOT" />
             <div element="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_OVERWATCH" />
@@ -267,7 +268,8 @@
 		</sheet>
 		<rules>
 			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_BLOOD_STAINS" level="3"/>
-			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_BEAST_WITHIN" level="3"/>      
+			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_BEAST_WITHIN" level="3"/>
+			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_MARK_OF_VIOLENCE" level="3"/>      
 			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_CRUSH_THE_COWARD" level="6"/>
 			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_TRICKSHOT" level="10"/>
 			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_PIERCING_SHOT" level="15"/>
@@ -279,10 +281,10 @@
 
 	<element name="Blood Stains" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_BLOOD_STAINS">
 		<description>
-			<p>Your Strength modifier is added to Intimidation checks. Additionally, when you deal damage with an unarmed strike, you can make an Intimidation check as a bonus action</p>
+			<p>Your Strength modifier is added to Intimidation checks. Additionally, when you deal damage with an unarmed strike, you can make an Intimidation check against their Insight as a bonus action. Failed creatures frightened until end of their next turn.</p>
 		</description>
 		<sheet>
-			<description>When you deal damage with an unarmed strike, you can make an Intimidation check as a bonus action</description>
+			<description>When you deal damage with an unarmed strike, you can make an Intimidation check against their Insight as a bonus action. Failed creatures frightened until end of their next turn.</description>
 		</sheet>
 		<rules>
 			<stat name="intimidation:misc" value="strength:modifier" />
@@ -293,10 +295,10 @@
 
     <element name="Beast Within" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_BEAST_WITHIN">
 		<description>
-			<p>Your unarmed attack damage roll is always calculated one level higher (e.g. your 1st level damage die is 1d8, 5th level damage die is 1d10, 11th level damage die is 1d12 and 17th level damage dice is 2d8). However, you have disadvantage on Charisma (Persuasion) checks when interacting with people who are aware of your reputation or unfamiliar with your appearance.</p>
+			<p>Your unarmed attack damage roll is always calculated one level higher (e.g. your 1st level damage die is 1d8, 5th level damage die is 1d10, 11th level damage die is 1d12 and 17th level damage dice is 2d8).</p>
 		</description>
 		<sheet>
-			<description>Your Iron Fist damage is higher. However, You have disadvantage on Charisma (Persuasion) checks when interacting with people who are aware of your reputation or unfamiliar with your appearance.</description>
+			<description>Your Iron Fist damage is higher. </description>
 		</sheet>
 		<rules>
 			<stat name="iron fists:amount" value="2" bonus="iron fists" level="17"/>
@@ -305,6 +307,17 @@
 			<stat name="iron fists:dice" value="12" bonus="iron fists" level="11" />
             <stat name="iron fists:dice" value="8" bonus="iron fists" level="17" />
 		</rules>
+	</element>
+
+<!--Fighting Style, Beast, Mark of Violence-->
+
+    <element name="Mark of Violence" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_MARK_OF_VIOLENCE">
+		<description>
+			<p>Your connection to the God of Savagery and your vicious past makes you unsettling. You have disadvantage on Charisma (Persuasion) checks when interacting with non-hostile creatures who are aware of your reputation, unless they worship the Violence God or share your brutal outlook. Additionally, lawful authorities may target you for suspicion, increasing the likelihood of legal trouble in civilized areas.</p>
+		</description>
+		<sheet>
+			<description>You have disadvantage on Charisma (Persuasion) checks when interacting with non-hostile creatures who are aware of your reputation, unless they worship the God of Savagery or share your brutal outlook. Additionally, lawful authorities may target you for suspicion, increasing the likelihood of legal trouble in civilized areas.</description>
+		</sheet>
 	</element>
 
 <!--Fighting Style, Beast, Crush the Coward-->
@@ -325,10 +338,10 @@
         <prerequisite>Beast Fighting Style</prerequisite>
 		<requirements>ID_MS_VRPG_ARCHETYPE_BEAST</requirements>
 		<description>
-			<p>When you hit a creature with an unarmed strike, you can spend 2 Threat Points to force the creature to make a Constitution saving throw (DC = 8 + your proficiency bonus + your Constitution modifier). On a failure, the creature has a disadvantage on Intelligence, Wisdom, and Charisma saving throws, and its speed is reduced by 10 until the end of its next turn.</p>
+			<p>When you hit a creature with an unarmed strike, you can spend 2 Threat Points to force the creature to make a Constitution saving throw (DC = 8 + your proficiency bonus + your Constitution modifier). On a failure, the creature has a disadvantage on Intelligence, Wisdom, or Charisma () saving throws for 1 minute. They can repeat the saving throw at the start of each of their turns.</p>
 		</description>
 		<sheet>
-			<description>When you hit a creature with an unarmed strike, you can spend 2 Threat Points to force the creature to make a DC {{threat moves:dc}} Constitution saving throw. On a failure, the creature has a disadvantage on Intelligence, Wisdom, and Charisma saving throws, and its speed is reduced by 10 until the end of its next turn.</description>
+			<description>When you hit a creature with an unarmed strike, you can spend 2 Threat Points to force the creature to make a DC {{threat moves:dc}} Constitution saving throw. On a failure, the creature has a disadvantage on Intelligence, Wisdom, or Charisma saving throws for 1 minute. They can repeat the saving throw at the start of each of their turns.</description>
 		</sheet>
 	</element>
 
@@ -337,10 +350,10 @@
         <prerequisite>Beast Fighting Style</prerequisite>
 		<requirements>ID_MS_VRPG_ARCHETYPE_BEAST</requirements>
 		<description>
-			<p>When you hit a creature with an unarmed strike, you can spend 1 Threat Point to force the creature to make a Constitution saving throw (DC = 8 + your proficiency bonus + your Constitution modifier). On a failure, the creature can’t speak or cast spells with verbal components until the end of its next turn.</p>
+			<p>When you hit a creature with an unarmed strike, you can spend 1 Threat Point to force the creature to make a Constitution saving throw (DC = 8 + your proficiency bonus + your Constitution modifier). On a failure, the creature can’t speak and cast spells with verbal components until the end of its next turn.</p>
 		</description>
 		<sheet>
-			<description>When you hit a creature with an unarmed strike, you can spend 1 Threat Point to force the creature to make a DC {{threat moves:dc}} Constitution saving throw. On a failure, the creature can’t speak or cast spells with verbal components until the end of its next turn.</description>
+			<description>When you hit a creature with an unarmed strike, you can spend 1 Threat Point to force the creature to make a DC {{threat moves:dc}} Constitution saving throw. On a failure, the creature can’t speak and cast spells with verbal components until the end of its next turn.</description>
 		</sheet>
 	</element>
 
@@ -361,10 +374,10 @@
         <prerequisite>Beast Fighting Style</prerequisite>
 		<requirements>ID_MS_VRPG_ARCHETYPE_BEAST</requirements>
 		<description>
-			<p>When you get hit by a critical attack, you can spend 1 Threat Points treating the damage as non-critical.</p>
+			<p>When you get hit by a critical attack, as a reaction you can spend 2 Threat Points treating the damage as non-critical.</p>
 		</description>
 		<sheet>
-			<description>When you get hit by a critical attack, you can spend 1 Threat Points treating the damage as non-critical.</description>
+			<description>When you get hit by a critical attack, as a reaction you can spend 2 Threat Points treating the damage as non-critical.</description>
 		</sheet>
 	</element>
 
@@ -373,14 +386,51 @@
         <prerequisite>Beast Fighting Style</prerequisite>
 		<requirements>ID_MS_VRPG_ARCHETYPE_BEAST</requirements>
 		<description>
-			<p>As a reaction when a creature attacks you, you can spend 2 Threat Points to add +2 to your AC against that attack. If the attack misses, you make an unarmed strike to the creature and the creature must succeed on a Wisdom saving throw (DC = 8 + your proficiency bonus + your Constitution modifier) or be frightened until the end of its next turn.</p>
+			<p>As a reaction when a creature attacks you, you can spend 2 Threat Points to add proficiency bonus to your AC against that attack. If the attack misses, you make an unarmed strike to the creature and the creature must succeed on a Wisdom saving throw (DC = 8 + your proficiency bonus + your Constitution modifier) or be frightened until the end of its next turn.</p>
 		</description>
 		<sheet>
-			<description>As a reaction when a creature attacks you, you can spend 2 Threat Points to add +2 to your AC against that attack. If the attack misses, you make an unarmed strike to the creature and the creature must succeed on a DC {{threat moves:dc}} Wisdom saving throw or be frightened until the end of its next turn.</description>
+			<description>As a reaction when a creature attacks you, you can spend 2 Threat Points to add {{proficiency}} to your AC against that attack. If the attack misses, you can use 1 Threat Point to make an unarmed strike to the creature and the creature must succeed on a DC {{threat moves:dc}} Wisdom saving throw or be frightened until the end of its next turn.</description>
 		</sheet>
 	</element>
 
+	<element name="Hard to Grapple" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_BEAST_ARCHETYPE_FEATURE_THREAT_HARD_TO_GRAPPLE">
+		<supports>Threat, Street Fighter</supports>
+        <prerequisite>Beast Fighting Style</prerequisite>
+		<requirements>ID_MS_VRPG_ARCHETYPE_BEAST</requirements>
+		<description>
+			<p>When a creature tries to grapple or restrain you, as a reaction you can spend 1 Threat Point to gain advantage on checks to avoid being grappled or restrained. Additionally, when you escape a grapple, you can spend 1 Threat Point to deal bludgeoning damage equal to your unarmed strike die to the grappling creature.</p>
+		</description>
+		<sheet>
+			<description>When a creature tries to grapple or restrain you, as a reaction you can spend 1 Threat Point to gain advantage on checks to avoid being grappled or restrained. Additionally, when you escape a grapple, you can spend 1 Threat Point to deal bludgeoning damage equal to your unarmed strike die to the grappling creature.</description>
+		</sheet>
+	</element>
 
+	<element name="Hard Hitter" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_BEAST_ARCHETYPE_FEATURE_THREAT_HARD_HITTER">
+		<supports>Threat, Street Fighter</supports>
+        <prerequisite>Beast Fighting Style</prerequisite>
+		<requirements>ID_MS_VRPG_ARCHETYPE_BEAST</requirements>
+		<description>
+			<p>When you hit a creature with an unarmed strike before rolling damage dice. You can spend 2 Threat Point to add your proficiency bonus to the damage to your unarmed strikes. </p>
+		</description>
+		<sheet>
+			<description>When you hit a creature with an unarmed strike before rolling damage dice. You can spend 2 Threat Point before rolling damage dice to add your proficiency bonus to the damage to your unarmed strikes. </description>
+		</sheet>
+	</element>
+
+	<element name="Hunger for Blood" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_BEAST_ARCHETYPE_FEATURE_THREAT_HUNGER_FOR_BLOOD">
+		<supports>Threat, Street Fighter</supports>
+        <prerequisite>Beast Fighting Style</prerequisite>
+		<requirements>ID_MS_VRPG_ARCHETYPE_BEAST</requirements>
+		<description>
+			<p>When you reduce a creature to 0 hit points, you can spend 1 Threat Point to gain advantage on your next attack roll or Intimidation check (your choice) befo
+			t turn.</p>
+		</description>
+		<sheet>
+			<description>When you reduce a creature to 0 hit points, you can spend 1 Threat Point to gain advantage on your next attack roll or Intimidation check (your choice) before the end of your next turn.</description>
+		</sheet>
+	</element>
+
+<!-- Improvised Weapon Proficiency -->
 
     <element name="Weapon Proficiency (Improvised Weapons)" type="Proficiency" source="Vindavia RPG" id="ID_MS_VRPG_PROFICIENCY_IMPROVISED_WEAPONS">
 		<requirements>ID_MS_VRPG_CLASS_STREET_FIGHTER</requirements>
