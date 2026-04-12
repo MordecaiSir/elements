@@ -613,9 +613,9 @@
 		</rules>
 	</element>
 
-	<element name="The Cure (Pistol)" type="Proficiency" source="Vindavia RPG" id="ID_MS_VRPG_PROFICIENCY_WEAPON_CURE_PISTOL">
+	<element name="Weapon Proficiency (The Cure [Pistol])" type="Proficiency" source="Vindavia RPG" id="ID_MS_VRPG_PROFICIENCY_WEAPON_CURE_PISTOL">
 	</element>
-	<element name="Peacemaker (Sniper)" type="Proficiency" source="Vindavia RPG" id="ID_MS_VRPG_PROFICIENCY_WEAPON_PEACEMAKER_SNIPER">
+	<element name="Weapon Proficiency (Peacemaker [Sniper])" type="Proficiency" source="Vindavia RPG" id="ID_MS_VRPG_PROFICIENCY_WEAPON_PEACEMAKER_SNIPER">
 	</element>
 
  <!-- Properties -->

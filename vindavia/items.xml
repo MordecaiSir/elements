@@ -7,7 +7,7 @@
 		</update>
 	</info>
 
-     <element name="Flintlock Pistol" type="Weapon" source="Vindavia RPG" id="ID_MS_VRPG_WEAPON_FLINTLOCK_PISTOL">
+    <element name="Flintlock Pistol" type="Weapon" source="Vindavia RPG" id="ID_MS_VRPG_WEAPON_FLINTLOCK_PISTOL">
 		<supports> ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_MS_VRPG_WEAPON_PROPERTY_RELOAD_1, ID_MS_VRPG_WEAPON_PROPERTY_MISFIRE_2</supports>
 		<description />
 		<setters>
