@@ -607,7 +607,6 @@
  <!-- Proficiencies (specific to this archetype) -->
 
     <element name="Weapon Proficiency (Firearms)" type="Proficiency" source="Vindavia RPG" id="ID_MS_VRPG_PROFICIENCY_WEAPON_FIREARMS">
-		<requirements>ID_MS_VRPG_CLASS_GUNSLINGER</requirements>
 		<rules>
 			<grant type="Proficiency" id="ID_MS_VRPG_PROFICIENCY_WEAPON_CURE_PISTOL" />
 			<grant type="Proficiency" id="ID_MS_VRPG_PROFICIENCY_WEAPON_PEACEMAKER_SNIPER" />
@@ -615,10 +614,8 @@
 	</element>
 
 	<element name="The Cure (Pistol)" type="Proficiency" source="Vindavia RPG" id="ID_MS_VRPG_PROFICIENCY_WEAPON_CURE_PISTOL">
-		<requirements>ID_MS_VRPG_CLASS_GUNSLINGER</requirements>
 	</element>
 	<element name="Peacemaker (Sniper)" type="Proficiency" source="Vindavia RPG" id="ID_MS_VRPG_PROFICIENCY_WEAPON_PEACEMAKER_SNIPER">
-		<requirements>ID_MS_VRPG_CLASS_GUNSLINGER</requirements>
 	</element>
 
  <!-- Properties -->

@@ -33,7 +33,7 @@
 
 	 <!-- Items -->
 
-
+	    <file name="items.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/items.xml" />
 
 	 <!-- Feats -->
 

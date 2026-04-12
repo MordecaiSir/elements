@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Vindavia Homebrew Items</name>
+		<update version="0.1.0">
+			<file name="items.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/items.xml" />
+		</update>
+	</info>
+
+     <element name="Flintlock Pistol" type="Weapon" source="Vindavia RPG" id="ID_MS_VRPG_WEAPON_FLINTLOCK_PISTOL">
+		<supports> ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_MS_VRPG_WEAPON_PROPERTY_RELOAD_2, ID_MS_VRPG_WEAPON_PROPERTY_MISFIRE_1</supports>
+		<description />
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="sp">25</set>
+			<set name="weight" lb="3">3 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">30/90</set>
+			<set name="damage" type="piercing">1d8</set>
+			<!-- <set name="misfire">1</set> -->
+			<set name="proficiency">ID_MS_VRPG_PROFICIENCY_WEAPON_FLINTLOCK_PISTOL</set>
+		</setters>
+	</element>
+    <element name="Musket" type="Weapon" source="Vindavia RPG" id="ID_MS_VRPG_WEAPON_MUSKET">
+		<supports> ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_MS_VRPG_WEAPON_PROPERTY_RELOAD_2, ID_MS_VRPG_WEAPON_PROPERTY_MISFIRE_3, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description />
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="sp">50</set>
+			<set name="weight" lb="12">12 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">40/120</set>
+			<set name="damage" type="piercing">1d12</set>
+			<!-- <set name="misfire">3</set> -->
+			<set name="proficiency">ID_MS_VRPG_PROFICIENCY_WEAPON_MUSKET</set>
+		</setters>
+	</element>
+    <element name="Weapon Proficiency (Flintlock Pistol)" type="Proficiency" source="Vindavia RPG" id="ID_MS_VRPG_PROFICIENCY_WEAPON_FLINTLOCK_PISTOL">
+	</element>
+    <element name="Weapon Proficiency (Musket)" type="Proficiency" source="Vindavia RPG" id="ID_MS_VRPG_PROFICIENCY_WEAPON_MUSKET">
+	</element>
+</elements>

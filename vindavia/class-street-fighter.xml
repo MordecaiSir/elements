@@ -422,8 +422,7 @@
         <prerequisite>Beast Fighting Style</prerequisite>
 		<requirements>ID_MS_VRPG_ARCHETYPE_BEAST</requirements>
 		<description>
-			<p>When you reduce a creature to 0 hit points, you can spend 1 Threat Point to gain advantage on your next attack roll or Intimidation check (your choice) befo
-			t turn.</p>
+			<p>When you reduce a creature to 0 hit points, you can spend 1 Threat Point to gain advantage on your next attack roll or Intimidation check (your choice) before the end of your next turn.</p>
 		</description>
 		<sheet>
 			<description>When you reduce a creature to 0 hit points, you can spend 1 Threat Point to gain advantage on your next attack roll or Intimidation check (your choice) before the end of your next turn.</description>
