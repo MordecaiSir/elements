@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Dragonborn</name>
-		<update version="0.1.0">
+		<update version="0.1.1">
 			<file name="race-dragonborn.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/race-dragonborn.xml" />
 		</update>
 	</info>
@@ -43,6 +43,22 @@
 			<span class="feature">Speed.</span>Your base walking speed is 30 feet.
 			<br />
 			<span class="feature">Draconic Ancestry.</span>You have Draconic Ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type, as shown in the table.
+			<table>
+				<thead>
+					<tr><td>Dragon</td><td>Damage Type</td></tr>
+				</thead>
+				<tr><td>Black</td><td>Acid</td></tr>
+				<tr><td>Blue</td><td>Lightning</td></tr>
+				<tr><td>Brass</td><td>Fire</td></tr>
+				<tr><td>Bronze</td><td>Lightning</td></tr>
+				<tr><td>Copper</td><td>Acid</td></tr>
+				<tr><td>Dark</td><td>Necrotic</td></tr>
+				<tr><td>Gold</td><td>Fire</td></tr>
+				<tr><td>Green</td><td>Poison</td></tr>
+				<tr><td>Red</td><td>Fire</td></tr>
+				<tr><td>Silver</td><td>Cold</td></tr>
+				<tr><td>White</td><td>Cold</td></tr>
+			</table>
 			<br />
 			<span class="feature">Breath Weapon.</span>You can use your action to exhale destructive energy. Your Draconic Ancestry determines the size, shape, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw, the type of which is determined by your Draconic Ancestry. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 damage on a failed save, and half as much damage on a successful one. The damage increases to 3d6 at 6th level, 4d6 at 11th level, and 5d6 at 16th level. After you use your breath weapon, you can’t use it again until you complete a short or long rest.
 			<br />
@@ -70,84 +86,158 @@
 			<grant type="Language" id="ID_LANGUAGE_COMMON" />
 			<grant type="Language" id="ID_LANGUAGE_DRACONIC" />
 			<grant type="Racial Trait" id="ID_MS_VRPG_RACIAL_TRAIT_DRACONIC_ANCESTRY" />
-			<grant type="Racial Trait" id="ID_MS_VRPG_RACIAL_TRAIT_BREATH_WEAPON" />
-			<grant type="Racial Trait" id="ID_MS_VRPG_RACIAL_TRAIT_DAMAGE_RESISTANCE" />
+			<grant type="Racial Trait" id="ID_MS_VRPG_RACIAL_TRAIT_DRAGONBORN_BREATH_WEAPON" />
+			<grant type="Racial Trait" id="ID_MS_VRPG_RACIAL_TRAIT_DRAGONBORN_DAMAGE_RESISTANCE" />
 			<grant type="Racial Trait" id="ID_MS_VRPG_RACIAL_TRAIT_DRACONIC_SPECIALITY" />
 			<select type="Race Variant" name="Dragonborn Variant" supports="Dragonborn" optional="true" />
 		</rules>
 	</element>
 
-	<!-- Draconic Ancestry Explanation -->
+ <!-- Draconic Ancestry Explanation -->
 
 	<element name="Draconic Ancestry" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_DRACONIC_ANCESTRY">
 		<description>
-			<p>You have Draconic Ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type, as shown in the table.</p>
-			<h5>Draconic Ancestry</h5>
+			<p>Your lineage stems from a dragon progenitor. Choose the kind of dragon from the Draconic Ancestors table. Your choice affects your Breath Weapon and Damage Resistance traits as well as your appearance.</p>
+			<h5>DRACONIC ANCESTORS</h5>
 			<table>
 				<thead>
-					<tr><td>Dragon</td><td>Damage Type</td><td>Breath Weapon</td></tr>
+					<tr><td>Dragon</td><td>Damage Type</td><td>Dragon</td><td>Damage Type</td></tr>
 				</thead>
-				<tr><td>Black</td><td>Acid</td><td>5 by 30 ft. line (Dex. save)</td></tr>
-				<tr><td>Blue</td><td>Lightning</td><td>5 by 30 ft. line (Dex. save)</td></tr>
-				<tr><td>Brass</td><td>Fire</td><td>5 by 30 ft. line (Dex. save)</td></tr>
-				<tr><td>Bronze</td><td>Lightning</td><td>5 by 30 ft. line (Dex. save)</td></tr>
-				<tr><td>Copper</td><td>Acid</td><td>5 by 30 ft. line (Dex. save)</td></tr>
-				<tr><td>Dark</td><td>Necrotic</td><td>15 ft. cone (Dex. save)</td></tr>
-				<tr><td>Gold</td><td>Fire</td><td>15 ft. cone (Dex. save)</td></tr>
-				<tr><td>Green</td><td>Poison</td><td>15 ft. cone (Con. save)</td></tr>
-				<tr><td>Red</td><td>Fire</td><td>15 ft. cone (Dex. save)</td></tr>
-				<tr><td>Silver</td><td>Cold</td><td>15 ft. cone (Con. save)</td></tr>
-				<tr><td>White</td><td>Cold</td><td>15 ft. cone (Con. save)</td></tr>
+				<tr><td>Black</td><td>Acid</td><td>Gold</td><td>Fire</td></tr>
+				<tr><td>Blue</td><td>Lightning</td><td>Green</td><td>Poison</td></tr>
+				<tr><td>Brass</td><td>Fire</td><td>Red</td><td>Fire</td></tr>
+				<tr><td>Bronze</td><td>Lightning</td><td>Silver</td><td>Cold</td></tr>
+				<tr><td>Copper</td><td>Acid</td><td>White</td><td>Cold</td></tr>
 			</table>
 		</description>
+		<sheet display="false" />
 		<rules>
 			<select type="Racial Trait" name="Draconic Ancestry" supports="VRPG Draconic Ancestry" />
 		</rules>
 	</element>
 
-	<!-- Breath Weapon -->
+ <!-- Breath Weapon -->
 
-	<element name="Breath Weapon" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_BREATH_WEAPON">
+	<element name="Breath Weapon" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_DRAGONBORN_BREATH_WEAPON">
 		<description>
-			<p>You can use your action to exhale destructive energy. Your Draconic Ancestry determines the size, shape, and damage type of the exhalation.</p>
-			<p>When you use your breath weapon, each creature in the area of the exhalation must make a saving throw, the type of which is determined by your Draconic Ancestry. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 damage on a failed save, and half as much damage on a successful one. The damage increases to 3d6 at 6th level, 4d6 at 11th level, and 5d6 at 16th level.</p>
-			<p>After you use your breath weapon, you can’t use it again until you complete a short or long rest.</p>
+			<p>When you take the Attack action on your turn, you can replace one of your attacks with an exhalation of magical energy in either a 15-foot Cone or a 30-foot Line that is 5 feet wide (choose the shape each time). Each creature in that area must make a Dexterity saving throw (DC 8 plus your Constitution modifier and Proficiency Bonus). On a failed save, a creature takes 1d10 damage of the type determined by your Draconic Ancestry trait. On a successful save, a creature takes half as much damage. This damage increases by 1d10 when you reach character levels 5 (2d10), 11 (3d10), and 17 (4d10).</p> 
+			<p class="indent">You can use this Breath Weapon a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p>
 		</description>
-		<sheet action="Action" usage="1/Short Rest">
-			<description>Exhale destructive energy. Your breath weapon does {{breath-weapon:dice count}}d{{breath-weapon:dice size}} {{draconic-ancestry:damage type}} damage in a {{draconic-ancestry:breath}} DC {{breath-weapon:dc}}</description>
-		</sheet>
+		<sheet display="false" />
 		<rules>
-			<stat name="breath-weapon:dc" value="8" />
-			<stat name="breath-weapon:dc" value="constitution:modifier" />
-			<stat name="breath-weapon:dc" value="proficiency" />
-			<stat name="breath-weapon:dice size" value="6" bonus="dice" />
-			<stat name="breath-weapon:dice count" value="2" level="1" />
-			<stat name="breath-weapon:dice count" value="1" level="6" />
-			<stat name="breath-weapon:dice count" value="1" level="11" />
-			<stat name="breath-weapon:dice count" value="1" level="16" />
+			<stat name="breath weapon:dc" value="8" bonus="base" />
+			<stat name="breath weapon:dc" value="constitution:modifier" bonus="ability" />
+			<stat name="breath weapon:dc" value="proficiency" bonus="proficiency" />
+			<stat name="breath weapon:dice count" value="1" level="1" bonus="base" />
+			<stat name="breath weapon:dice count" value="2" level="5" bonus="base" />
+			<stat name="breath weapon:dice count" value="3" level="11" bonus="base" />
+			<stat name="breath weapon:dice count" value="4" level="17" bonus="base" />
+			<grant type="Racial Trait" id="ID_MS_VRPG_RACIAL_TRAIT_DRAGONBORN_BREATH_WEAPON_BLACK" requirements="ID_MS_VRPG_RACIAL_TRAIT_DRAGONBORN_DRACONIC_ANCESTRY_BLACK" />
+			<grant type="Racial Trait" id="ID_MS_VRPG_RACIAL_TRAIT_DRAGONBORN_BREATH_WEAPON_BLUE" requirements="ID_MS_VRPG_RACIAL_TRAIT_DRAGONBORN_DRACONIC_ANCESTRY_BLUE" />
+			<grant type="Racial Trait" id="ID_MS_VRPG_RACIAL_TRAIT_DRAGONBORN_BREATH_WEAPON_BRASS" requirements="ID_MS_VRPG_RACIAL_TRAIT_DRAGONBORN_DRACONIC_ANCESTRY_BRASS" />
+			<grant type="Racial Trait" id="ID_MS_VRPG_RACIAL_TRAIT_DRAGONBORN_BREATH_WEAPON_BRONZE" requirements="ID_MS_VRPG_RACIAL_TRAIT_DRAGONBORN_DRACONIC_ANCESTRY_BRONZE" />
+			<grant type="Racial Trait" id="ID_MS_VRPG_RACIAL_TRAIT_DRAGONBORN_BREATH_WEAPON_COPPER" requirements="ID_MS_VRPG_RACIAL_TRAIT_DRAGONBORN_DRACONIC_ANCESTRY_COPPER" />
+			<grant type="Racial Trait" id="ID_MS_VRPG_RACIAL_TRAIT_DRAGONBORN_BREATH_WEAPON_GOLD" requirements="ID_MS_VRPG_RACIAL_TRAIT_DRAGONBORN_DRACONIC_ANCESTRY_GOLD" />
+			<grant type="Racial Trait" id="ID_MS_VRPG_RACIAL_TRAIT_DRAGONBORN_BREATH_WEAPON_GREEN" requirements="ID_MS_VRPG_RACIAL_TRAIT_DRAGONBORN_DRACONIC_ANCESTRY_GREEN" />
+			<grant type="Racial Trait" id="ID_MS_VRPG_RACIAL_TRAIT_DRAGONBORN_BREATH_WEAPON_RED" requirements="ID_MS_VRPG_RACIAL_TRAIT_DRAGONBORN_DRACONIC_ANCESTRY_RED" />
+			<grant type="Racial Trait" id="ID_MS_VRPG_RACIAL_TRAIT_DRAGONBORN_BREATH_WEAPON_SILVER" requirements="ID_MS_VRPG_RACIAL_TRAIT_DRAGONBORN_DRACONIC_ANCESTRY_SILVER" />
+			<grant type="Racial Trait" id="ID_MS_VRPG_RACIAL_TRAIT_DRAGONBORN_BREATH_WEAPON_WHITE" requirements="ID_MS_VRPG_RACIAL_TRAIT_DRAGONBORN_DRACONIC_ANCESTRY_WHITE" />
+			<grant type="Racial Trait" id="ID_MS_VRPG_RACIAL_TRAIT_DRAGONBORN_BREATH_WEAPON_DARK" requirements="ID_MS_VRPG_RACIAL_TRAIT_DRACONIC_ANCESTRY_DARK" />
 		</rules>
 	</element>
 
-	<!-- Damage Resistance -->
-
-	<element name="Damage Resistance" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_DAMAGE_RESISTANCE">
-		<description>
-			<p>You have resistance to the damage type associated with your Draconic Ancestry.</p>
-		</description>
-		<sheet>
-			<description>You have resistance to {{draconic-ancestry:damage type}}.</description>
+	<element name="Breath Weapon (Black)" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_DRAGONBORN_BREATH_WEAPON_BLACK">
+		<compendium display="false" />
+		<sheet alt="Breath Weapon" action="Attack" usage="{{proficiency}}/Long Rest">
+			<description>You exhale magical energy in either a 15-foot Cone or a 30-foot Line that is 5 feet wide (choose the shape each time). Each creature in the area must make a Dexterity saving throw against a DC {{breath weapon:dc}}. On a failed save, a creature takes {{breath weapon:dice count}}d10 Acid damage, or half as much damage on a successful one.</description>
 		</sheet>
+	</element>
+	<element name="Breath Weapon (Blue)" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_DRAGONBORN_BREATH_WEAPON_BLUE">
+		<compendium display="false" />
+		<sheet alt="Breath Weapon" action="Attack" usage="{{proficiency}}/Long Rest">
+			<description>You exhale magical energy in either a 15-foot Cone or a 30-foot Line that is 5 feet wide (choose the shape each time). Each creature in the area must make a Dexterity saving throw against a DC {{breath weapon:dc}}. On a failed save, a creature takes {{breath weapon:dice count}}d10 Lightning damage, or half as much damage on a successful one.</description>
+		</sheet>
+	</element>
+	<element name="Breath Weapon (Brass)" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_DRAGONBORN_BREATH_WEAPON_BRASS">
+		<compendium display="false" />
+		<sheet alt="Breath Weapon" action="Attack" usage="{{proficiency}}/Long Rest">
+			<description>You exhale magical energy in either a 15-foot Cone or a 30-foot Line that is 5 feet wide (choose the shape each time). Each creature in the area must make a Dexterity saving throw against a DC {{breath weapon:dc}}. On a failed save, a creature takes {{breath weapon:dice count}}d10 Fire damage, or half as much damage on a successful one.</description>
+		</sheet>
+	</element>
+	<element name="Breath Weapon (Bronze)" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_DRAGONBORN_BREATH_WEAPON_BRONZE">
+		<compendium display="false" />
+		<sheet alt="Breath Weapon" action="Attack" usage="{{proficiency}}/Long Rest">
+			<description>You exhale magical energy in either a 15-foot Cone or a 30-foot Line that is 5 feet wide (choose the shape each time). Each creature in the area must make a Dexterity saving throw against a DC {{breath weapon:dc}}. On a failed save, a creature takes {{breath weapon:dice count}}d10 Lightning damage, or half as much damage on a successful one.</description>
+		</sheet>
+	</element>
+	<element name="Breath Weapon (Copper)" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_DRAGONBORN_BREATH_WEAPON_COPPER">
+		<compendium display="false" />
+		<sheet alt="Breath Weapon" action="Attack" usage="{{proficiency}}/Long Rest">
+			<description>You exhale magical energy in either a 15-foot Cone or a 30-foot Line that is 5 feet wide (choose the shape each time). Each creature in the area must make a Dexterity saving throw against a DC {{breath weapon:dc}}. On a failed save, a creature takes {{breath weapon:dice count}}d10 Acid damage, or half as much damage on a successful one.</description>
+		</sheet>
+	</element>
+	<element name="Breath Weapon (Dark)" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_DRAGONBORN_BREATH_WEAPON_DARK">
+		<compendium display="false" />
+		<sheet alt="Breath Weapon" action="Attack" usage="{{proficiency}}/Long Rest">
+			<description>You exhale magical energy in either a 15-foot Cone or a 30-foot Line that is 5 feet wide (choose the shape each time). Each creature in the area must make a Dexterity saving throw against a DC {{breath weapon:dc}}. On a failed save, a creature takes {{breath weapon:dice count}}d10 Necrotic damage, or half as much damage on a successful one.</description>
+		</sheet>
+	</element>
+	<element name="Breath Weapon (Gold)" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_DRAGONBORN_BREATH_WEAPON_GOLD">
+		<compendium display="false" />
+		<sheet alt="Breath Weapon" action="Attack" usage="{{proficiency}}/Long Rest">
+			<description>You exhale magical energy in either a 15-foot Cone or a 30-foot Line that is 5 feet wide (choose the shape each time). Each creature in the area must make a Dexterity saving throw against a DC {{breath weapon:dc}}. On a failed save, a creature takes {{breath weapon:dice count}}d10 Fire damage, or half as much damage on a successful one.</description>
+		</sheet>
+	</element>
+	<element name="Breath Weapon (Green)" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_DRAGONBORN_BREATH_WEAPON_GREEN">
+		<compendium display="false" />
+		<sheet alt="Breath Weapon" action="Attack" usage="{{proficiency}}/Long Rest">
+			<description>You exhale magical energy in either a 15-foot Cone or a 30-foot Line that is 5 feet wide (choose the shape each time). Each creature in the area must make a Dexterity saving throw against a DC {{breath weapon:dc}}. On a failed save, a creature takes {{breath weapon:dice count}}d10 Poison damage, or half as much damage on a successful one.</description>
+		</sheet>
+	</element>
+	<element name="Breath Weapon (Red)" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_DRAGONBORN_BREATH_WEAPON_RED">
+		<compendium display="false" />
+		<sheet alt="Breath Weapon" action="Attack" usage="{{proficiency}}/Long Rest">
+			<description>You exhale magical energy in either a 15-foot Cone or a 30-foot Line that is 5 feet wide (choose the shape each time). Each creature in the area must make a Dexterity saving throw against a DC {{breath weapon:dc}}. On a failed save, a creature takes {{breath weapon:dice count}}d10 Fire damage, or half as much damage on a successful one.</description>
+		</sheet>
+	</element>
+	<element name="Breath Weapon (Silver)" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_DRAGONBORN_BREATH_WEAPON_SILVER">
+		<compendium display="false" />
+		<sheet alt="Breath Weapon" action="Attack" usage="{{proficiency}}/Long Rest">
+			<description>You exhale magical energy in either a 15-foot Cone or a 30-foot Line that is 5 feet wide (choose the shape each time). Each creature in the area must make a Dexterity saving throw against a DC {{breath weapon:dc}}. On a failed save, a creature takes {{breath weapon:dice count}}d10 Cold damage, or half as much damage on a successful one.</description>
+		</sheet>
+	</element>
+	<element name="Breath Weapon (White)" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_DRAGONBORN_BREATH_WEAPON_WHITE">
+		<compendium display="false" />
+		<sheet alt="Breath Weapon" action="Attack" usage="{{proficiency}}/Long Rest">
+			<description>You exhale magical energy in either a 15-foot Cone or a 30-foot Line that is 5 feet wide (choose the shape each time). Each creature in the area must make a Dexterity saving throw against a DC {{breath weapon:dc}}. On a failed save, a creature takes {{breath weapon:dice count}}d10 Cold damage, or half as much damage on a successful one.</description>
+		</sheet>
+	</element>
+
+
+ <!-- Damage Resistance -->
+
+	<element name="Draconic Resistance" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_DRAGONBORN_DAMAGE_RESISTANCE">
+		<description>
+			<p>You have Resistance to the damage type determined by your Draconic Ancestry trait.</p>
+		</description>
+		<sheet display="false" />
 		<rules>
-			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" requirements="ID_MS_VRPG_RACIAL_TRAIT_DRACONIC_ANCESTRY_BLACK||ID_MS_VRPG_RACIAL_TRAIT_DRACONIC_ANCESTRY_COPPER" />
-			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" requirements="ID_MS_VRPG_RACIAL_TRAIT_DRACONIC_ANCESTRY_BLUE||ID_MS_VRPG_RACIAL_TRAIT_DRACONIC_ANCESTRY_BRONZE" />
-			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" requirements="ID_MS_VRPG_RACIAL_TRAIT_DRACONIC_ANCESTRY_BRASS||ID_MS_VRPG_RACIAL_TRAIT_DRACONIC_ANCESTRY_GOLD||ID_MS_VRPG_RACIAL_TRAIT_DRACONIC_ANCESTRY_RED" />
-			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" requirements="ID_MS_VRPG_RACIAL_TRAIT_DRACONIC_ANCESTRY_GREEN" />
-			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" requirements="ID_MS_VRPG_RACIAL_TRAIT_DRACONIC_ANCESTRY_SILVER||ID_MS_VRPG_RACIAL_TRAIT_DRACONIC_ANCESTRY_WHITE" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" requirements="ID_MS_VRPG_RACIAL_TRAIT_DRAGONBORN_DRACONIC_ANCESTRY_BLACK" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" requirements="ID_MS_VRPG_RACIAL_TRAIT_DRAGONBORN_DRACONIC_ANCESTRY_BLUE" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" requirements="ID_MS_VRPG_RACIAL_TRAIT_DRAGONBORN_DRACONIC_ANCESTRY_BRASS" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" requirements="ID_MS_VRPG_RACIAL_TRAIT_DRAGONBORN_DRACONIC_ANCESTRY_BRONZE" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" requirements="ID_MS_VRPG_RACIAL_TRAIT_DRAGONBORN_DRACONIC_ANCESTRY_COPPER" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" requirements="ID_MS_VRPG_RACIAL_TRAIT_DRAGONBORN_DRACONIC_ANCESTRY_GOLD" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" requirements="ID_MS_VRPG_RACIAL_TRAIT_DRAGONBORN_DRACONIC_ANCESTRY_GREEN" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" requirements="ID_MS_VRPG_RACIAL_TRAIT_DRAGONBORN_DRACONIC_ANCESTRY_RED" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" requirements="ID_MS_VRPG_RACIAL_TRAIT_DRAGONBORN_DRACONIC_ANCESTRY_SILVER" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" requirements="ID_MS_VRPG_RACIAL_TRAIT_DRAGONBORN_DRACONIC_ANCESTRY_WHITE" />
 			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" requirements="ID_MS_VRPG_RACIAL_TRAIT_DRACONIC_ANCESTRY_DARK" />
 		</rules>
 	</element>
+			
 
-	<!-- Draconic Speciality -->
+ <!-- Draconic Speciality -->
 
 	<element name="Draconic Speciality" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_DRACONIC_SPECIALITY">
 		<description>
@@ -173,7 +263,7 @@
 			<div element="ID_MS_VRPG_RACIAL_TRAIT_DRACONIC_SPECIALITY" />
 		</description>
 		<sheet alt="Wings">
-			<description>Your Draconic Speciality is {{draconic-speciality}}. With your wings, you have a flying speed of 20 feet if you aren’t wearing heavy armor and aren’t exceeding your carrying capacity.</description>
+			<description>With your wings, you have a flying speed of 20 feet if you aren’t wearing heavy armor and aren’t exceeding your carrying capacity.</description>
 		</sheet>
 		<rules>
 			<stat inline="true" name="draconic-speciality" value="Wings"/>
@@ -187,7 +277,7 @@
 			<div element="ID_MS_VRPG_RACIAL_TRAIT_DRACONIC_SPECIALITY" />
 		</description>
 		<sheet alt="Hardened Scales">
-			<description>Your Draconic Speciality is {{draconic-speciality}}. Your scales harden. While you aren’t wearing armor, you can calculate your AC as 13 + your Dexterity modifier. You can use a shield and still gain this benefit.</description>
+			<description>While you aren’t wearing armor, you can calculate your AC as 13 + your Dexterity modifier. You can use a shield and still gain this benefit.</description>
 		</sheet>
 		<rules>
 			<stat inline="true" name="draconic-speciality" value="Hardened Scales"/>
@@ -207,179 +297,126 @@
 		<description>
 			<div element="ID_MS_VRPG_RACIAL_TRAIT_DRACONIC_SPECIALITY" />
 		</description>
-		<sheet alt="Wings">
-			<description>Your Draconic Speciality is {{draconic-speciality}}. You grow retractable claws from the nails of your fingers. Extending or retracting the claws requires no action. The claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 1d4 + {{strength:modifier}}, instead of the normal bludgeoning damage for an unarmed strike.</description>
+		<sheet alt="Claws">
+			<description>You grow retractable claws from the nails of your fingers. Extending or retracting the claws requires no action. The claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 1d4 + {{strength:modifier}}, instead of the normal bludgeoning damage for an unarmed strike.</description>
 		</sheet>
 		<rules>
 			<stat inline="true" name="draconic-speciality" value="Claws"/>
 		</rules>
 	</element>
 
-	<!-- Draconic Ancestry Variants -->
+ <!-- Draconic Ancestry Variants -->
 
-	<element name="Draconic Ancestry (Black)" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_DRACONIC_ANCESTRY_BLACK">
+	<element name="Black" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_DRAGONBORN_DRACONIC_ANCESTRY_BLACK">
 		<supports>VRPG Draconic Ancestry</supports>
+		<compendium display="false" />
 		<description>
-			<div element="ID_MS_VRPG_RACIAL_TRAIT_DRACONIC_ANCESTRY" />
+			<p>Your lineage stems from a Black Dragon. You have resistance to Acid damage, and your Breath Weapon uses Acid as its damage type.</p>
 		</description>
-		<sheet alt="Black">
-			<description>Your Draconic Ancestry is {{draconic-ancestry}}. Your damage type is {{draconic-ancestry:damage type}}. Your breath weapon is {{draconic-ancestry:breath}}.</description>
+		<sheet alt="Draconic Ancestry">
+			<description>Your lineage stems from a Black Dragon. Your Draconic Ancestry damage type is Acid.</description>
 		</sheet>
-		<rules>
-			<stat inline="true" name="draconic-ancestry" value="Black"/>
-			<stat inline="true" name="draconic-ancestry:damage type" value="Acid" />
-			<stat inline="true" name="draconic-ancestry:breath" value="5 by 30 ft. line (Dex. save)" />
-		</rules>
+	</element>
+	<element name="Blue" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_DRAGONBORN_DRACONIC_ANCESTRY_BLUE">
+		<supports>VRPG Draconic Ancestry</supports>
+		<compendium display="false" />
+		<description>
+			<p>Your lineage stems from a Blue Dragon. You have resistance to Lightning damage, and your Breath Weapon uses Lightning as its damage type.</p>
+		</description>
+		<sheet alt="Draconic Ancestry">
+			<description>Your lineage stems from a Blue Dragon. Your Draconic Ancestry damage type is Lightning.</description>
+		</sheet>
 	</element>
 
-	<element name="Draconic Ancestry (Blue)" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_DRACONIC_ANCESTRY_BLUE">
+	<element name="Brass" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_DRAGONBORN_DRACONIC_ANCESTRY_BRASS">
 		<supports>VRPG Draconic Ancestry</supports>
+		<compendium display="false" />
 		<description>
-			<div element="ID_MS_VRPG_RACIAL_TRAIT_DRACONIC_ANCESTRY" />
+			<p>Your lineage stems from a Brass Dragon. You have resistance to Fire damage, and your Breath Weapon uses Fire as its damage type.</p>
 		</description>
-		<sheet alt="Blue">
-			<description>Your Draconic Ancestry is {{draconic-ancestry}}. Your damage type is {{draconic-ancestry:damage type}}. Your breath weapon is {{draconic-ancestry:breath}}.</description>
+		<sheet alt="Draconic Ancestry">
+			<description>Your lineage stems from a Brass Dragon. Your Draconic Ancestry damage type is Fire.</description>
 		</sheet>
-		<rules>
-			<stat inline="true" name="draconic-ancestry" value="Blue"/>
-			<stat inline="true" name="draconic-ancestry:damage type" value="Lightning" />
-			<stat inline="true" name="draconic-ancestry:breath" value="5 by 30 ft. line (Dex. save)" />
-		</rules>
 	</element>
-
-	<element name="Draconic Ancestry (Brass)" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_DRACONIC_ANCESTRY_BRASS">
+	<element name="Bronze" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_DRAGONBORN_DRACONIC_ANCESTRY_BRONZE">
 		<supports>VRPG Draconic Ancestry</supports>
+		<compendium display="false" />
 		<description>
-			<div element="ID_MS_VRPG_RACIAL_TRAIT_DRACONIC_ANCESTRY" />
+			<p>Your lineage stems from a Bronze Dragon. You have resistance to Lightning damage, and your Breath Weapon uses Lightning as its damage type.</p>
 		</description>
-		<sheet alt="Brass">
-			<description>Your Draconic Ancestry is {{draconic-ancestry}}. Your damage type is {{draconic-ancestry:damage type}}. Your breath weapon is {{draconic-ancestry:breath}}.</description>
+		<sheet alt="Draconic Ancestry">
+			<description>Your lineage stems from a Bronze Dragon. Your Draconic Ancestry damage type is Lightning.</description>
 		</sheet>
-		<rules>
-			<stat inline="true" name="draconic-ancestry" value="Brass"/>
-			<stat inline="true" name="draconic-ancestry:damage type" value="Fire" />
-			<stat inline="true" name="draconic-ancestry:breath" value="5 by 30 ft. line (Dex. save)" />
-		</rules>
 	</element>
-
-	<element name="Draconic Ancestry (Bronze)" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_DRACONIC_ANCESTRY_BRONZE">
+	<element name="Copper" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_DRAGONBORN_DRACONIC_ANCESTRY_COPPER">
 		<supports>VRPG Draconic Ancestry</supports>
+		<compendium display="false" />
 		<description>
-			<div element="ID_MS_VRPG_RACIAL_TRAIT_DRACONIC_ANCESTRY" />
+			<p>Your lineage stems from a Copper Dragon. You have resistance to Acid damage, and your Breath Weapon uses Acid as its damage type.</p>
 		</description>
-		<sheet alt="Bronze">
-			<description>Your Draconic Ancestry is {{draconic-ancestry}}. Your damage type is {{draconic-ancestry:damage type}}. Your breath weapon is {{draconic-ancestry:breath}}.</description>
+		<sheet alt="Draconic Ancestry">
+			<description>Your lineage stems from a Copper Dragon. Your Draconic Ancestry damage type is Acid.</description>
 		</sheet>
-		<rules>
-			<stat inline="true" name="draconic-ancestry" value="Bronze"/>
-			<stat inline="true" name="draconic-ancestry:damage type" value="Lightning" />
-			<stat inline="true" name="draconic-ancestry:breath" value="5 by 30 ft. line (Dex. save)" />
-		</rules>
 	</element>
-
-	<element name="Draconic Ancestry (Copper)" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_DRACONIC_ANCESTRY_COPPER">
+	<element name="Dark" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_DRACONIC_ANCESTRY_DARK">
 		<supports>VRPG Draconic Ancestry</supports>
+		<compendium display="false" />
 		<description>
-			<div element="ID_MS_VRPG_RACIAL_TRAIT_DRACONIC_ANCESTRY" />
+			<p>Your lineage stems from a Dark Dragon. You have resistance to Necrotic damage, and your Breath Weapon uses Necrotic as its damage type.</p>
 		</description>
-		<sheet alt="Copper">
-			<description>Your Draconic Ancestry is {{draconic-ancestry}}. Your damage type is {{draconic-ancestry:damage type}}. Your breath weapon is {{draconic-ancestry:breath}}.</description>
+		<sheet alt="Draconic Ancestry">
+			<description>Your lineage stems from a Dark Dragon. Your Draconic Ancestry damage type is Necrotic.</description>
 		</sheet>
-		<rules>
-			<stat inline="true" name="draconic-ancestry" value="Copper"/>
-			<stat inline="true" name="draconic-ancestry:damage type" value="Acid" />
-			<stat inline="true" name="draconic-ancestry:breath" value="5 by 30 ft. line (Dex. save)" />
-		</rules>
 	</element>
-
-	<element name="Draconic Ancestry (Dark)" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_DRACONIC_ANCESTRY_DARK">
+	<element name="Gold" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_DRAGONBORN_DRACONIC_ANCESTRY_GOLD">
 		<supports>VRPG Draconic Ancestry</supports>
+		<compendium display="false" />
 		<description>
-			<div element="ID_MS_VRPG_RACIAL_TRAIT_DRACONIC_ANCESTRY" />
+			<p>Your lineage stems from a Gold Dragon. You have resistance to Fire damage, and your Breath Weapon uses Fire as its damage type.</p>
 		</description>
-		<sheet alt="Dark">
-			<description>Your Draconic Ancestry is {{draconic-ancestry}}. Your damage type is {{draconic-ancestry:damage type}}. Your breath weapon is {{draconic-ancestry:breath}}.</description>
+		<sheet alt="Draconic Ancestry">
+			<description>Your lineage stems from a Gold Dragon. Your Draconic Ancestry damage type is Fire.</description>
 		</sheet>
-		<rules>
-			<stat inline="true" name="draconic-ancestry" value="Dark"/>
-			<stat inline="true" name="draconic-ancestry:damage type" value="Necrotic" />
-			<stat inline="true" name="draconic-ancestry:breath" value="15 ft. cone (Dex. save)" />
-		</rules>
 	</element>
-
-	<element name="Draconic Ancestry (Gold)" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_DRACONIC_ANCESTRY_GOLD">
+	<element name="Green" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_DRAGONBORN_DRACONIC_ANCESTRY_GREEN">
 		<supports>VRPG Draconic Ancestry</supports>
+		<compendium display="false" />
 		<description>
-			<div element="ID_MS_VRPG_RACIAL_TRAIT_DRACONIC_ANCESTRY" />
+			<p>Your lineage stems from a Green Dragon. You have resistance to Poison damage, and your Breath Weapon uses Poison as its damage type.</p>
 		</description>
-		<sheet alt="Gold">
-			<description>Your Draconic Ancestry is {{draconic-ancestry}}. Your damage type is {{draconic-ancestry:damage type}}. Your breath weapon is {{draconic-ancestry:breath}}.</description>
+		<sheet alt="Draconic Ancestry">
+			<description>Your lineage stems from a Green Dragon. Your Draconic Ancestry damage type is Poison.</description>
 		</sheet>
-		<rules>
-			<stat inline="true" name="draconic-ancestry" value="Gold"/>
-			<stat inline="true" name="draconic-ancestry:damage type" value="Fire" />
-			<stat inline="true" name="draconic-ancestry:breath" value="15 ft. cone (Dex. save)" />
-		</rules>
 	</element>
-
-	<element name="Draconic Ancestry (Green)" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_DRACONIC_ANCESTRY_GREEN">
+	<element name="Red" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_DRAGONBORN_DRACONIC_ANCESTRY_RED">
 		<supports>VRPG Draconic Ancestry</supports>
+		<compendium display="false" />
 		<description>
-			<div element="ID_MS_VRPG_RACIAL_TRAIT_DRACONIC_ANCESTRY" />
+			<p>Your lineage stems from a Red Dragon. You have resistance to Fire damage, and your Breath Weapon uses Fire as its damage type.</p>
 		</description>
-		<sheet alt="Green">
-			<description>Your Draconic Ancestry is {{draconic-ancestry}}. Your damage type is {{draconic-ancestry:damage type}}. Your breath weapon is {{draconic-ancestry:breath}}.</description>
+		<sheet alt="Draconic Ancestry">
+			<description>Your lineage stems from a Red Dragon. Your Draconic Ancestry damage type is Fire.</description>
 		</sheet>
-		<rules>
-			<stat inline="true" name="draconic-ancestry" value="Green"/>
-			<stat inline="true" name="draconic-ancestry:damage type" value="Poison" />
-			<stat inline="true" name="draconic-ancestry:breath" value="15 ft. cone (Con. save)" />
-		</rules>
 	</element>
-
-	<element name="Draconic Ancestry (Red)" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_DRACONIC_ANCESTRY_RED">
+	<element name="Silver" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_DRAGONBORN_DRACONIC_ANCESTRY_SILVER">
 		<supports>VRPG Draconic Ancestry</supports>
+		<compendium display="false" />
 		<description>
-			<div element="ID_MS_VRPG_RACIAL_TRAIT_DRACONIC_ANCESTRY" />
+			<p>Your lineage stems from a Silver Dragon. You have resistance to Cold damage, and your Breath Weapon uses Cold as its damage type.</p>
 		</description>
-		<sheet alt="Red">
-			<description>Your Draconic Ancestry is {{draconic-ancestry}}. Your damage type is {{draconic-ancestry:damage type}}. Your breath weapon is {{draconic-ancestry:breath}}.</description>
+		<sheet alt="Draconic Ancestry">
+			<description>Your lineage stems from a Silver Dragon. Your Draconic Ancestry damage type is Cold.</description>
 		</sheet>
-		<rules>
-			<stat inline="true" name="draconic-ancestry" value="Red"/>
-			<stat inline="true" name="draconic-ancestry:damage type" value="Fire" />
-			<stat inline="true" name="draconic-ancestry:breath" value="15 ft. cone (Dex. save)" />
-		</rules>
 	</element>
-
-	<element name="Draconic Ancestry (Silver)" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_DRACONIC_ANCESTRY_SILVER">
+	<element name="White" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_DRAGONBORN_DRACONIC_ANCESTRY_WHITE">
 		<supports>VRPG Draconic Ancestry</supports>
+		<compendium display="false" />
 		<description>
-			<div element="ID_MS_VRPG_RACIAL_TRAIT_DRACONIC_ANCESTRY" />
+			<p>Your lineage stems from a White Dragon. You have resistance to Cold damage, and your Breath Weapon uses Cold as its damage type.</p>
 		</description>
-		<sheet alt="Silver">
-			<description>Your Draconic Ancestry is {{draconic-ancestry}}. Your damage type is {{draconic-ancestry:damage type}}. Your breath weapon is {{draconic-ancestry:breath}}.</description>
+		<sheet alt="Draconic Ancestry">
+			<description>Your lineage stems from a White Dragon. Your Draconic Ancestry damage type is Cold.</description>
 		</sheet>
-		<rules>
-			<stat inline="true" name="draconic-ancestry" value="Silver"/>
-			<stat inline="true" name="draconic-ancestry:damage type" value="Cold" />
-			<stat inline="true" name="draconic-ancestry:breath" value="15 ft. cone (Con. save)" />
-		</rules>
-	</element>
-
-	<element name="Draconic Ancestry (White)" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_DRACONIC_ANCESTRY_WHITE">
-		<supports>VRPG Draconic Ancestry</supports>
-		<description>
-			<div element="ID_MS_VRPG_RACIAL_TRAIT_DRACONIC_ANCESTRY" />
-		</description>
-		<sheet alt="White">
-			<description>Your Draconic Ancestry is {{draconic-ancestry}}. Your damage type is {{draconic-ancestry:damage type}}. Your breath weapon is {{draconic-ancestry:breath}}.</description>
-		</sheet>
-		<rules>
-			<stat inline="true" name="draconic-ancestry" value="White"/>
-			<stat inline="true" name="draconic-ancestry:damage type" value="Cold" />
-			<stat inline="true" name="draconic-ancestry:breath" value="15 ft. cone (Con. save)" />
-		</rules>
 	</element>
 
 </elements>
