@@ -9,7 +9,7 @@
 		</update>
 	</info>
 
- <!-- Eldritch Invocations -->
+ <!-- Eldritch Invocations, Not active for now
 
 	<element name="Agonizing Blast" type="Class Feature" source="Player’s Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_AGONIZING_BLAST">
 		<supports>Eldritch Invocation</supports>
@@ -29,6 +29,6 @@
 		<rules>
 			<stat name="agonizing blast:count" value="1" />
 		</rules>
-	</element>
+	</element> -->
 
 </elements>
