@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Rune Carver</name>
+		<update version="1.0.0">
+			<file name="fighter-rune-carver.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/fighter-rune-carver.xml" />
+		</update>
+	</info>
+	
+ <!-- Subclass description -->
+    
+	<element name="Unyielding One" type="Archetype" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FIGHTER_UNYIELDING_ONE">
+		<supports>Martial Archetype</supports>
+		<description>
+			<p>When he left his side of allies and go face to face with enemy, he said one thing to the them. I like it when my bite marks cut through my skin.
+            "Your enemies most vulnerable time is when they hit YOU." - Krazgral 'Thousand Scarred King'</p>
+			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_UNYIELDING_ONE_DONT_FEEL_ANYTHING" />
+			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_UNYIELDING_ONE_GUARD_BREAKER" />
+			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_UNYIELDING_ONE_IM_STILL_HERE" />
+            <div element="ID_MS_VRPG_ARCHETYPE_FEATURE_UNYIELDING_ONE_PAYBACK" />
+			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_UNYIELDING_ONE_REACTIVE" />
+		</description>
+		<sheet display="false">
+			<description>A seeker of magical power within ancient languages, and to hasten the speed of their blade and strengthen of their armor by imbuing them with the power of these runes.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_UNYIELDING_ONE_DONT_FEEL_ANYTHING" level="3" />
+			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_UNYIELDING_ONE_GUARD_BREAKER" level="7" />
+			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_UNYIELDING_ONE_IM_STILL_HERE" level="10" />
+            <grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_UNYIELDING_ONE_PAYBACK" level="15" />
+			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_UNYIELDING_ONE_REACTIVE" level="18" />
+		</rules>
+	</element>
+
+  <!-- Don't Feel Anything -->
+
+	<element name="Don't Feel Anything" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_UNYIELDING_ONE_DONT_FEEL_ANYTHING">
+		<description>
+			<p>When you take damage, you can choose to gain resistance to that damage type until end of combat. You can use this feature twice per long rest and this resistance is not applied for the triggering damage. After reaching level 10 you can use this feature thrice and at level 20 you can use this feature four times.</p>
+		</description>
+		<sheet usage="{{dont feel anything:use}} / Per Combat">
+			<p>When you take damage, you can choose to gain resistance to that damage type until end of combat</p>
+		</sheet>
+        <rules>
+        <stat name="dont feel anything:use" value="2"/>
+        <stat name="dont feel anything:use" value="1" level="10"/>
+        <stat name="dont feel anything:use" value="1" level="20"/>
+        </rules>
+	</element>
+
+  <!-- Guard Breaker -->
+
+	<element name="Guard Breaker" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_UNYIELDING_ONE_GUARD_BREAKER">
+		<description>
+			<p>Your attacks remove some armor from target, for an attack you make your target suffers -1 penalty to their AC. This feature can be used once per turn. If there is no physical armor that you can remove, you cannot use this feature. This effect stacks and lasts until the end of combat or the target uses its action to wear that armor you removed.</p>
+		</description>
+		<sheet usage="1 / Per Turn">
+			<p>When you attack, your target suffer -1 penalty to their AC. If there is no physical armor that you can remove, you cannot use this feature. This effect can stack.</p>
+		</sheet>
+	</element>
+
+  <!-- I'm Still Here -->
+
+	<element name="I'm Still Here" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_UNYIELDING_ONE_IM_STILL_HERE">
+		<description>
+			<p>When a creature within 5 feet of you attacks someone other than you, you can use your reaction to take the damage by simply putting your self in front of the attack. Or if this is a spell that forces you and others to roll a saving throw, you can use this feature to grant your allies advantage on that saving throw with this reaction by giving yourself disadvantage.</p>
+		</description>
+		<sheet usage="Reaction">
+			<p>When a creature within 5 feet of you attacks someone other than you, you can use your reaction to take the damage. If this is a spell that forces you and others to roll a saving throw, you can grant your allies advantage on that saving throw with this reaction by giving yourself disadvantage.</p>
+		</sheet>
+	</element>
+
+  <!-- Payback -->
+
+	<element name="Payback" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_UNYIELDING_ONE_PAYBACK">
+		<description>
+			<p>Whenever a creature within 5 feet of you hits you with an attack or spell, you can use reaction to make one attack against them. If you use your I'm Still Here feature, you can make this one attack within the same reaction.</p>
+		</description>
+		<sheet usage="Reaction">
+			<p>Whenever a creature within 5 feet of you hits you with an attack or spell, you can use reaction to make one attack against them. If you use your I'm Still Here feature, you can make this one attack within the same reaction.</p>
+		</sheet>
+	</element>
+
+  <!-- Reactive -->
+
+	<element name="Reactive" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_UNYIELDING_ONE_REACTIVE">
+		<description>
+			<p>You can use 2 reactions.</p>
+		</description>
+		<sheet>
+			<p>You can use 2 reactions.</p>
+		</sheet>
+	</element>
+
+</elements>
