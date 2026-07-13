@@ -12,6 +12,8 @@
 	 <!-- Quality of Life -->
 
 	    <file name="quality-of-life-changes-and-additions.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/quality-of-life-changes-and-additions.xml" />
+		<file name="warlock-pact-boons.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/warlock-pact-boons.xml" />
+		<file name="companions.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/companions.xml" />
 
 	 <!-- Classes -->
 

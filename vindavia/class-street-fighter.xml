@@ -259,8 +259,8 @@
 			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_BLOOD_STAINS"/>
 			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_BEAST_WITHIN"/>
 			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_MARK_OF_VIOLENCE"/>
-			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_TRICKSHOT"/>
-			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_PIERCING_SHOT" />
+			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_I_FEEL_NO_PAIN"/>
+			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_PLEASURE_OF_KILLING" />
             <div element="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_OVERWATCH" />
 		</description>
         <sheet display="false">
@@ -271,8 +271,8 @@
 			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_BEAST_WITHIN" level="3"/>
 			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_MARK_OF_VIOLENCE" level="3"/>      
 			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_CRUSH_THE_COWARD" level="6"/>
-			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_TRICKSHOT" level="10"/>
-			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_PIERCING_SHOT" level="15"/>
+			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_I_FEEL_NO_PAIN" level="10"/>
+			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_PLEASURE_OF_KILLING" level="15"/>
             <grant type="Archetype Feature" id="ID_MS_VRPG_CLASS_FEATURE_GUNSLINGER_OVERWATCH" level="18"/>
 		</rules>
     </element>
@@ -331,6 +331,28 @@
 		</sheet>
 	</element>
 
+<!--Fighting Style, Beast, I Feel No Pain!-->
+
+	<element name="I Feel No Pain!" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_I_FEEL_NO_PAIN">
+		<description>
+			<p>You gain resistance to bludgeoning, piercing, and slashing damage when you are below half of your hit points. Additionally, when you take damage, as a reaction you can reduce the damage by your Constitution Modifier level. You can use this feature a number of times equal to your proficiency bonus, regaining expended uses when you finish a long rest.</p>
+		</description>
+		<sheet>
+			<description action="Reaction" usage="{{proficiency}} / Long Rest">You gain resistance to bludgeoning, piercing, and slashing damage when you are below half of your hit points. Additionally, when you take damage, as a reaction you can reduce the damage by {{constitution:modifier}}.</description>
+		</sheet>
+	</element>
+
+<!--Fighting Style, Beast, Pleasure of Killing-->
+
+	<element name="Pleasure of Killing" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_PLEASURE_OF_KILLING">
+		<description>
+			<p>When you kill a creature regain hit points equal Constitution modifier and gain threat points equal to your Strength modifier.</p>
+		</description>
+		<sheet>
+			<description>When you kill a creature regain hit points equal {{constitution:modifier}} and gain threat points equal to your {{strength:modifier}}.</description>
+		</sheet>
+	</element>
+
 <!--Threats-->
 
     <element name="Skull Splitter" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_BEAST_ARCHETYPE_FEATURE_THREAT_SKULL_SPLITTER">
@@ -338,7 +360,7 @@
         <prerequisite>Beast Fighting Style</prerequisite>
 		<requirements>ID_MS_VRPG_ARCHETYPE_BEAST</requirements>
 		<description>
-			<p>When you hit a creature with an unarmed strike, you can spend 2 Threat Points to force the creature to make a Constitution saving throw (DC = 8 + your proficiency bonus + your Constitution modifier). On a failure, the creature has a disadvantage on Intelligence, Wisdom, or Charisma () saving throws for 1 minute. They can repeat the saving throw at the start of each of their turns.</p>
+			<p>When you hit a creature with an unarmed strike, you can spend 2 Threat Points to force the creature to make a Constitution saving throw (DC = 8 + your proficiency bonus + your Constitution modifier). On a failure, the creature has a disadvantage on Intelligence, Wisdom, or Charisma saving throws for 1 minute. They can repeat the saving throw at the start of each of their turns.</p>
 		</description>
 		<sheet>
 			<description>When you hit a creature with an unarmed strike, you can spend 2 Threat Points to force the creature to make a DC {{threat moves:dc}} Constitution saving throw. On a failure, the creature has a disadvantage on Intelligence, Wisdom, or Charisma saving throws for 1 minute. They can repeat the saving throw at the start of each of their turns.</description>

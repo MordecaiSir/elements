@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Eldritch Invocations</name>
+		<description>Eldritch Invocations for the Warlock Class from the Player’s Handbook 2024. </description>
+		<author url="https://dndstore.wizards.com/us/en/product/1001494/2024-player-s-handbook-digital-plus-physical-bundle">Wizards of the Coast</author>
+		<update version="0.0.1">
+			<file name="eldritch-invocations.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook-2024/classes/eldritch-invocations.xml" />
+		</update>
+	</info>
+
+ <!-- Eldritch Invocations -->
+
+	<element name="Agonizing Blast" type="Class Feature" source="Player’s Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_AGONIZING_BLAST">
+		<supports>Eldritch Invocation</supports>
+		<requirements>[level:warlock:2],!ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_AGONIZING_BLAST</requirements>
+		<prerequisite>Level 2+ Warlock, a Warlock Cantrip That Deals Damage</prerequisite>
+		<description>
+			<p><em>Prerequisite: Level 2+ Warlock, a Warlock Cantrip That Deals Damage</em></p>
+			<p>Choose one of your known Warlock cantrips that deals damage. You can add your Charisma modifier to that spell’s damage rolls.</p>
+			<p class="indent"><em><strong>Repeatable.</strong></em> You can gain this invocation more than once. Each time you do so, choose a different eligible cantrip.</p>
+		</description>
+		<setters>
+			<set name="allow duplicate">true</set>
+		</setters>
+		<sheet>
+			<description>{{agonizing blast:count}} of your cantrips, chosen when you gain this Invocation, gain +{{charisma:modifier}} bonus to damage.</description>
+		</sheet>
+		<rules>
+			<stat name="agonizing blast:count" value="1" />
+		</rules>
+	</element>
+
+</elements>

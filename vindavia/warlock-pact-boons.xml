@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Warlock Pact Boons</name>
+        <update version="0.0.1">
+            <file name="warlock-pact-boons.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/warlock-pact-boons.xml" />
+        </update>
+    </info>
+    
+  <!-- Pact of the Staff -->
+
+    <element name="Pact of the Staff" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_WARLOCK_PACT_BOONS_PACT_OF_THE_STAFF">
+        <supports>Pact Boon</supports>
+        <description>
+            <p>This Staff counts as an arcane focus. When you get 4th level on warlock, you also choose two spells from any spell list of a level you have warlock spell slots for. You can cast one of the chosen spells for free and other one using your warlock spell slots. Once you cast a spell in this way, you can’t cast it again until your next long rest. You can change this spells if you get new level of spell slots or you gain a new level on warlock.</p>
+            <p class="indent">Also, the Staff gives you an alternative way to cast spells at a higher level. Whenever you would cast a spell using a warlock spell slot of a higher level than the spell, you can choose to gain 5 temporary hit points for each slot level above the spell’s base level. This is decreased to 3 temporary hit points per level if the spell has a casting time of 1 bonus action or 1 reaction. These temporary hit points last for up to 1 hour. If the spell benefits from being cast at a higher level, you can choose to gain the temporary hit points, gain the spell’s regular benefits or gain a combination of the two choices.</p>
+            <p class="indent">For example, if you are a 9th level warlock and cast shatter using one of your 5th level warlock spell slots, you can choose to gain 15 temporary hit points and have the spell deal 3d8 damage. You can also choose to gain no temporary hit points and have the spell deal 6d8 damage, or gain 5 or 10 temporary hit points and have the spell deal 5d8 or 4d8 damage, respectively.</p>
+        </description>
+        <sheet>
+            <description>This Staff counts as an arcane focus. You can cast one of the given spells by this Staff for free and other one using your warlock spell slots. Whenever you would cast a spell using a warlock spell slot of a higher level than the spell, you can choose to gain 5 temporary hit points for each slot level above the spell’s base level. This is decreased to 3 temporary hit points per level if the spell has a casting time of 1 bonus action or 1 reaction. These temporary hit points last for up to 1 hour. If the spell benefits from being cast at a higher level, you can choose to gain the temporary hit points, gain the spell’s regular benefits or gain a combination of the two choices.</description>
+        </sheet>
+        <rules>
+			<select type="Spell" name="Spellcasting (Pact of the Staff)" supports="$(spellcasting:slots)" number="2" level="0" spellcasting="Warlock"/>
+		</rules>
+    </element>
+
+  <!-- Not Active For Now
+  
+Pact of the Tome
+
+    <element name="Pact of the Tome" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_WARLOCK_PACT_BOONS_PACT_OF_THE_TOME">
+		<supports>Pact Boon</supports>
+		<description>
+			<p>Stitching together strands of shadow, you conjure forth a book in your hand at the end of a Short or Long Rest. This <i>Book of Shadows</i> (you determine its appearance) contains eldritch magic that only you can access, granting you the benefits below. The book disappears if you conjure another book with this feature or if you die.</p>
+			<p class="indent"><em><strong>Cantrips and Rituals.</strong></em> When the book appears, choose three cantrips, and choose two level 1 spells that have the Ritual tag. The spells can be from any class’s spell list, and they must be spells you don’t already have prepared. While the book is on your person, you have the chosen spells prepared, and they function as Warlock spells for you.</p>
+			<p class="indent"><em><strong>Spellcasting Focus.</strong></em> You can use the book as a Spellcasting Focus.</p>
+		</description>
+		<sheet>
+			<description>You conjure a Book of Shadows in your hand at the end of a Short or Long Rest. You can use it as your Spellcasting Focus, only you can access it, and it disappears if you conjure another book with this feature or if you die.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Cantrip (Pact of the Tome)" supports="0" number="2" spellcasting="Warlock" />
+			<select type="Spell" name="Rituals (Pact of the Tome)" supports="1,Ritual" number="1" spellcasting="Warlock" allowReplace="false"/>
+		</rules>
+	</element>
+
+Pact of the Blade 
+
+    <element name="Pact of the Blade" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_WARLOCK_PACT_BOONS_PACT_OF_THE_BLADE">
+		<supports>Pact Boon</supports>
+		<description>
+			<p>As a Bonus Action, you can conjure a pact weapon in your hand—a Simple or Martial Melee weapon of your choice with which you bond—or create a bond with a magic weapon you touch; you can’t bond with a magic weapon if someone else is attuned to it or another Warlock is bonded with it. Until the bond ends, you have proficiency with the weapon, and you can use it as a Spellcasting Focus.</p>
+			<p class="indent">Whenever you attack with the bonded weapon, you can use your Charisma modifier for the attack and damage rolls instead of using Strength or Dexterity; and you can cause the weapon to deal Necrotic, Psychic, or Radiant damage or its normal damage type.</p>
+			<p class="indent">Your bond with the weapon ends if you use this feature’s Bonus Action again, if the weapon is more than 5 feet away from you for 1 minute or more, or if you die. A conjured weapon disappears when the bond ends.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can conjure a pact weapon in your hand—a Simple or Martial Melee weapon of your choice with which you bond—or create a bond with a magic weapon you touch. Until the bond ends, you have proficiency with the weapon, and you can use it as a Spellcasting Focus. &#13;
+			You can use your Charisma modifier for the attack and damage rolls with the bonded weapon; and you can cause the weapon to deal Necrotic, Psychic, or Radiant damage or its normal damage type. &#13;
+			Your bond with the weapon ends if you use this feature’s Bonus Action again, if the weapon is more than 5 feet away from you for 1 minute or more, or if you die. A conjured weapon disappears when the bond ends.</description>
+		</sheet>
+	</element>
+
+Pact of the Chain	
+
+	<element name="Pact of the Chain" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_WARLOCK_PACT_BOONS_PACT_OF_THE_CHAIN">
+		<supports>Pact Boon</supports>
+		<description>
+			<p>You learn the <i>Find Familiar</i> spell and can cast it as a Magic action without expending a spell slot.</p>
+			<p class="indent">When you cast the spell, you choose one of the normal forms for your familiar or one of the following special forms: <b>Imp</b>, <b>Pseudodragon</b>, <b>Quasit</b>, <b>Skeleton</b>, <b>Slaad Tadpole</b>, <b>Sphinx of Wonder</b>, <b>Sprite</b>, or <b>Venomous Snake</b> (see appendix B for the familiar’s stat block).</p>
+			<p class="indent">Additionally, when you take the Attack action, you can forgo one of your own attacks to allow your familiar to make one attack of its own with its Reaction.</p>
+			<div class="reference">
+				<div element="ID_PHB_SPELL_FIND_FAMILIAR" />
+			</div>
+		</description>
+		<sheet>
+			<description>You can cast the Find Familiar spell without expending a spell slot. &#13;
+			Additionally, you can forgo one of your own attacks to allow your familiar to make one attack of its own with its Reaction.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_FIND_FAMILIAR" />
+			<select type="Companion" name="Pact of the Chain Familiar" supports="Familiar||Variant Familiar||Beast,0" />
+		</rules>
+	</element>  -->
+
+</elements>
