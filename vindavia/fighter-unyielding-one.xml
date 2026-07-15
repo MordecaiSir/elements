@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Rune Carver</name>
-		<update version="1.0.0">
+		<update version="1.0.1">
 			<file name="fighter-rune-carver.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/fighter-rune-carver.xml" />
 		</update>
 	</info>
@@ -12,7 +12,9 @@
 	<element name="Unyielding One" type="Archetype" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FIGHTER_UNYIELDING_ONE">
 		<supports>Martial Archetype</supports>
 		<description>
-			<p>When he left his side of allies and go face to face with enemy, he said one thing to the them. I like it when my bite marks cut through my skin.
+			<p>Renowned for unwavering loyalty, unmatched courage, and an unbreakable will to protect, you stand as the shield of all who deserve defending. You do not fear wounds—you embrace them. Every scar etched upon your body is proof of a life spared through your sacrifice. Pain is not your burden, but your purpose. You wear every wound with pride, for each one is a testament to your resolve.
+			
+			When he left his side of allies and go face to face with enemy, he said one thing to the them. I like it when my bite marks cut through my skin.
             "Your enemies most vulnerable time is when they hit YOU." - Krazgral 'Thousand Scarred King'</p>
 			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_UNYIELDING_ONE_DONT_FEEL_ANYTHING" />
 			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_UNYIELDING_ONE_GUARD_BREAKER" />
