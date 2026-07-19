@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Dragonborn</name>
-		<update version="0.1.1">
+		<update version="0.1.2">
 			<file name="race-custom-lineage.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/race-custom-lineage.xml" />
 		</update>
 	</info>
@@ -24,10 +24,10 @@
 		<sheet display="false" />
 		<rules>
 			<select type="Racial Trait" name="Size" supports="Custom Race Size" />
-            <select type="Racial Trait" name="Variable Trait" supports="Custom Race Variable Trait" />
-            <select type="Racial Trait" name="Racial Feature" supports="Custom Race Optional Feature" optional="true" />
+            <select type="Racial Trait" name="Variable Trait" supports="Custom Race Variable Trait" number="2" />
+			<select type="Racial Trait" name="Sight" supports="Custom Race Sight" optional="true"/>
+            <select type="Racial Trait" name="Racial Feature" supports="Custom Race Optional Feature" optional="true" number="3"/>
 			<select type="Ability Score Improvement" name="Ability Score Improvement +2 (Custom Lineage)" supports="Custom Race ASI" />
-			<select type="Feat" name="Feat (Custom Lineage)" />
 			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_MS_VRPG_OPTION_CUSTOMIZED_LANGUAGE" />
 			<select type="Language" name="Customized Language" supports="Custom Race Language" requirements="ID_MS_VRPG_OPTION_CUSTOMIZED_LANGUAGE" />
 			<select type="Language" name="Language (Custom Lineage)" supports="Standard||Exotic" />
@@ -78,17 +78,17 @@
     <element name="Large" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_LARGE">
 		<supports> Custom Race Size </supports>
 		<description>
-			<p>Your size is Large and your walking speed is 30 feet.</p>
+			<p>Your size is Large and your walking speed is 35 feet.</p>
 		</description>
 		<sheet display="false" />
 		<compendium display="false" />
 		<rules>
 			<grant type="Size" id="ID_SIZE_LARGE" />
-            <stat name="innate speed" value="30" bonus="base" />
+            <stat name="innate speed" value="35" bonus="base" />
 		</rules>
 	</element>
 
-	<!-- Variable Trait -->
+	<!-- Variable Trait --> 
 
 	<element name="Skill Proficiency" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_SKILL_PROFICIENCY">
 		<supports> Custom Race Variable Trait </supports>
@@ -98,14 +98,62 @@
 		<sheet display="false" />
 		<compendium display="false" />
 		<rules>
-			<select type="Proficiency" name="Skill (Custom Lineage)" supports="Skill" />
+			<select type="Proficiency" name="Skill (Custom Lineage)" supports="Skill" number="2"/>
+		</rules>
+	</element>
+
+	<element name="Feat" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_FEAT">
+		<supports> Custom Race Variable Trait </supports>
+		<description>
+			<p>You gain one feat of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<compendium display="false" />
+		<rules>
+			<select type="Feat" name="Feat (Custom Lineage)" />
+		</rules>
+	</element>
+
+	<element name="Resistance" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_RESISTANCE">
+		<supports> Custom Race Variable Trait </supports>
+		<description>
+			<p>You gain one damage resistance of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<compendium display="false" />
+		<rules>
+			<select type="Racial Trait" name="Damage Resistance Selection" supports="Damage Resistance Selection"/>
 		</rules>
 	</element>
 
 	<element name="Darkvision" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_DARKVISION">
-		<supports> Custom Race Variable Trait </supports>
+		<supports> Custom Race Sight </supports>
 		<description>
-			<p>Darkvision with a range of 60 feet.</p>
+			<p>Choose the Darkvision range between 15, 30 and 60 feet.</p>
+		</description>
+		<sheet display="false" />
+		<compendium display="false" />
+		<rules>
+			<select type="Racial Trait" name="Darkvision Range" supports="Custom Race Darkvision Range" />
+		</rules>
+	</element>
+
+	<element name="Lesser Darkvision" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_DARKVISION_RANGE_ONE">
+		<supports> Custom Race Darkvision Range </supports>
+		<description>
+			<p>Darkvision with a range of 15 feet.</p>
+		</description>
+		<sheet display="false" />
+		<compendium display="false" />
+		<rules>
+			<grant type="Vision" id="ID_VISION_LESSER_DARKVISION" />
+		</rules>
+	</element>
+
+	<element name="Normal Darkvision." type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_DARKVISION_RANGE_TWO">
+		<supports> Custom Race Darkvision Range </supports>
+		<description>
+			<p>Darkvision with a range of 30 feet.</p>
 		</description>
 		<sheet display="false" />
 		<compendium display="false" />
@@ -114,16 +162,111 @@
 		</rules>
 	</element>
 
+	<element name="Superior Darkvision" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_DARKVISION_RANGE_THREE">
+		<supports> Custom Race Darkvision Range </supports>
+		<description>
+			<p>Darkvision with a range of 60 feet.</p>
+		</description>
+		<sheet display="false" />
+		<compendium display="false" />
+		<rules>
+			<grant type="Vision" id="ID_VISION_SUPERIORDARKVISION" />
+		</rules>
+	</element>
+
+	<element name="Tremorsense" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_TREMORSENSE">
+		<supports> Custom Race Sight </supports>
+		<description>
+			<p>Choose the Tremorsense range between 30, 60 and 90 feet.</p>
+		</description>
+		<sheet display="false" />
+		<compendium display="false" />
+		<rules>
+			<select type="Racial Trait" name="Tremorsense Range" supports="Custom Race Tremorsense Range" />
+		</rules>
+	</element>
+
+	<element name="Lesser Tremorsense" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_TREMORSENSE_RANGE_ONE">
+		<supports> Custom Race Tremorsense Range </supports>
+		<description>
+			<p>Tremorsense with a range of 30 feet.</p>
+		</description>
+		<sheet display="false" />
+		<compendium display="false" />
+		<rules>
+			<grant type="Vision" id="ID_VISION_LESSER_TREMORSENSE" />
+		</rules>
+	</element>
+
+	<element name="Normal Tremorsense" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_TREMORSENSE_RANGE_TWO">
+		<supports> Custom Race Tremorsense Range </supports>
+		<description>
+			<p>Tremorsense with a range of 60 feet.</p>
+		</description>
+		<sheet display="false" />
+		<compendium display="false" />
+		<rules>
+			<grant type="Vision" id="ID_VISION_TREMORSENSE" />
+		</rules>
+	</element>
+
+	<element name="Superior Tremorsense" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_TREMORSENSE_RANGE_THREE">
+		<supports> Custom Race Tremorsense Range </supports>
+		<description>
+			<p>Tremorsense with a range of 90 feet.</p>
+		</description>
+		<sheet display="false" />
+		<compendium display="false" />
+		<rules>
+			<grant type="Vision" id="ID_VISION_SUPERIOR_TREMORSENSE" />
+		</rules>
+	</element>
+
     <!-- Optional Feature -->
 
     <element name="Wings" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_CUSTOM_RACE_OPTIONAL_FEATURE_WINGS">
 		<supports>Custom Race Optional Feature</supports>
 		<description>
-			With your wings, you have a flying speed of 30 feet if you aren’t wearing heavy armor and aren’t exceeding your carrying capacity.
+			With your wings, you have a flying speed equal to your walking speed if you aren’t wearing heavy armor and aren’t exceeding your carrying capacity.
 		</description>
 		<sheet display="false" />
 		<rules>
-			<stat name="innate speed:fly" value="30" bonus="base" />
+			<stat name="innate speed:fly" value="innate speed" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Swimming" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_CUSTOM_RACE_OPTIONAL_FEATURE_SWIM">
+		<supports>Custom Race Optional Feature</supports>
+		<description>
+			You have a swimming speed equal to your walking speed if you aren’t wearing heavy armor and aren’t exceeding your carrying capacity.
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="innate speed:swim" value="innate speed" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Climbing" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_CUSTOM_RACE_OPTIONAL_FEATURE_CLIMB">
+		<supports>Custom Race Optional Feature</supports>
+		<description>
+			You have a climbing speed equal to your walking speed if you aren’t wearing heavy armor and aren’t exceeding your carrying capacity.
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="innate speed:climb" value="innate speed" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Gills" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_CUSTOM_RACE_OPTIONAL_FEATURE_GILLS">
+		<supports>Custom Race Optional Feature</supports>
+		<description>
+			You can breathe underwater normally.
+		</description>
+		<sheet>
+			<p>You can breathe underwater normally.</p>
+		</sheet>
+		<rules>
+			<stat name="innate speed:climb" value="30" bonus="base" />
 		</rules>
 	</element>
 
@@ -200,5 +343,163 @@
             <stat name="charisma" value="2" alt="Custom Lineage" />
         </rules>
     </element>
+
+    <!-- Damage Resistance Selection -->
+
+	<element name="Acid" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_ACID_RESISTANCE">
+		<supports> Damage Resistance Selection </supports>
+		<description>
+			<p>You gain resistance to Acid damage.</p>
+		</description>
+		<sheet display="false" />
+		<compendium display="false" />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" />
+		</rules>
+	</element>
+
+	<element name="Cold" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_COLD_RESISTANCE">
+		<supports> Damage Resistance Selection </supports>
+		<description>
+			<p>You gain resistance to Cold damage.</p>
+		</description>
+		<sheet display="false" />
+		<compendium display="false" />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+		</rules>
+	</element>
+
+	<element name="Fire" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_FIRE_RESISTANCE">
+		<supports> Damage Resistance Selection </supports>
+		<description>
+			<p>You gain resistance to Fire damage.</p>
+		</description>
+		<sheet display="false" />
+		<compendium display="false" />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+		</rules>
+	</element>
+
+	<element name="Force" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_FORCE_RESISTANCE">
+		<supports> Damage Resistance Selection </supports>
+		<description>
+			<p>You gain resistance to Force damage.</p>
+		</description>
+		<sheet display="false" />
+		<compendium display="false" />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FORCE" />
+		</rules>
+	</element>
+
+	<element name="Lightning" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_LIGHTNING_RESISTANCE">
+		<supports> Damage Resistance Selection </supports>
+		<description>
+			<p>You gain resistance to Lightning damage.</p>
+		</description>
+		<sheet display="false" />
+		<compendium display="false" />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" />
+		</rules>
+	</element>
+
+	<element name="Necrotic" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_NECROTIC_RESISTANCE">
+		<supports> Damage Resistance Selection </supports>
+		<description>
+			<p>You gain resistance to Necrotic damage.</p>
+		</description>
+		<sheet display="false" />
+		<compendium display="false" />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+		</rules>
+	</element>
+
+	<element name="Poison" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_POISON_RESISTANCE">
+		<supports> Damage Resistance Selection </supports>
+		<description>
+			<p>You gain resistance to Poison damage.</p>
+		</description>
+		<sheet display="false" />
+		<compendium display="false" />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+		</rules>
+	</element>
+
+	<element name="Psychic" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_PSYCHIC_RESISTANCE">
+		<supports> Damage Resistance Selection </supports>
+		<description>
+			<p>You gain resistance to Psychic damage.</p>
+		</description>
+		<sheet display="false" />
+		<compendium display="false" />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PSYCHIC" />
+		</rules>
+	</element>
+
+	<element name="Radiant" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_RADIANT_RESISTANCE">
+		<supports> Damage Resistance Selection </supports>
+		<description>
+			<p>You gain resistance to Radiant damage.</p>
+		</description>
+		<sheet display="false" />
+		<compendium display="false" />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" />
+		</rules>
+	</element>
+
+	<element name="Thunder" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_THUNDER_RESISTANCE">
+		<supports> Damage Resistance Selection </supports>
+		<description>
+			<p>You gain resistance to Thunder damage.</p>
+		</description>
+		<sheet display="false" />
+		<compendium display="false" />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_THUNDER" />
+		</rules>
+	</element>
+
+	<element name="Bludgeoning" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_BLUDGEONING_RESISTANCE">
+		<supports> Damage Resistance Selection </supports>
+		<description>
+			<p>You gain resistance to Bludgeoning damage.</p>
+		</description>
+		<sheet display="false" />
+		<compendium display="false" />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_BLUDGEONING" />
+		</rules>
+	</element>
+
+	<element name="Piercing" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_PIERCING_RESISTANCE">
+		<supports> Damage Resistance Selection </supports>
+		<description>
+			<p>You gain resistance to Piercing damage.</p>
+		</description>
+		<sheet display="false" />
+		<compendium display="false" />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PIERCING" />
+		</rules>
+	</element>
+
+	<element name="Slashing" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_SLASHING_RESISTANCE">
+		<supports> Damage Resistance Selection </supports>
+		<description>
+			<p>You gain resistance to Slashing damage.</p>
+		</description>
+		<sheet display="false" />
+		<compendium display="false" />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_SLASHING" />
+		</rules>
+	</element>
 	
 </elements>

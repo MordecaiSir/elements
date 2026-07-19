@@ -3,7 +3,7 @@
 	<info>
 		<name>Quality of Life</name>
 		<description>Elements that should've been part of the app itself</description>
-		<update version="0.1.0">
+		<update version="0.1.1">
 			<file name="internal.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/quality-of-life-changes-and-additions.xml" />
 		</update>
 	</info>
@@ -935,7 +935,7 @@
 		</rules>
 	</element>
 
-	<element name="Darkvision" type="Vision" source="Vindavia RPG" id="ID_VISION_LESSER_DARKVISION">
+	<element name="Lesser Darkvision" type="Vision" source="Vindavia RPG" id="ID_VISION_LESSER_DARKVISION">
 		<requirements>!(ID_VISION_SUPERIORDARKVISION || ID_VISION_DARKVISION)</requirements>
 		<compendium display="false" />
 		<description>
@@ -1087,6 +1087,19 @@
 		</rules>
 	</element>
 
+	<element name="Lesser Tremorsense" type="Vision" source="Vindavia RPG" id="ID_VISION_LESSER_TREMORSENSE">
+		<description>
+			<p>A monster with tremorsense can detect and pinpoint the origin of vibrations within a specific radius, provided that the monster and the source of the vibrations are in contact with the same ground or substance.</p>
+			<p class="indent">Tremorsense can't be used to detect flying or incorporeal creatures. Many burrowing creatures, such as ankhegs, have this special sense.</p>
+		</description>
+		<sheet>
+			<description>You can detect and pinpoint the origin of vibrations within {{tremorsense:range}} feet, provided that the monster and the source of the vibrations are in contact with the same ground or substance. Tremorsense can't be used to detect flying or incorporeal creatures.</description>
+		</sheet>
+		<rules>
+			<stat name="tremorsense:range" value="30" bonus="base" />
+		</rules>
+	</element>
+
 	<element name="Tremorsense" type="Vision" source="Vindavia RPG" id="ID_VISION_TREMORSENSE">
 		<description>
 			<p>A monster with tremorsense can detect and pinpoint the origin of vibrations within a specific radius, provided that the monster and the source of the vibrations are in contact with the same ground or substance.</p>
@@ -1096,7 +1109,20 @@
 			<description>You can detect and pinpoint the origin of vibrations within {{tremorsense:range}} feet, provided that the monster and the source of the vibrations are in contact with the same ground or substance. Tremorsense can't be used to detect flying or incorporeal creatures.</description>
 		</sheet>
 		<rules>
-			<stat name="tremorsense:range" value="0" bonus="base" />
+			<stat name="tremorsense:range" value="60" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Superior Tremorsense" type="Vision" source="Vindavia RPG" id="ID_VISION_SUPERIOR_TREMORSENSE">
+		<description>
+			<p>A monster with tremorsense can detect and pinpoint the origin of vibrations within a specific radius, provided that the monster and the source of the vibrations are in contact with the same ground or substance.</p>
+			<p class="indent">Tremorsense can't be used to detect flying or incorporeal creatures. Many burrowing creatures, such as ankhegs, have this special sense.</p>
+		</description>
+		<sheet>
+			<description>You can detect and pinpoint the origin of vibrations within {{tremorsense:range}} feet, provided that the monster and the source of the vibrations are in contact with the same ground or substance. Tremorsense can't be used to detect flying or incorporeal creatures.</description>
+		</sheet>
+		<rules>
+			<stat name="tremorsense:range" value="90" bonus="base" />
 		</rules>
 	</element>
 
