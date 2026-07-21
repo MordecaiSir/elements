@@ -26,15 +26,13 @@
 			<select type="Racial Trait" name="Size" supports="Custom Race Size" />
             <select type="Racial Trait" name="Variable Trait" supports="Custom Race Variable Trait" number="2" />
 			<select type="Racial Trait" name="Sight" supports="Custom Race Sight" optional="true"/>
-            <select type="Racial Trait" name="Racial Feature" supports="Custom Race Optional Feature" optional="true" number="3"/>
+            <select type="Racial Trait" name="Racial Feature" supports="Custom Race Racial Trait" optional="true" number="3"/>
 			<select type="Ability Score Improvement" name="Ability Score Improvement +2 (Custom Lineage)" supports="Custom Race ASI" />
 			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_MS_VRPG_OPTION_CUSTOMIZED_LANGUAGE" />
-			<select type="Language" name="Customized Language" supports="Custom Race Language" requirements="ID_MS_VRPG_OPTION_CUSTOMIZED_LANGUAGE" />
-			<select type="Language" name="Language (Custom Lineage)" supports="Standard||Exotic" />
 		</rules>
 	</element>
 
-	<!-- Size -->
+   <!-- Size -->
 
     <element name="Tiny" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_TINY">
 		<supports> Custom Race Size </supports>
@@ -88,7 +86,7 @@
 		</rules>
 	</element>
 
-	<!-- Variable Trait --> 
+   <!-- Variable Trait --> 
 
 	<element name="Skill Proficiency" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_SKILL_PROFICIENCY">
 		<supports> Custom Race Variable Trait </supports>
@@ -99,6 +97,18 @@
 		<compendium display="false" />
 		<rules>
 			<select type="Proficiency" name="Skill (Custom Lineage)" supports="Skill" number="2"/>
+		</rules>
+	</element>
+
+	<element name="Extra Language" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_EXTRA_LANGUAGE">
+		<supports> Custom Race Variable Trait </supports>
+		<description>
+			<p>You know extra one language.</p>
+		</description>
+		<sheet display="false" />
+		<compendium display="false" />
+		<rules>
+			<select type="Language" name="Language (Custom Lineage)" supports="Standard||Exotic" />
 		</rules>
 	</element>
 
@@ -125,6 +135,8 @@
 			<select type="Racial Trait" name="Damage Resistance Selection" supports="Damage Resistance Selection"/>
 		</rules>
 	</element>
+
+   <!-- Optional Sight Selection -->
 
 	<element name="Darkvision" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_DARKVISION">
 		<supports> Custom Race Sight </supports>
@@ -222,10 +234,10 @@
 		</rules>
 	</element>
 
-    <!-- Optional Feature -->
+   <!-- Racial Feature -->
 
     <element name="Wings" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_CUSTOM_RACE_OPTIONAL_FEATURE_WINGS">
-		<supports>Custom Race Optional Feature</supports>
+		<supports>Custom Race Racial Trait</supports>
 		<description>
 			With your wings, you have a flying speed equal to your walking speed if you aren’t wearing heavy armor and aren’t exceeding your carrying capacity.
 		</description>
@@ -236,7 +248,7 @@
 	</element>
 
 	<element name="Swimming" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_CUSTOM_RACE_OPTIONAL_FEATURE_SWIM">
-		<supports>Custom Race Optional Feature</supports>
+		<supports>Custom Race Racial Trait</supports>
 		<description>
 			You have a swimming speed equal to your walking speed if you aren’t wearing heavy armor and aren’t exceeding your carrying capacity.
 		</description>
@@ -247,7 +259,7 @@
 	</element>
 
 	<element name="Climbing" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_CUSTOM_RACE_OPTIONAL_FEATURE_CLIMB">
-		<supports>Custom Race Optional Feature</supports>
+		<supports>Custom Race Racial Trait</supports>
 		<description>
 			You have a climbing speed equal to your walking speed if you aren’t wearing heavy armor and aren’t exceeding your carrying capacity.
 		</description>
@@ -258,19 +270,53 @@
 	</element>
 
 	<element name="Gills" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_CUSTOM_RACE_OPTIONAL_FEATURE_GILLS">
-		<supports>Custom Race Optional Feature</supports>
+		<supports>Custom Race Racial Trait</supports>
 		<description>
 			You can breathe underwater normally.
 		</description>
 		<sheet>
 			<p>You can breathe underwater normally.</p>
 		</sheet>
+	</element>
+
+	<element name="Shapechange" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_SHAPECHANGE_OPTIONS">
+		<supports> Custom Race Racial Trait </supports>
+		<description>
+			<p>Choose between Doppelganger and Full Shapechange.</p>
+		</description>
+		<sheet display="false" />
+		<compendium display="false" />
 		<rules>
-			<stat name="innate speed:climb" value="30" bonus="base" />
+			<select type="Racial Trait" name="Shapechange Selection" supports="Custom Race Shapechange Options" />
 		</rules>
 	</element>
 
-    <!-- Ability Score Improvement 2 -->
+	 <element name="Cantrips" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_CUSTOM_RACE_OPTIONAL_FEATURE_CANTRIPS">
+		<supports>Custom Race Racial Trait</supports>
+		<description>You learn two cantrips from any list and choose one ability to counted as spellcasting.</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Racial Trait" name="Spellcasting Selection" supports="Custom Race Spellcasting Options Cantrips" />
+			<select type="Spell" name="Cantrip (Racial Trait)" supports="0" number="2" spellcasting="Custom Race Cantrips"/>
+		</rules>
+	</element>
+
+	<element name="Spell Casting" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_CUSTOM_RACE_OPTIONAL_FEATURE_SPELL_CASTING">
+		<supports>Custom Race Racial Trait</supports>
+		<description>You learn three spells acording to your level. On level one you know one first level spell, on level three you know one second level spell and on level five you know one third level spell. You can cast these spells once per day.</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Racial Trait" name="Spellcasting Selection" supports="Custom Race Spellcasting Options Spells" />
+			<select type="Spell" name="Spellcasting (Racial Trait)" supports="1" number="1" level="1" spellcasting="Custom Race Spells"/>
+			<select type="Spell" name="Spellcasting (Racial Trait)" supports="2" number="1" level="3" spellcasting="Custom Race Spells"/>
+			<select type="Spell" name="Spellcasting (Racial Trait)" supports="3" number="1" level="5" spellcasting="Custom Race Spells"/>
+			<stat name="custom race spells:spellcasting:slots:1" value="1" level="1" />
+			<stat name="custom race spells:spellcasting:slots:2" value="1" level="3" />
+			<stat name="custom race spells:spellcasting:slots:3" value="1" level="5" />
+		</rules>
+	</element>
+
+   <!-- Ability Score Improvement 2 -->
 
     <element name="Strength" type="Ability Score Improvement" source="Vindaiva RPG" id="ID_MS_VRPG_ASI_STRENGTH">
         <compendium display="false" />
@@ -344,7 +390,7 @@
         </rules>
     </element>
 
-    <!-- Damage Resistance Selection -->
+   <!-- Damage Resistance Selection -->
 
 	<element name="Acid" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_ACID_RESISTANCE">
 		<supports> Damage Resistance Selection </supports>
@@ -500,6 +546,80 @@
 		<rules>
 			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_SLASHING" />
 		</rules>
+	</element>
+
+   <!-- Shapechange Selection -->
+
+   	<element name="Partial Shapechange (Doppelganger)" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_SHAPECHANGE_DOPPELGANGER">
+		<supports> Custom Race Shapechange Options </supports>
+		<description>
+			<p>As an action, you change your appearance and your voice. You determine the specifics of the changes, including your coloration and hair length. You can make yourself appear as a member of another race, though none of your game statistics change. You can't duplicate the appearance of an individual you've never seen, and you must adopt a form that has the same basic arrangement of limbs that you have. Your clothing and equipment aren't changed by this trait.</p>
+		</description>
+		<sheet>
+			<p>As an action, you change your appearance and your voice. You determine the specifics of the changes, including your coloration and hair length. You can make yourself appear as a member of another race, though none of your game statistics change. You can't duplicate the appearance of an individual you've never seen, and you must adopt a form that has the same basic arrangement of limbs that you have. Your clothing and equipment aren't changed by this trait.</p>
+		</sheet>
+		<compendium display="false" />
+	</element>
+
+	<element name="Full Shapechange" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_SHAPECHANGE_FULL">
+		<supports> Custom Race Shapechange Options </supports>
+		<description>
+			<p>As an action, you change your appearance and your voice. You determine the specifics of the changes, including your coloration, hair length and sex. You can make yourself appear as a member of another race, though none of your game statistics change. Your clothing and equipment aren't changed by this trait.</p>
+		</description>
+		<sheet>
+			<p>As an action, you change your appearance and your voice. You determine the specifics of the changes, including your coloration, hair length and sex. You can make yourself appear as a member of another race, though none of your game statistics change. Your clothing and equipment aren't changed by this trait.</p>
+		</sheet>
+		<compendium display="false" />
+	</element>
+
+   <!-- Spellcasting Selection -->
+
+	<element name="Intelligence Casting" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_CUSTOM_RACE_OPTIONAL_FEATURE_CANTRIPS_SELECTION_INT_CANTRIP">
+		<supports>Custom Race Spellcasting Options Cantrips</supports>
+		<description>Make your spellcasting ability Intelligence</description>
+		<sheet display="false" />
+		<compendium display="false" />
+		<spellcasting name="Custom Race Cantrips" ability="Intelligence" allowReplace="true"></spellcasting>
+	</element>
+
+	<element name="Wisdom Casting" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_CUSTOM_RACE_OPTIONAL_FEATURE_CANTRIPS_SELECTION_WIS_CANTRIP">
+		<supports>Custom Race Spellcasting Options Cantrips</supports>
+		<description>Make your spellcasting ability Wisdom</description>
+		<sheet display="false" />
+		<compendium display="false" />
+		<spellcasting name="Custom Race Cantrips" ability="Wisdom" allowReplace="true"></spellcasting>
+	</element>
+
+	<element name="Charisma Casting" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_CUSTOM_RACE_OPTIONAL_FEATURE_CANTRIPS_SELECTION_CHA_CANTRIP">
+		<supports>Custom Race Spellcasting Options Cantrips</supports>
+		<description>Make your spellcasting ability Charisma</description>
+		<sheet display="false" />
+		<compendium display="false" />
+		<spellcasting name="Custom Race Cantrips" ability="Charisma" allowReplace="true"></spellcasting>
+	</element>
+
+	<element name="Intelligence Casting" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_CUSTOM_RACE_OPTIONAL_FEATURE_CANTRIPS_SELECTION_INT_SPELLS">
+		<supports>Custom Race Spellcasting Options Spells</supports>
+		<description>Make your spellcasting ability Intelligence</description>
+		<sheet display="false" />
+		<compendium display="false" />
+		<spellcasting name="Custom Race Spells" ability="Intelligence" allowReplace="true"></spellcasting>
+	</element>
+
+	<element name="Wisdom Casting" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_CUSTOM_RACE_OPTIONAL_FEATURE_CANTRIPS_SELECTION_WIS_SPELLS">
+		<supports>Custom Race Spellcasting Options Spells</supports>
+		<description>Make your spellcasting ability Wisdom</description>
+		<sheet display="false" />
+		<compendium display="false" />
+		<spellcasting name="Custom Race Spells" ability="Wisdom" allowReplace="true"></spellcasting>
+	</element>
+
+	<element name="Charisma Casting" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_CUSTOM_RACE_OPTIONAL_FEATURE_CANTRIPS_SELECTION_CHA_SPELLS">
+		<supports>Custom Race Spellcasting Options Spells</supports>
+		<description>Make your spellcasting ability Charisma</description>
+		<sheet display="false" />
+		<compendium display="false" />
+		<spellcasting name="Custom Race Spells" ability="Charisma" allowReplace="true"></spellcasting>
 	</element>
 	
 </elements>

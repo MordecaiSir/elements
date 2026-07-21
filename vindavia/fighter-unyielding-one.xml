@@ -44,7 +44,7 @@
 			<p>When you take damage, you can choose to gain resistance to that damage type until end of combat</p>
 		</sheet>
         <rules>
-        <stat name="dont feel anything:use" value="2"/>
+        <stat name="dont feel anything:use" value="2" bonus="base"/>
         <stat name="dont feel anything:use" value="1" level="10"/>
         <stat name="dont feel anything:use" value="1" level="20"/>
         </rules>
