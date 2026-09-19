@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>The Ancient Scribe</name>
-		<update version="1.0.1">
+		<update version="1.0.2">
 			<file name="warlock-hate.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/warlock-hate.xml" />
 		</update>
 	</info>
@@ -62,7 +62,6 @@
 	</element>
 
    <!-- Wrath Fueled Soul -->
-
 
 	<element name="Wrath-Fueled Soul" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_HATE_WRATH_FUELED_SOUL">
 		<description>

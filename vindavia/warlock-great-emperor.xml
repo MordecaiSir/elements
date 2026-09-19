@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Great Emperor of Tartarus</name>
-		<update version="1.0.3">
+		<update version="1.0.4">
 			<file name="warlock-great-emperor.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/warlock-great-emperor.xml" />
 		</update>
 	</info>
@@ -132,7 +132,7 @@
 
                “The souls of his army do not rest; they await his command in the dark.”</p>
 		</description>
-		<sheet>
+		<sheet usage="Reaction">
           <description>When you take damage, you can use your reaction to summon spectral soldiers that intercept the attack. You reduce the damage taken by 1d8- + your Charisma modifier + half of your Warlock level.
 		  Once per turn when you cast a Warlock spell that targets a creature, you can summon a Spirit Legionnaire in an unoccupied space within 10 feet of that creature. The Legionnaire is a spectral warrior with AC 13 + your Charisma modifier and HP equal to twice your Warlock level.
           The Legionnaire takes the Help action automatically if you don't order to attack a creature on your turn, aiding your next melee weapon attack and giving it an advantage.

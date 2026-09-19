@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>The Ancient Scribe</name>
+		<update version="1.0.0">
+			<file name="warlock-father-of-malevolence.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/warlock-father-of-malevolence.xml" />
+		</update>
+	</info>
+	
+	<!-- Subclass description -->
+
+	<element name="Father of Malevolence" type="Archetype" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_WARLOCK_FATHER_OF_MALEVOLENCE">
+		<supports>Otherworldly Patron</supports>
+		<description>
+			<p>Your patron is not a demon, god, or fey—but MALEVOLENCE incarnate. It simply exists, as the purest reaction to injustice, betrayal, and divine silence. Those who serve MALEVOLENCE do not beg for power. They demand it.</p>
+			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_MALEVOLENCE_EXPANDED_SPELL_LIST" />
+            <div element="ID_MS_VRPG_ARCHETYPE_FEATURE_MALEVOLENCE_CRUELTY" />
+            <div element="ID_MS_VRPG_ARCHETYPE_FEATURE_MALEVOLENCE_EXPLOIT_THE_WEAK" />
+			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_MALEVOLENCE_MAKE_THEM_SUFFER" />
+			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_MALEVOLENCE_DARKEST_MIRROR" />
+			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_MALEVOLENCE_AGAINST_THEIR_WILL" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_MALEVOLENCE_EXPANDED_SPELL_LIST" level="1" />
+            <grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_MALEVOLENCE_CRUELTY" level="1" />
+            <grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_MALEVOLENCE_EXPLOIT_THE_WEAK" level="1" />
+			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_MALEVOLENCE_MAKE_THEM_SUFFER" level="6" />
+			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_MALEVOLENCE_DARKEST_MIRROR" level="10" />
+			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_MALEVOLENCE_AGAINST_THEIR_WILL" level="14" />
+		</rules>
+	</element>
+
+	<element name="Expanded Spell List" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_MALEVOLENCE_EXPANDED_SPELL_LIST">
+		<description>
+			<p>Father of Malevolence lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
+			<h5 class="caption">MALEVOLENCE EXPANDED SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Spell Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>Dissonant Whispers, Ray of Sickness</em></td></tr>
+				<tr><td>2nd</td><td><em>Crown of Madness, Blidness/Deafness</em></td></tr>
+				<tr><td>3rd</td><td><em>Bestow Curse, Vampiric Touch, Life Transference</em></td></tr>
+				<tr><td>4th</td><td><em>Blight, Shadow of Moil, Vitriolic Sphere</em></td></tr>
+				<tr><td>5th</td><td><em>Enervation, Hold Monster, Contagion, Dominate Person</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+        <spellcasting name="Warlock" extend="true">
+			<extend>ID_PHB_SPELL_DISSONANT_WHISPERS</extend>
+			<extend>ID_PHB_SPELL_RAY_OF_SICKNESS</extend>
+			<extend>ID_PHB_SPELL_CROWN_OF_MADNESS</extend>
+			<extend>ID_PHB_SPELL_BLINDNESS_DEAFNESS</extend>
+			<extend>ID_PHB_SPELL_BESTOW_CURSE</extend>
+			<extend>ID_PHB_SPELL_VAMPIRIC_TOUCH</extend>
+			<extend>ID_PHB_SPELL_LIFE_TRANSFERENCE</extend>
+			<extend>ID_PHB_SPELL_BLIGHT</extend>
+			<extend>ID_PHB_SPELL_SHADOW_OF_MOIL</extend>
+			<extend>ID_PHB_SPELL_VITRIOLIC_SPHERE</extend>
+            <extend>ID_PHB_SPELL_ENERVATION</extend>
+            <extend>ID_PHB_SPELL_HOLD_MONSTER</extend>
+            <extend>ID_PHB_SPELL_CONTAGION</extend>
+            <extend>ID_PHB_SPELL_DOMINATE_PERSON</extend>
+		</spellcasting>
+	</element>
+
+<!-- Cruelty -->
+
+	<element name="Cruelty" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_MALEVOLENCE_CRUELTY">
+		<description>
+			<p><em>1st-level Father of Malevolence feature</em></p>
+			<p>When you choose this pact at 1st level, you choose one of the following manifestations of cruelty: Acid, Necrotic or Poison. Your choice determines the damage type associated with your Cruelty feature and affects other features of this subclass.</p>
+		</description>
+		<sheet>
+          <description>Your cruelty type is {{cruelty:type}}.</description>
+		</sheet>
+		<rules>
+          <select type="Archetype Feature" name="Cruelty Type Selection" supports="Cruelty Type" number="1" />
+		</rules>
+	</element>
+
+<!-- Exploit the Weak -->
+
+	<element name="Exploit the Weak" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_MALEVOLENCE_EXPLOIT_THE_WEAK">
+		<description>
+			<p><em>1st-level Father of Malevolence feature</em></p>
+			<p>When you choose this pact at 1st level, you learn to drain the power of fallen creatures, surrounding yourself with an aura of deadly darkness.</p>
+
+<p>When you reduce a creature to 0 hit points, you encase yourself in swirling shadows, gaining advantage on Charisma (Intimidation) checks. Your Darkspiral aura ends when you finish a short or long rest, expend the aura, or use this feature. You can suppress the aura while you have it, but you gain no benefits from it while it is suppressed. You count as having a half cover, +2 bonus to your AC and Dexterity saving throws.</p>
+
+<p>When a creature you can see targets you with a melee or ranged attack, you can expend your Darkspiral aura as a reaction to deal damage to that creature equal to 1d6 + your proficiency bonus. The damage type is determined by your chosen Cruelty. If you also choose to deal damage to an ally in addition to the hostile creature, that ally takes damage equal to the damage dealt by this feature, including any additional damage from your warlock level.</p>
+		</description>
+		<sheet usage="Reaction">
+          <description>When you reduce a creature to 0 hit points, you gain a Darkspiral Aura. You can suppress the aura, but gain no benefits from it while suppressed.
+          While active, you have advantage on Charisma (Intimidation) checks and gain +2 AC and Dexterity saving throws. 
+          When a creature targets you with a melee or ranged attack, you can expend the aura as a reaction to deal 1d6 + {{proficiency}} {{cruelty:type}} damage to it. You may also target an ally with this damage. If you do, add {{level:warlock}} to the damage, and both the creature and ally take the resulting total damage.
+          The aura ends when you finish a short or long rest, expend it, or use this feature.</description>
+		</sheet>
+	</element>
+
+<!-- Make Them Suffer -->
+
+	<element name="Make Them Suffer" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_MALEVOLENCE_MAKE_THEM_SUFFER">
+		<description>
+			<p><em>6th-level Father of Malevolence feature</em></p>
+			<p>Beginning at 6th level, you have resistance to the damage type associated with your chosen Cruelty.</p>
+
+<p>In addition, when you cast a spell that deals damage of the type associated with your chosen Cruelty, you can add your Charisma modifier to one damage roll of that spell against one of its targets.</p>
+
+<p>When you deal damage to a bloodied creature, you can deal extra damage to that creature equal to your proficiency bonus. This extra damage is of the type associated with your chosen Cruelty. You can deal this extra damage once per turn. For the purposes of this feature, a bloodied creature is a creature that has half its hit points or fewer remaining.</p>
+
+<p>At 14th level, you can ignore resistance to the damage type associated with your chosen Cruelty.</p>
+		</description>
+		<sheet>
+          <description>When you cast a spell that deals your {{cruelty:type}} damage, add {{mts:damage}} to one damage roll against one target.
+          Once per turn, when you deal damage to a creature at half its hit points or fewer, deal extra {{proficiency}} {{cruelty:type}} damage.</description>
+          <description level="14">When you cast a spell that deals your {{cruelty:type}} damage, add {{mts:damage}} to one damage roll against one target.
+          Once per turn, when you deal damage to a creature at half its hit points or fewer, deal extra {{proficiency}} {{cruelty:type}} damage.
+          You ignore {{cruelty:type}} resistance.</description>
+		</sheet>
+        <rules>
+            <stat name="mts:damage" value="1" bonus="base" />
+			<stat name="mts:damage" value="charisma:modifier" bonus="base" />
+          <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" requirements="ID_MS_VRPG_ARCHETYPE_FEATURE_MALEVOLENCE_CRUELTY_TYPE_SELECTION_ACID"/>
+          <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" requirements="ID_MS_VRPG_ARCHETYPE_FEATURE_MALEVOLENCE_CRUELTY_TYPE_SELECTION_NECROTIC"/>
+          <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" requirements="ID_MS_VRPG_ARCHETYPE_FEATURE_MALEVOLENCE_CRUELTY_TYPE_SELECTION_POISON"/>
+		  <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" requirements="ID_MS_VRPG_ARCHETYPE_FEATURE_MALEVOLENCE_CRUELTY_TYPE_SELECTION_COLD"/>
+		  <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" requirements="ID_MS_VRPG_ARCHETYPE_FEATURE_MALEVOLENCE_CRUELTY_TYPE_SELECTION_FIRE"/>
+		  <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" requirements="ID_MS_VRPG_ARCHETYPE_FEATURE_MALEVOLENCE_CRUELTY_TYPE_SELECTION_LIGHTNING"/>
+		</rules>
+	</element>
+
+<!-- Darkest Mirror -->
+
+	<element name="Darkest Mirror" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_MALEVOLENCE_DARKEST_MIRROR">
+		<description>
+			<p><em>10th-level Father of Malevolence feature</em></p>
+			<p>Starting at 10th level, you have advantage on saving throws against effects that compel you to speak the truth, reveal information against your will, or prevent you from knowingly speaking a lie.</p>
+
+<p>Additionally, you have advantage on Wisdom (Insight) and Charisma (Persuasion) checks made against creatures that are cruel, ruthless, or openly malicious.</p>
+
+<p>You can also sense the presence of benevolent creatures. As an action, you can open your awareness to detect such beings until the end of your next turn. During that time, you know the location of any creature within 60 feet of you that is a Celestial or that radiates an aura of genuine goodness, provided that creature isn't behind total cover. You know the creature's type, but not its identity or alignment.</p>
+
+<p>You can use this awareness a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet usage="{{proficiency}} / Long Rest">
+          <description>You have advantage on saving throws against effects that compel you to speak the truth, reveal information against your will, or prevent you from knowingly speaking a lie. 
+		  You have advantage on Insight and Persuasion checks made against creatures that are cruel, ruthless, or openly malicious.
+		  As an action, sense Celestials and creatures radiating genuine goodness within 60 ft. until end of your next turn (instant while Exploring). You know their location and type, but not identity and alignment. Total cover blocks detection.</description>
+		</sheet>
+	</element>
+
+<!-- Against Their Will -->
+
+	<element name="Against Their Will" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_MALEVOLENCE_AGAINST_THEIR_WILL">
+		<description>
+			<p><em>14th-level Father of Malevolence feature</em></p>
+			<p>Starting at 14th level, as an action, you choose one creature you can see within 60 feet of you as your target. The target remains chosen until it dies or you choose another creature.</p>
+
+<p>When the target moves, takes the Attack action, or casts a spell, you can use your reaction to force it to make a Constitution saving throw against your warlock spell save DC. On a failed save, the target's action is wasted, and it takes 2d8 + your proficiency bonus damage of the type chosen by your Cruelty feature. On a successful save, the target takes damage equal to your proficiency bonus of the same type.</p>
+
+<p>A creature that is immune to the frightened condition is unaffected by this feature. A creature that has advantage on saving throws against being frightened has advantage on the saving throws made against this feature.</p>
+
+<p>Once the target dies, you can choose another creature within 60 feet of you as your target.</p>
+		</description>
+		<sheet usage="Action / Reaction">
+          <description>As an action, choose a creature you can see within 60 ft. It remains your target until it dies or you choose another.
+		  When the target moves, attacks, or casts a spell, you may use your reaction to force a Constitution save against your spell save DC. On a failure, its action is wasted and it takes 2d8 + {{proficiency}} {{cruelty:type}} damage. On a success, it takes {{proficiency}} {{cruelty:type}} damage instead.
+		  Creatures immune to frightened are unaffected. Creatures with advantage against frightened have advantage on this save.
+		  When the target dies, you may choose another creature within 60 ft.</description>
+		</sheet>
+	</element>
+
+<!-- Eldritch Invocations -->
+
+    <element name="Eldritch Cruelty" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_FEATURE_MALEVOLENCE_ELDRITCH_INVOCATIONS_ELDRITCH_CRUELTY">
+        <supports>Eldritch Invocation</supports>
+        <requirements>ID_MS_VRPG_ARCHETYPE_WARLOCK_FATHER_OF_MALEVOLENCE</requirements>
+        <prerequisite>Father of Malevolence patron</prerequisite>
+        <description>
+            <p>Your Eldritch Blast damage same as your chosen Cruelty type.</p>
+        </description>
+        <sheet>
+            <description>Your Eldritch Blast damage is {{cruelty:type}}.</description>
+        </sheet>
+    </element>
+
+	<element name="Way More Cruel" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_FEATURE_MALEVOLENCE_ELDRITCH_INVOCATIONS_WAY_MORE_CRUEL">
+        <supports>Eldritch Invocation</supports>
+        <requirements>ID_MS_VRPG_ARCHETYPE_WARLOCK_FATHER_OF_MALEVOLENCE</requirements>
+        <prerequisite>Father of Malevolence patron</prerequisite>
+        <description>
+            <p>You gain three new options for your Cruelty choices. Fire, Cold and Lightning.</p>
+        </description>
+        <sheet display="false" />
+    </element>
+
+	<element name="Voice of the Malevolent" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_FEATURE_MALEVOLENCE_ELDRITCH_INVOCATIONS_VOICE_OF_THE_MALEVOLENT">
+        <supports>Eldritch Invocation</supports>
+        <requirements>ID_MS_VRPG_ARCHETYPE_WARLOCK_FATHER_OF_MALEVOLENCE</requirements>
+        <prerequisite>Father of Malevolence patron</prerequisite>
+        <description>
+            <p>You gain proficiency in Intimidation. If you already have proficiency in Intimidation, your proficiency bonus is doubled for any check you make with it.
+			Additionally, you can cast thaumaturgy at will. When you cast it, the sound of your voice becomes unnaturally threatening or cruel.</p>
+        </description>
+        <sheet>
+            <description>When you cast Thaumaturgy, the sound of your voice becomes unnaturally threatening or cruel.</description>
+        </sheet>
+		<rules>
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_INTIMIDATION" />
+			<grant type="Spell" id="ID_PHB_SPELL_THAUMATURGY" />
+		</rules>
+    </element>
+
+	<element name="Crush Their Mental" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_FEATURE_MALEVOLENCE_ELDRITCH_INVOCATIONS_ELDRITCH_CRUSH_THEIR_MENTAL">
+        <supports>Eldritch Invocation</supports>
+        <requirements>[level:5],ID_MS_VRPG_ARCHETYPE_WARLOCK_FATHER_OF_MALEVOLENCE</requirements>
+        <prerequisite>Father of Malevolence patron, 5th Level</prerequisite>
+        <description>
+            <p>When you deal damage to a bloodied creature, you can use your bonus action to force it to make a Wisdom saving throw agaisnt your spell save DC. On a failed save, the creature is frightened of you until the end of your next turn. On a successful save, the creature is unaffected and can't be affected by this feature for 1 day.</p>
+			<p>You can use this invocation a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+        </description>
+        <sheet usage="{{proficiency}} Bonus Action / Long Rest">
+            <description>When you deal damage to a bloodied creature, you can use your bonus action to force it to make a DC {{warlock:spellcasting:dc}} Wisdom saving throw. 
+			On a failed save, the creature is frightened of you until the end of your next turn. 
+			On a successful save, the creature is unaffected and can't be affected by this feature for 1 day.</description>
+        </sheet>
+    </element>
+
+	<element name="Cruelty Made Manifest" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_FEATURE_MALEVOLENCE_ELDRITCH_INVOCATIONS_ELDRITCH_CRUELTY_MADE_MANIFEST">
+        <supports>Eldritch Invocation</supports>
+        <requirements>[level:5],ID_MS_VRPG_ARCHETYPE_WARLOCK_FATHER_OF_MALEVOLENCE</requirements>
+        <prerequisite>Father of Malevolence patron, 5th Level</prerequisite>
+        <description>
+            <p>When you deal damage of that type to a creature with your Exploit the Weak feature, you can reduce that creature’s speed by 10 feet until the start of your next turn.</p>
+        </description>
+        <sheet>
+            <description>When you deal damage of that type to a creature with your Exploit the Weak feature, you can reduce that creature’s speed by 10 feet until the start of your next turn.</description>
+        </sheet>
+    </element>
+
+	<element name="Not Until I'm Done" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_FEATURE_MALEVOLENCE_ELDRITCH_INVOCATIONS_ELDRITCH_NOT_UNTIL_IM_DONE">
+        <supports>Eldritch Invocation</supports>
+        <requirements>[level:5],ID_MS_VRPG_ARCHETYPE_WARLOCK_FATHER_OF_MALEVOLENCE</requirements>
+        <prerequisite>Father of Malevolence patron, 5th Level</prerequisite>
+        <description>
+            <p>You can cast speak with dead without expending a spell slot or material components.</p>
+			<p>When you cast the spell using this invocation, the corpse can answer only if doing so serves one of your questions or benefits you in some way.</p>
+        </description>
+        <sheet>
+            <description>You can cast speak with dead without expending a spell slot or material components.
+			When you cast the spell using this invocation, the corpse can answer only if doing so serves one of your questions or benefits you in some way.</description>
+        </sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_SPEAK_WITH_DEAD" />
+		</rules>
+    </element>
+
+	<element name="A Useful Sacrifice" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_FEATURE_MALEVOLENCE_ELDRITCH_INVOCATIONS_ELDRITCH_A_USEFUL_SACRIFICE">
+        <supports>Eldritch Invocation</supports>
+        <requirements>[level:5],ID_MS_VRPG_ARCHETYPE_WARLOCK_FATHER_OF_MALEVOLENCE</requirements>
+        <prerequisite>Father of Malevolence patron, 5th Level</prerequisite>
+        <description>
+            <p>When you reduce a creature to 0 hit points, you can use your reaction to gain one of the following benefits:</p>
+			<p>You gain temporary hit points equal to your warlock level.</p>
+			<p>You can immediately move up to half your speed without provoking opportunity attacks.</p>
+			<p>You have advantage on the next attack roll or ability check you make before the end of your next turn.</p>
+			<p>You can use this invocation once per short or long rest.</p>
+        </description>
+        <sheet usage="1 / Short Rest">
+            <description>When you reduce a creature to 0 hit points, you can use your reaction to gain one of the following benefits:
+			You gain {{level:warlock}} temporary hit points.
+			You can immediately move up to half your speed without provoking opportunity attacks.
+			You have advantage on the next attack roll or ability check you make before the end of your next turn.</description>
+        </sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_SPEAK_WITH_DEAD" />
+		</rules>
+    </element>
+
+	<element name="Cruel Retaliation" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_FEATURE_MALEVOLENCE_ELDRITCH_INVOCATIONS_ELDRITCH_A_USEFUL_SACRIFICE">
+        <supports>Eldritch Invocation</supports>
+        <requirements>[level:5],ID_MS_VRPG_ARCHETYPE_WARLOCK_FATHER_OF_MALEVOLENCE</requirements>
+        <prerequisite>Father of Malevolence patron, 5th Level</prerequisite>
+        <description>
+            <p>When you use your Exploit the Weak feature to deal damage to a hostile creature, you can force that creature to make a Wisdom saving throw against your warlock spell save DC. On a failed save, the creature has frightened condition until end of its next turn.</p>
+			<p>You can use this effect a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+        </description>
+        <sheet usage="{{proficiency}} / Long Rest">
+            <description>hen you use your Exploit the Weak feature to deal damage to a hostile creature, you can force that creature to make a DC {{warlock:spellcasting:dc}} Wisdom saving throw. 
+			On a failed save, the creature has frightened condition until end of its next turn</description>
+        </sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_SPEAK_WITH_DEAD" />
+		</rules>
+    </element>
+
+	<element name="Unbowed" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_FEATURE_MALEVOLENCE_ELDRITCH_INVOCATIONS_ELDRITCH_UNBOWED">
+        <supports>Eldritch Invocation</supports>
+        <requirements>[level:7],ID_MS_VRPG_ARCHETYPE_WARLOCK_FATHER_OF_MALEVOLENCE</requirements>
+        <prerequisite>Father of Malevolence patron, 7th Level</prerequisite>
+        <description>
+            <p>You have advantage on saving throws against being charmed or frightened.</p>
+			<p>If you succeed on a saving throw against either condition, you can move up to 10 feet without provoking opportunity attacks.</p>
+        </description>
+        <sheet>
+            <description>You have advantage on saving throws against being charmed or frightened.
+			If you succeed on a saving throw against either condition, you can move up to 10 feet without provoking opportunity attacks.</description>
+        </sheet>
+    </element>
+
+	<element name="Merciless Hex" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_FEATURE_MALEVOLENCE_ELDRITCH_INVOCATIONS_ELDRITCH_MERCILESS_HEX">
+        <supports>Eldritch Invocation</supports>
+        <requirements>[level:7],ID_MS_VRPG_ARCHETYPE_WARLOCK_FATHER_OF_MALEVOLENCE</requirements>
+        <prerequisite>Father of Malevolence patron, 7th Level</prerequisite>
+        <description>
+            <p>When you attack a creature that is cursed by your Hex and is Bloodied, your attack rolls against that creature score a Critical Hit on a roll of 19 or 20.</p>
+        </description>
+        <sheet>
+            <description>When you attack a creature that is cursed by your Hex and is Bloodied, your attack rolls against that creature score a Critical Hit on a roll of 19 or 20.</description>
+        </sheet>
+    </element>
+
+	<element name="Freedom Comes First" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_FEATURE_MALEVOLENCE_ELDRITCH_INVOCATIONS_ELDRITCH_FREEDOM_COMES_FIRST">
+        <supports>Eldritch Invocation</supports>
+        <requirements>[level:7],ID_MS_VRPG_ARCHETYPE_WARLOCK_FATHER_OF_MALEVOLENCE</requirements>
+        <prerequisite>Father of Malevolence patron, 7th Level</prerequisite>
+        <description>
+            <p>When you are restrained, grappled, or paralyzed, you can use your bonus action to attempt to break free. Make a Charisma saving throw against the effect’s save DC. On a success, the effect ends on you. If the effect has no save DC, make a Charisma check against DC 15 instead.</p>
+			<p>You can use this invocation once per short or long rest.</p>
+        </description>
+        <sheet usage="1 / Short Rest">
+            <description>When you are restrained, grappled, or paralyzed, you can use your bonus action to attempt to break free. Make a Charisma saving throw against the effect’s save DC. On a success, the effect ends on you. If the effect has no save DC, make a Charisma check against DC 15 instead.</description>
+        </sheet>
+    </element>
+
+	<element name="Malice Feeds Malice" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_FEATURE_MALEVOLENCE_ELDRITCH_INVOCATIONS_ELDRITCH_MALICE_FEEDS_MALICE">
+        <supports>Eldritch Invocation</supports>
+        <requirements>[level:7],ID_MS_VRPG_ARCHETYPE_WARLOCK_FATHER_OF_MALEVOLENCE</requirements>
+        <prerequisite>Father of Malevolence patron, 7th Level</prerequisite>
+        <description>
+            <p>When a creature within 60 feet of you becomes frightened, poisoned, or cursed, you gain temporary hit points equal to your proficiency bonus + charisma modifier.</p>
+			<p>You can gain these temporary hit points only once per turn.</p>
+        </description>
+        <sheet>
+            <description>When a creature within 60 feet of you becomes frightened, poisoned, or cursed, you gain {{mfm:thp}} temporary hit points.</description>
+        </sheet>
+		<rules>
+			<stat name="mfm:thp" value="proficiency"/>
+			<stat name="mfm:thp" value="charisma:modifier"/>
+		</rules>
+    </element>
+
+	<element name="A Price for Mercy" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_FEATURE_MALEVOLENCE_ELDRITCH_INVOCATIONS_ELDRITCH_A_PRICE_FOR_MERCY">
+        <supports>Eldritch Invocation</supports>
+        <requirements>[level:9],ID_MS_VRPG_ARCHETYPE_WARLOCK_FATHER_OF_MALEVOLENCE</requirements>
+        <prerequisite>Father of Malevolence patron, 9th Level</prerequisite>
+        <description>
+            <p>When a creature you can see within 60 feet of you would regain hit points, you can use your reaction to force that creature to make a Charisma saving throw against your warlock spell save DC.</p>
+			<p>On a failed save, the creature regains only half the hit points it would have regained, and you gain temporary hit points equal to your proficiency bonus. On a successful save, the creature regains hit points normally. You can use this invocation a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+        </description>
+        <sheet usage="{{proficiency}} / Long Rest">
+            <description>When a creature you can see within 60 feet of you would regain hit points, you can use your reaction to force that creature to make a DC {{warlock:spellcasting:dc}} Charisma saving throw.
+			On a failed save, the creature regains only half the hit points it would have regained, and you gain {{proficiency}} temporary hit points.
+			On a successful save, the creature regains hit points normally.</description>
+        </sheet>
+		<rules>
+			<stat name="mfm:thp" value="proficiency"/>
+			<stat name="mfm:thp" value="charisma:modifier"/>
+		</rules>
+    </element>
+
+<!-- Cruelty Type Selection -->
+	
+    <element name="Acid" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_MALEVOLENCE_CRUELTY_TYPE_SELECTION_ACID">
+		<supports>Cruelty Type</supports>
+		<description>
+			<p>Your Cruelty Type is Acid.</p>
+		</description>
+		<sheet display="false" />
+        <compendium display="false" />
+        <rules>
+          <stat inline="true" name="cruelty:type" value="Acid"/>
+		</rules>
+    </element>
+
+    <element name="Necrotic" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_MALEVOLENCE_CRUELTY_TYPE_SELECTION_NECROTIC">
+		<supports>Cruelty Type</supports>
+		<description>
+			<p>Your Cruelty Type is Necrotic.</p>
+		</description>
+		<sheet display="false" />
+        <compendium display="false" />
+        <rules>
+          <stat inline="true" name="cruelty:type" value="Necrotic"/>
+		</rules>
+    </element>
+
+    <element name="Poison" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_MALEVOLENCE_CRUELTY_TYPE_SELECTION_POISON">
+		<supports>Cruelty Type</supports>
+		<description>
+			<p>Your Cruelty Type is Poison.</p>
+		</description>
+		<sheet display="false" />
+        <compendium display="false" />
+        <rules>
+          <stat inline="true" name="cruelty:type" value="Poison"/>
+		</rules>
+    </element>
+
+	<element name="Cold" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_MALEVOLENCE_CRUELTY_TYPE_SELECTION_COLD">
+		<supports>Cruelty Type</supports>
+		<requirements>ID_MS_VRPG_CLASS_FEATURE_MALEVOLENCE_ELDRITCH_INVOCATIONS_WAY_MORE_CRUEL</requirements>
+        <prerequisite>Way More Cruel Eldritch Invocation</prerequisite>
+		<description>
+			<p>Your Cruelty Type is Cold.</p>
+		</description>
+		<sheet display="false" />
+        <compendium display="false" />
+        <rules>
+          <stat inline="true" name="cruelty:type" value="Cold" requirements="ID_MS_VRPG_CLASS_FEATURE_MALEVOLENCE_ELDRITCH_INVOCATIONS_WAY_MORE_CRUEL"/>
+		</rules>
+    </element>
+
+	<element name="Fire" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_MALEVOLENCE_CRUELTY_TYPE_SELECTION_FIRE">
+		<supports>Cruelty Type</supports>
+		<requirements>ID_MS_VRPG_CLASS_FEATURE_MALEVOLENCE_ELDRITCH_INVOCATIONS_WAY_MORE_CRUEL</requirements>
+        <prerequisite>Way More Cruel Eldritch Invocation</prerequisite>
+		<description>
+			<p>Your Cruelty Type is Fire.</p>
+		</description>
+		<sheet display="false" />
+        <compendium display="false" />
+        <rules>
+          <stat inline="true" name="cruelty:type" value="Fire" requirements="ID_MS_VRPG_CLASS_FEATURE_MALEVOLENCE_ELDRITCH_INVOCATIONS_WAY_MORE_CRUEL"/>
+		</rules>
+    </element>
+
+	<element name="Lightning" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_MALEVOLENCE_CRUELTY_TYPE_SELECTION_LIGHTNING">
+		<supports>Cruelty Type</supports>
+		<requirements>ID_MS_VRPG_CLASS_FEATURE_MALEVOLENCE_ELDRITCH_INVOCATIONS_WAY_MORE_CRUEL</requirements>
+        <prerequisite>Way More Cruel Eldritch Invocation</prerequisite>
+		<description>
+			<p>Your Cruelty Type is Lightning.</p>
+		</description>
+		<sheet display="false" />
+        <compendium display="false" />
+        <rules>
+          <stat inline="true" name="cruelty:type" value="Lightning" requirements="ID_MS_VRPG_CLASS_FEATURE_MALEVOLENCE_ELDRITCH_INVOCATIONS_WAY_MORE_CRUEL"/>
+		</rules>
+    </element>
+
+</elements>

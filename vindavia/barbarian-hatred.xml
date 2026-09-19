@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Path of the Hatred</name>
-		<update version="1.0.81">
+		<update version="1.1.0">
 			<file name="barbarian-hatred.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/barbarian-hatred.xml" />
 		</update>
 	</info>
@@ -14,7 +14,7 @@
 		<description>
 			<p>Barbarians who walk the Path of Hatred are driven by an unrelenting fury, fueled by the wrongs they've endured and the desire to protect what remains dear to them. Their rage is not just an expression of emotion but a destructive force that bends their body and mind to a single purpose: the annihilation of those who stand in their way. Every strike, every wound, only serves to intensify their wrath, pushing them beyond the limits of pain and endurance.</p>
             <p>These warriors care little for their own safety, throwing themselves into battle with reckless abandon. Their hatred manifests as a primal force, granting them brutal power, but at a terrible cost. They are relentless, driven by a single goal—eradication of their enemies at all costs. The pain they endure in battle only sharpens their focus, and their presence on the battlefield draws the attention of all who would dare to challenge them.</p>
-            <p>Barbarians on this path are the embodiment of vengeance and fury. Their rage is their shield, their weapon, and their curse, making them formidable foes and unyielding protectors of those they care about.</p>
+            <p>Barbarians on this path are the embodiment of vengeance and fury. Their rage is their shield, their weapon, and their curse, making them formidable foes and unyielding protectors of those they care about. "Human body is a walking annihilation. If right conditions are met, nothing can stop them. Even us..." - Unknown Being</p>
 			<p class="indent">You can choose the reason of your hatred or determine it by rolling on the Origin of the Hatred table.</p>
 			<h5 class="caption">Origin of the Hatred</h5>
 			<table>
@@ -29,14 +29,14 @@
 			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_PATH_OF_THE_HATRED_HATRED" />
 			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_PATH_OF_THE_HATRED_UNTIL_LAST_ENEMY_DIES" />
 			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_PATH_OF_THE_HATRED_MONSTER_IN_FRONT_OF_ME" />
-			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_PATH_OF_THE_HATRED_CONTINUE_THE_MASSACRE" />
+			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_PATH_OF_THE_HATRED_CONTINUE_TO_THE_MASSACRE" />
 		</description>
 		<sheet display="false" />
 		<rules>
 			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_PATH_OF_THE_HATRED_HATRED" level="3" />
 			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_PATH_OF_THE_HATRED_UNTIL_LAST_ENEMY_DIES" level="6" />
 			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_PATH_OF_THE_HATRED_MONSTER_IN_FRONT_OF_ME" level="10" />
-			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_PATH_OF_THE_HATRED_CONTINUE_THE_MASSACRE" level="14" />
+			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_PATH_OF_THE_HATRED_CONTINUE_TO_THE_MASSACRE" level="14" />
 		</rules>
 	</element>
 
@@ -89,22 +89,22 @@
 	<element name="MONSTER IN FRONT OF ME" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_PATH_OF_THE_HATRED_MONSTER_IN_FRONT_OF_ME">
 		<description>
 			<p><em>10th-level Path of the Hatred feature</em></p>
-			<p>Starting at 10th level, You pose too much danger to your enemy. Your enemies around you are prioritizing killing you first. While you're raging, if any enemies are within 30 ft. will prioritize attacking you. If the creature cannot attack you, then the target will not prioritize you. You also gain resistance to all types of damage (except extra damage from Wild Strikes).</p>
+			<p>Starting at 10th level, You pose too much danger to your enemy. Your enemies around you, are prioritizing killing you first. While you're raging, if any enemies are within 30 feet, they will prioritize attacking you. If the creature cannot attack you, then the target will not prioritize you. You also gain resistance to all types of damage while raging (except extra damage from Wild Strikes).</p>
 		</description>
 		<sheet>
 			<description>
-			<p>While you're raging, if any enemies are within 30 ft. will prioritize attacking you. If the creature cannot attack you, then the target will not prioritize you. You also gain resistance to all types of damage (except Wild Strikes extra damage).</p>
+			<p>While you're raging, if any enemies are within 30 feet, they will prioritize attacking you. If the creature cannot attack you, then the target will not prioritize you. You also gain resistance to all types of damage while raging (except Wild Strikes extra damage).</p>
 			
 			</description>
 		</sheet>
 	</element>
 
-    <!-- CONTINUE THE MASSACRE-->
+    <!-- CONTINUE TO THE MASSACRE-->
 
-	<element name="CONTINUE THE MASSACRE" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_PATH_OF_THE_HATRED_CONTINUE_THE_MASSACRE">
+	<element name="CONTINUE TO THE MASSACRE" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_PATH_OF_THE_HATRED_CONTINUE_TO_THE_MASSACRE">
 		<description>
 			<p><em>14th-level Path of the Hatred feature</em></p>
-			<p>Starting at 14th level, The hatred that fuels your rage allows you to gain unimaginable toughness. While you're raging, when you kill a enemy you regain hit points equal to 5 + constitution modifier. </p>
+			<p>Starting at 14th level, The hatred that fuels your rage allows you to gain unimaginable toughness. While you're raging, when you kill a enemy you regain hit points equal to 5 + constitution modifier (minimum 1). </p>
 			<p>Also when you take damage from a creature that is within 5 feet of you, you can use your reaction to make a melee weapon attack against that creature.</p>
 		</description>
 		<sheet>
@@ -114,8 +114,9 @@
 			</description>
 		</sheet>
 		<rules>
+		    <stat name="massacre:hp" value="1" bonus="base" />
 			<stat name="massacre:hp" value="5" />
-			<stat name="massacre:hp" value="constitution:modifier" />
+			<stat name="massacre:hp" value="constitution:modifier" bonus="base" />
 		</rules>
 	</element>
 

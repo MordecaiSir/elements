@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Dragonborn</name>
-		<update version="0.1.2">
+		<update version="0.1.3">
 			<file name="race-custom-lineage.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/race-custom-lineage.xml" />
 		</update>
 	</info>
@@ -91,7 +91,7 @@
 	<element name="Skill Proficiency" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_SKILL_PROFICIENCY">
 		<supports> Custom Race Variable Trait </supports>
 		<description>
-			<p>Proficiency in one skill of your choice.</p>
+			<p>Proficiency in two skill of your choice.</p>
 		</description>
 		<sheet display="false" />
 		<compendium display="false" />
@@ -295,8 +295,9 @@
 		<supports>Custom Race Racial Trait</supports>
 		<description>You learn two cantrips from any list and choose one ability to counted as spellcasting.</description>
 		<sheet display="false" />
+		<compendium display="false" />
 		<rules>
-			<select type="Racial Trait" name="Spellcasting Selection" supports="Custom Race Spellcasting Options Cantrips" />
+			<select type="Racial Trait" name="Spellcasting Selection (Cantrips)" supports="Custom Race Spellcasting Options Cantrips" />
 			<select type="Spell" name="Cantrip (Racial Trait)" supports="0" number="2" spellcasting="Custom Race Cantrips"/>
 		</rules>
 	</element>
@@ -305,14 +306,111 @@
 		<supports>Custom Race Racial Trait</supports>
 		<description>You learn three spells acording to your level. On level one you know one first level spell, on level three you know one second level spell and on level five you know one third level spell. You can cast these spells once per day.</description>
 		<sheet display="false" />
+		<compendium display="false" />
 		<rules>
-			<select type="Racial Trait" name="Spellcasting Selection" supports="Custom Race Spellcasting Options Spells" />
+			<select type="Racial Trait" name="Spellcasting Selection (Spells)" supports="Custom Race Spellcasting Options Spells" />
 			<select type="Spell" name="Spellcasting (Racial Trait)" supports="1" number="1" level="1" spellcasting="Custom Race Spells"/>
 			<select type="Spell" name="Spellcasting (Racial Trait)" supports="2" number="1" level="3" spellcasting="Custom Race Spells"/>
 			<select type="Spell" name="Spellcasting (Racial Trait)" supports="3" number="1" level="5" spellcasting="Custom Race Spells"/>
 			<stat name="custom race spells:spellcasting:slots:1" value="1" level="1" />
 			<stat name="custom race spells:spellcasting:slots:2" value="1" level="3" />
 			<stat name="custom race spells:spellcasting:slots:3" value="1" level="5" />
+		</rules>
+	</element>
+
+	<element name="Claws" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_CUSTOM_RACE_OPTIONAL_FEATURE_CLAWS">
+		<supports>Custom Race Racial Trait</supports>
+		<description>Your Claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 1d4 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.</description>
+		<sheet>
+			<description>Your Claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 1d4 + {{strength:modifier}}, instead of the bludgeoning damage.</description>
+		</sheet>
+		<compendium display="false" />
+		<rules />
+	</element>
+
+	<element name="Powerful Build" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_POWERFUL_BUILD">
+		<supports> Custom Race Racial Trait </supports>
+		<description>
+			<p>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</p>
+		</description>
+		<sheet>
+			<description>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</description>
+		</sheet>
+		<compendium display="false" />
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_WEIGHT_CAPACITY_COUNTS_AS_LARGER" />
+		</rules>
+	</element>
+
+	<element name="Charge" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_CHARGE">
+		<supports> Custom Race Racial Trait </supports>
+		<description>
+			<p>If you move at least 30 feet straight toward a target and then hit it with a melee weapon attack on the same turn, you can immediately follow that attack with a bonus action, making one attack against the target with your body. Deal bludgeoning damage equal to your strength modifier and push the target by 5 feet.</p>
+		</description>
+		<sheet>
+			<description> If you move at least 30 feet straight toward a target and then hit it with a melee weapon attack on the same turn, you can immediately follow that attack with a bonus action, making one attack against the target with your body. Deal {{strength:modifier}} bludgeoning damage and push the target by 5 feet.</description>
+		</sheet>
+		<compendium display="false" />
+		<rules />
+	</element>
+
+	<element name="Brave" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_BRAVE">
+		<supports> Custom Race Racial Trait </supports>
+		<description>
+			<p>You have advantage on saving throws against being frightened.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on saving throws against being frightened.</description>
+		</sheet>
+		<compendium display="false" />
+		<rules />
+	</element>
+
+	<element name="Aggressive" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_AGGRESSIVE">
+		<supports> Custom Race Racial Trait </supports>
+		<description>
+			<p>As a bonus action, you can move up to your movement speed toward a hostile creature you can see or hear. You must end this move closer to the enemy than you started.</p>
+		</description>
+		<sheet>
+			<description>As a bonus action, you can move up to your movement speed toward a hostile creature you can see or hear. You must end this move closer to the enemy than you started.</description>
+		</sheet>
+		<compendium display="false" />
+		<rules />
+	</element>
+
+	<element name="Poison Resistance" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_POISON_RESISTANCE">
+		<supports> Custom Race Racial Trait </supports>
+		<description>
+			<p>You have Advantage on saving throws to avoid or end the Poisoned condition.</p>
+		</description>
+		<sheet>
+			<description>You have Advantage on saving throws to avoid or end the Poisoned condition.</description>
+		</sheet>
+		<compendium display="false" />
+		<rules />
+	</element>
+
+	<element name="Natural Armor" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_NATURAL_ARMOR_OPTIONS">
+		<supports> Custom Race Racial Trait </supports>
+		<description>
+			<p>Choose between 13, 15 or 18 AC.</p>
+		</description>
+		<sheet display="false" />
+		<compendium display="false" />
+		<rules>
+			<select type="Racial Trait" name="Natural Armor Selection" supports="Custom Race Natural Armor Options" />
+		</rules>
+	</element>
+
+	<element name="Vulnerability" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_VULNERABILITY">
+		<supports> Custom Race Racial Trait </supports>
+		<description>
+			<p>You gain one damage vulnerability of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<compendium display="false" />
+		<rules>
+			<select type="Racial Trait" name="Damage Vulnerability Selection" supports="Damage Vulnerability Selection"/>
 		</rules>
 	</element>
 
@@ -555,7 +653,7 @@
 		<description>
 			<p>As an action, you change your appearance and your voice. You determine the specifics of the changes, including your coloration and hair length. You can make yourself appear as a member of another race, though none of your game statistics change. You can't duplicate the appearance of an individual you've never seen, and you must adopt a form that has the same basic arrangement of limbs that you have. Your clothing and equipment aren't changed by this trait.</p>
 		</description>
-		<sheet>
+		<sheet alt="Doppelganger">
 			<p>As an action, you change your appearance and your voice. You determine the specifics of the changes, including your coloration and hair length. You can make yourself appear as a member of another race, though none of your game statistics change. You can't duplicate the appearance of an individual you've never seen, and you must adopt a form that has the same basic arrangement of limbs that you have. Your clothing and equipment aren't changed by this trait.</p>
 		</sheet>
 		<compendium display="false" />
@@ -621,5 +719,218 @@
 		<compendium display="false" />
 		<spellcasting name="Custom Race Spells" ability="Charisma" allowReplace="true"></spellcasting>
 	</element>
-	
+
+   <!-- Natural Armor Selection -->
+
+	<element name="Light Natural Armor" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_CUSTOM_RACE_OPTIONAL_FEATURE_NATURAL_ARMOR_SELECTION_LIGHT">
+		<supports>Custom Race Natural Armor Options</supports>
+		<description>Make your AC 13 + Dexterity Modifier.</description>
+		<sheet display="false" />
+		<compendium display="false" />
+		<rules>
+			<stat inline="true" name="light-natural-armor" value="Light Natural Armor"/>
+
+			<stat name="ac:thin natural armor:base" value="13" />
+			<stat name="ac:thin natural armor:dexterity" value="dexterity:modifier" />
+
+			<stat name="ac:thin natural armor" value="ac:thin natural armor:base" />
+			<stat name="ac:thin natural armor" value="ac:thin natural armor:dexterity" />
+
+			<stat name="ac:calculation" value="ac:thin natural armor" bonus="calculation" equipped="[armor:none]" alt="Light Natural Armor (Custom Race)" />
+		</rules>
+	</element>
+
+	<element name="Medium Natural Armor" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_CUSTOM_RACE_OPTIONAL_FEATURE_NATURAL_ARMOR_SELECTION_MEDIUM">
+		<supports>Custom Race Natural Armor Options</supports>
+		<description>Make your AC 15 + Dexterity Modifier (Maximum 2).</description>
+		<sheet display="false" />
+		<compendium display="false" />
+		<rules>
+			<stat inline="true" name="medium-natural-armor" value="Medium Natural Armor"/>
+
+			<stat name="ac:medium natural armor:base" value="15" />
+			<stat name="ac:medium natural armor:dexterity" value="dexterity:modifier" maximum="2"/>
+
+			<stat name="ac:medium natural armor" value="ac:medium natural armor:base" />
+			<stat name="ac:medium natural armor" value="ac:medium natural armor:dexterity" maximum="2"/>
+
+			<stat name="ac:calculation" value="ac:medium natural armor" bonus="calculation" equipped="[armor:none]" alt="Medium Natural Armor (Custom Race)" />
+		</rules>
+	</element>
+
+	<element name="Heavy Natural Armor" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_CUSTOM_RACE_OPTIONAL_FEATURE_NATURAL_ARMOR_SELECTION_HEAVY">
+		<supports>Custom Race Natural Armor Options</supports>
+		<description>Make your AC 18. You can't wear normal armor, you need to find kind armor suits you or pay someone to make you a special design armor (Thats expensive).</description>
+		<sheet>
+			<description>You can't wear normal armor, you need to find kind armor suits you or pay someone to make you a special design armor (Thats expensive).</description>
+		</sheet>
+		<compendium display="false" />
+		<rules>
+			<stat inline="true" name="heavy-natural-armor" value="Heavy Natural Armor"/>
+
+			<stat name="ac:heavy natural armor:base" value="18" />
+
+			<stat name="ac:heavy natural armor" value="ac:heavy natural armor:base" />
+
+			<stat name="ac:calculation" value="ac:heavy natural armor" bonus="calculation" equipped="[armor:none]" alt="Heavy Natural Armor (Custom Race)" />
+		</rules>
+	</element>
+
+   <!-- Damage Vulnerability Selection -->
+
+	<element name="Acid" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_ACID_VULNERABILITY">
+		<supports> Damage Vulnerability Selection </supports>
+		<description>
+			<p>You gain vulnerability to Acid damage.</p>
+		</description>
+		<sheet display="false" />
+		<compendium display="false" />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ACID" />
+		</rules>
+	</element>
+
+	<element name="Cold" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_COLD_VULNERABILITY">
+		<supports> Damage Vulnerability Selection </supports>
+		<description>
+			<p>You gain vulnerability to Cold damage.</p>
+		</description>
+		<sheet display="false" />
+		<compendium display="false" />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_COLD" />
+		</rules>
+	</element>
+
+	<element name="Fire" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_FIRE_VULNERABILITY">
+		<supports> Damage Vulnerability Selection </supports>
+		<description>
+			<p>You gain vulnerability to Fire damage.</p>
+		</description>
+		<sheet display="false" />
+		<compendium display="false" />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITYE_FIRE" />
+		</rules>
+	</element>
+
+	<element name="Force" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_FORCE_VULNERABILITY">
+		<supports> Damage Vulnerability Selection </supports>
+		<description>
+			<p>You gain vulnerability to Force damage.</p>
+		</description>
+		<sheet display="false" />
+		<compendium display="false" />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_FORCE" />
+		</rules>
+	</element>
+
+	<element name="Lightning" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_LIGHTNING_VULNERABILITY">
+		<supports> Damage Vulnerability Selection </supports>
+		<description>
+			<p>You gain vulnerability to Lightning damage.</p>
+		</description>
+		<sheet display="false" />
+		<compendium display="false" />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_LIGHTNING" />
+		</rules>
+	</element>
+
+	<element name="Necrotic" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_NECROTIC_VULNERABILITY">
+		<supports> Damage Vulnerability Selection </supports>
+		<description>
+			<p>You gain vulnerability to Necrotic damage.</p>
+		</description>
+		<sheet display="false" />
+		<compendium display="false" />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_NECROTIC" />
+		</rules>
+	</element>
+
+	<element name="Poison" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_POISON_VULNERABILITY">
+		<supports> Damage Vulnerability Selection </supports>
+		<description>
+			<p>You gain vulnerability to Poison damage.</p>
+		</description>
+		<sheet display="false" />
+		<compendium display="false" />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_POISON" />
+		</rules>
+	</element>
+
+	<element name="Psychic" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_PSYCHIC_VULNERABILITY">
+		<supports> Damage Vulnerability Selection </supports>
+		<description>
+			<p>You gain vulnerability to Psychic damage.</p>
+		</description>
+		<sheet display="false" />
+		<compendium display="false" />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_PSYCHIC" />
+		</rules>
+	</element>
+
+	<element name="Radiant" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_RADIANT_VULNERABILITY">
+		<supports> Damage Vulnerability Selection </supports>
+		<description>
+			<p>You gain vulnerability to Radiant damage.</p>
+		</description>
+		<sheet display="false" />
+		<compendium display="false" />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_RADIANT" />
+		</rules>
+	</element>
+
+	<element name="Thunder" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_THUNDER_VULNERABILITY">
+		<supports> Damage Vulnerability Selection </supports>
+		<description>
+			<p>You gain vulnerability to Thunder damage.</p>
+		</description>
+		<sheet display="false" />
+		<compendium display="false" />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_THUNDER" />
+		</rules>
+	</element>
+
+	<element name="Bludgeoning" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_BLUDGEONING_VULNERABILITY">
+		<supports> Damage Vulnerability Selection </supports>
+		<description>
+			<p>You gain vulnerability to Bludgeoning damage.</p>
+		</description>
+		<sheet display="false" />
+		<compendium display="false" />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_BLUDGEONING" />
+		</rules>
+	</element>
+
+	<element name="Piercing" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_PIERCING_VULNERABILITY">
+		<supports> Damage Vulnerability Selection </supports>
+		<description>
+			<p>You gain vulnerability to Piercing damage.</p>
+		</description>
+		<sheet display="false" />
+		<compendium display="false" />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_PIERCING" />
+		</rules>
+	</element>
+
+	<element name="Slashing" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_SLASHING_VULNERABILITY">
+		<supports> Damage Vulnerability Selection </supports>
+		<description>
+			<p>You gain vulnerability to Slashing damage.</p>
+		</description>
+		<sheet display="false" />
+		<compendium display="false" />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_SLASHING" />
+		</rules>
+	</element>
 </elements>
