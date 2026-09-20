@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>The Ancient Scribe</name>
+		<update version="1.0.0">
+			<file name="warlock-all-knowing.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/warlock-all-knowing.xml" />
+		</update>
+	</info>
+	
+	<!-- Subclass description -->
+
+	<element name="The All Knowing" type="Archetype" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_WARLOCK_THE_ALL_KNOWING">
+		<supports>Otherworldly Patron</supports>
+		<description>
+			<p>Your patron is not a demon, god, or fey—but ALL_KNOWING incarnate. It simply exists, as the purest reaction to injustice, betrayal, and divine silence. Those who serve ALL_KNOWING do not beg for power. They demand it.</p>
+			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_ALL_KNOWING_EXPANDED_SPELL_LIST" />
+            <div element="ID_MS_VRPG_ARCHETYPE_FEATURE_ALL_KNOWING_EMPOWERED_AWAKENED_MIND" />
+			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_ALL_KNOWING_MIND_HUNTER" />
+			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_ALL_KNOWING_EMPOWERED_SHIELDED_MIND" />
+			<div element="ID_MS_VRPG_ARCHETYPE_FEATURE_ALL_KNOWING_DEFIER_OF_RULES" />
+            <div element="ID_MS_VRPG_ARCHETYPE_FEATURE_ALL_KNOWING_UNFATHOMABLE_KNOWLEDGE" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_ALL_KNOWING_EXPANDED_SPELL_LIST" level="1" />
+            <grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_ALL_KNOWING_EMPOWERED_AWAKENED_MIND" level="1" />
+			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_ALL_KNOWING_MIND_HUNTER" level="6" />
+			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_ALL_KNOWING_EMPOWERED_SHIELDED_MIND" level="10" />
+			<grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_ALL_KNOWING_DEFIER_OF_RULES" level="14" />
+            <grant type="Archetype Feature" id="ID_MS_VRPG_ARCHETYPE_FEATURE_ALL_KNOWING_UNFATHOMABLE_KNOWLEDGE" level="14" />
+		</rules>
+	</element>
+
+	<element name="Expanded Spell List" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_ALL_KNOWING_EXPANDED_SPELL_LIST">
+		<description>
+			<p>You can choose spells from any list.</p>
+		</description>
+		<sheet display="false" />
+        <spellcasting name="Warlock" extend="true">
+			<extend>Sorcerer</extend>
+			<extend>Wizard</extend>
+			<extend>Cleric</extend>
+			<extend>Bard</extend>
+			<extend>Paladin</extend>
+			<extend>Druid</extend>
+			<extend>Ranger</extend>
+		</spellcasting>
+	</element>
+
+<!-- Empowered Awakened Mind -->
+
+	<element name="Empowered Awakened Mind" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_ALL_KNOWING_EMPOWERED_AWAKENED_MIND">
+		<description>
+			<p><em>1st-level The All Knowing feature</em></p>
+			<p>Starting at 1st level, your alien knowledge gives you the ability to touch the minds of other creatures. You can telepathically communicate with any creature you can see within 60 feet of yourself. You don't need to share a language with the creature for it to understand your telepathic communication, and the creature doesn't need to know any language. If a creature doesn't know any language, it understands your telepathic communication as basic concepts rather than specific words or languages.</p>
+            <p>The range of this feature increases to 90 feet at 10th level and 120 feet at 14th level.</p>
+		</description>
+		<sheet>
+          <description>You can telepathically communicate with any creature you can see within 60 feet of yourself. You don't need to share a language with the creature for it to understand your telepathic communication, and the creature doesn't need to know any language. If a creature doesn't know any language, it understands your telepathic communication as basic concepts rather than specific words or languages.</description>
+          <description level="10">You can telepathically communicate with any creature you can see within 90 feet of yourself. You don't need to share a language with the creature for it to understand your telepathic communication, and the creature doesn't need to know any language. If a creature doesn't know any language, it understands your telepathic communication as basic concepts rather than specific words or languages.</description>
+          <description level="14">You can telepathically communicate with any creatures within 120 feet of yourself but you don't learn their location. You don't need to share a language with the creatures for it to understand your telepathic communication, and the creatures doesn't need to know any language. If a creatures doesn't know any language, it understands your telepathic communication as basic concepts rather than specific words or languages.</description>
+		</sheet>
+	</element>
+
+<!-- Mind Hunter -->
+
+	<element name="Mind Hunter" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_ALL_KNOWING_MIND_HUNTER">
+		<description>
+			<p><em>6th-level The All Knowing feature</em></p>
+			<p>Starting at 6th level, your psychic abilities allow you to pierce the mental defenses of other creatures. You ignore resistance to psychic damage.</p>
+            <p>At 10th level, if a creature is immune to psychic damage, you treat its immunity as resistance instead.</p>
+            <p>At 14th level, if a creature has neither resistance nor immunity to psychic damage, you treat it as vulnerable to psychic damage.</p>
+		</description>
+		<sheet>
+          <description>You ignore psychic resistance.</description>
+          <description level="10">You ignore psychic resistance. 
+          You count psychic immunity as resistance.</description>
+          <description level="14">You ignore psychic resistance. 
+          You count psychic immunity as resistance. 
+          If creature neither have resistance or immunity, they count as vulnerable to psychic damage.</description>
+		</sheet>
+	</element>
+
+<!-- Empowered Shielded Mind -->
+
+	<element name="Empowered Shielded Mind" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_ALL_KNOWING_EMPOWERED_SHIELDED_MIND">
+		<description>
+			<p><em>10th-level The All Knowing feature</em></p>
+			<p>Starting at 10th level, your thoughts can't be read by telepathy or other means unless you allow it.</p>
+            <p>You also gain immunity to psychic damage. In addition, whenever a creature you can see deals psychic damage to you, you can use your reaction to deal psychic damage to that creature equal to the amount of damage it would have dealt to you before your immunity was applied.</p>
+		</description>
+		<sheet>
+          <description usage="Reaction">Your thoughts can't be read by telepathy or other means unless you allow it.
+          Whenever a creature you can see deals psychic damage to you, you can use your reaction to deal psychic damage to that creature equal to the amount of damage it would have dealt to you before your immunity was applied.</description>
+		</sheet>
+        <rules>
+		  <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_PSYCHIC"/>
+		</rules>
+	</element>
+
+<!-- Defier of Rules -->
+
+	<element name="Defier of Rules" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_ALL_KNOWING_DEFIER_OF_RULES">
+		<description>
+			<p><em>14th-level The All Knowing feature</em></p>
+			<p>Starting at 14th level, you have learned to manipulate the fundamental rules of the mind.</p>
+            <p>When you or a creature you can see makes a saving throw, you can use your reaction to change the type of that saving throw to another ability of your choice. You can use this reaction a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a short or long rest.</p>
+		</description>
+		<sheet usage="{{DoR:limit}} Reaction / Short Rest">
+          <description>When you or a creature you can see makes a saving throw, you can use your reaction to change the type of that saving throw to another ability of your choice.</description>
+		</sheet>
+        <rules>
+		  <stat name="DoR:limit" value="1" bonus="base" />
+		  <stat name="DoR:limit" value="charisma:modifier" bonus="base" />
+		</rules>
+	</element>
+
+<!-- Unfathomable Knowledge -->
+
+	<element name="Unfathomable Knowledge" type="Archetype Feature" source="Vindavia RPG" id="ID_MS_VRPG_ARCHETYPE_FEATURE_ALL_KNOWING_UNFATHOMABLE_KNOWLEDGE">
+		<description>
+			<p><em>14th-level The All Knowing feature</em></p>
+			<p>Starting at 14th level, you have learned to manipulate the fundamental rules of the mind.</p>
+            <p>As a bonus action, you can infiltrate the mind of a creature you can see within 60 feet of yourself and fill its mind with unfathomable knowledge. The target must succeed on an Intelligence saving throw against your spell save DC.</p>
+            <p>On a failed save, the target takes psychic damage equal to your Warlock level and is incapacitated until the end of your next turn. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
+            <p>On a successful save, the target takes psychic damage equal to Proficiency Bonus and isn't incapacitated.</p>
+            <p>Once you use this feature, you can't use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet usage="1 Bonus Action / Short Rest">
+          <description>As a bonus action, you can infiltrate the mind of a creature you can see within 60 feet of yourself and fill its mind with unfathomable knowledge. The target must succeed on an DC {{warlock:spellcasting:dc}} Intelligence saving throw.
+          On a failed save, the target takes {{level:warlock}} psychic damage and is incapacitated until the end of your next turn. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+          On a successful save, the target takes {{proficiency}} psychic damage and isn't incapacitated.</description>
+		</sheet>
+	</element>
+
+<!-- Eldritch Invocations -->
+
+    <element name="Mind Blaster" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_FEATURE_ALL_KNOWING_ELDRITCH_INVOCATIONS_MIND_BLASTER">
+        <supports>Eldritch Invocation</supports>
+        <requirements>ID_MS_VRPG_ARCHETYPE_WARLOCK_THE_ALL_KNOWING, ID_PHB_SPELL_ELDRITCH_BLAST</requirements>
+        <prerequisite>The All Knowing patron, Eldritch Blast</prerequisite>
+        <description>
+            <p>Your Eldritch Blast can deal Psychic Damage.</p>
+        </description>
+        <sheet>
+            <description>Your Eldritch Blast deal Psychic Damage.</description>
+        </sheet>
+    </element>
+
+    <element name="Voice Beyond Language" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_FEATURE_ALL_KNOWING_ELDRITCH_INVOCATIONS_VOICE_BEYOND_LANGUAGE">
+        <supports>Eldritch Invocation</supports>
+        <requirements>ID_MS_VRPG_ARCHETYPE_WARLOCK_THE_ALL_KNOWING</requirements>
+        <prerequisite>The All Knowing patron</prerequisite>
+        <description>
+            <p>When you communicate telepathically with a creature it can understand complex ideas, emotions, and images you transmit through your telepathy</p>
+        </description>
+        <sheet>
+            <description>When you communicate telepathically with a creature it can understand complex ideas, emotions, and images you transmit through your telepathy</description>
+        </sheet>
+    </element>
+
+    <element name="Unnatural Presence" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_FEATURE_ALL_KNOWING_ELDRITCH_INVOCATIONS_ELDRITCH_UNNATURAL_PRESENCE">
+        <supports>Eldritch Invocation</supports>
+        <requirements>[level:5],ID_MS_VRPG_ARCHETYPE_WARLOCK_THE_ALL_KNOWING</requirements>
+        <prerequisite>The All Knowing patron, 5th Level</prerequisite>
+        <description>
+            <p>Your presence carries an otherworldly influence. You gain proficiency in Intimidation and Persuasion.</p>
+            <p>Whenever you make a Charisma (Intimidation) or Charisma (Persuasion) check, you can treat a d20 roll of 9 or lower as a 10.</p>
+            <p>Once you use this benefit, you can't use it again until you finish a short or long rest.</p>
+        </description>
+        <sheet usage="1 / Short Rest">
+            <description>Whenever you make a Charisma (Intimidation) or Charisma (Persuasion) check, you can treat a d20 roll of 9 or lower as a 10.</description>
+        </sheet>
+        <rules>
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_INTIMIDATION" />
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_PERSUASION" />
+		</rules>
+    </element>
+
+    <element name="Psychic Devastation" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_FEATURE_ALL_KNOWING_ELDRITCH_INVOCATIONS_ELDRITCH_PSYCHIC_DEVASTATION">
+        <supports>Eldritch Invocation</supports>
+        <requirements>[level:7],ID_MS_VRPG_ARCHETYPE_WARLOCK_THE_ALL_KNOWING</requirements>
+        <prerequisite>The All Knowing patron, 7th Level</prerequisite>
+        <description>
+            <p>Once on each of your turns, when you deal psychic damage to a creature, you can deal extra psychic damage to it equal to your Charisma modifier.</p>
+        </description>
+        <sheet>
+            <description>Once on each of your turns, when you deal psychic damage to a creature, you can deal extra {{charisma:modifier}} psychic damage to it.</description>
+        </sheet>
+    </element>
+
+    <element name="Shatter the Mind" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_FEATURE_ALL_KNOWING_ELDRITCH_INVOCATIONS_ELDRITCH_SHATTER_THE_MIND">
+        <supports>Eldritch Invocation</supports>
+        <requirements>[level:7],ID_MS_VRPG_ARCHETYPE_WARLOCK_THE_ALL_KNOWING, ID_PHB_SPELL_ELDRITCH_BLAST</requirements>
+        <prerequisite>The All Knowing patron, 7th Level, Eldritch Blast</prerequisite>
+        <description>
+            <p>When you deal psychic damage to a creature with your Eldritch Blast, you can force it to make an Intelligence saving throw against your spell save DC.</p>
+            <p>On a failed save, the creature can't take reactions until the start of your next turn.</p>
+            <p>Once you use this feature, you can't use it again until you finish a short or long rest.</p>
+        </description>
+        <sheet usage="1 / Short Rest">
+            <description>When you deal psychic damage to a creature with your Eldritch Blast, you can force it to make an DC {{warlock:spellcasting:dc}} Intelligence saving throw.
+            On a failed save, the creature can't take reactions until the start of your next turn.</description>
+        </sheet>
+    </element>
+
+    <element name="Unfathomable Sight" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_FEATURE_ALL_KNOWING_ELDRITCH_INVOCATIONS_ELDRITCH_UNFATHOMABLE_SIGHT">
+        <supports>Eldritch Invocation</supports>
+        <requirements>[level:9],ID_MS_VRPG_ARCHETYPE_WARLOCK_THE_ALL_KNOWING</requirements>
+        <prerequisite>The All Knowing patron, 9th Level</prerequisite>
+        <description>
+            <p>You can see invisible creatures and objects within 30 feet of you.</p>
+            <p>In addition, you can perceive the presence of creatures within 30 feet of you even if they are behind total cover, although you can't see them through the cover.</p>
+        </description>
+        <sheet>
+            <description>You can see invisible creatures and objects within 30 feet of you.
+            In addition, you can perceive the presence of creatures within 30 feet of you even if they are behind total cover, although you can't see them through the cover.</description>
+        </sheet>
+    </element>
+
+    <element name="Mind Over Matter" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_FEATURE_ALL_KNOWING_ELDRITCH_INVOCATIONS_ELDRITCH_MIND_OVER_MATTER">
+        <supports>Eldritch Invocation</supports>
+        <requirements>[level:12],ID_MS_VRPG_ARCHETYPE_WARLOCK_THE_ALL_KNOWING</requirements>
+        <prerequisite>The All Knowing patron, 12th Level</prerequisite>
+        <description>
+            <p>When you fail an Intelligence, Wisdom, or Charisma saving throw, you can use your reaction to reroll it. You must use the new roll.</p>
+            <p>Once you use this feature, you can't use it again until you finish a short or long rest.</p>
+        </description>
+        <sheet usage="1 / Short Rest">
+            <description>When you fail an Intelligence, Wisdom, or Charisma saving throw, you can use your reaction to reroll it. You must use the new roll.</description>
+        </sheet>
+    </element>
+
+    <element name="The Mind That Should Not Be" type="Class Feature" source="Vindavia RPG" id="ID_MS_VRPG_CLASS_FEATURE_ALL_KNOWING_ELDRITCH_INVOCATIONS_ELDRITCH_THE_MIND_THAT_SHOULD_NOT_BE">
+        <supports>Eldritch Invocation</supports>
+        <requirements>[level:14],ID_MS_VRPG_ARCHETYPE_WARLOCK_THE_ALL_KNOWING</requirements>
+        <prerequisite>The All Knowing patron, 14th Level</prerequisite>
+        <description>
+            <p>Your mind exists beyond the understanding of mortal creatures.</p>
+            <p>You have advantage on Intelligence, Wisdom, and Charisma saving throws, and you can't be frightened, charmed, or possessed.</p>
+            <p>In addition, whenever a creature attempts to read your thoughts or communicate with you telepathically without your permission, you can use your reaction to deal psychic damage to that creature equal to your Warlock level.</p>
+        </description>
+        <sheet usage="Reaction">
+            <description>You have advantage on Intelligence, Wisdom, and Charisma saving throws, and you can't be frightened, charmed, or possessed.
+            In addition, whenever a creature attempts to read your thoughts or communicate with you telepathically without your permission, you can use your reaction to deal {{level:warlock}} psychic damage to that creature.</description>
+        </sheet>
+    </element>
+
+</elements>
