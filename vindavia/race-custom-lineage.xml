@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Dragonborn</name>
-		<update version="0.1.3">
+		<update version="0.1.4">
 			<file name="race-custom-lineage.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/race-custom-lineage.xml" />
 		</update>
 	</info>
@@ -412,6 +412,18 @@
 		<rules>
 			<select type="Racial Trait" name="Damage Vulnerability Selection" supports="Damage Vulnerability Selection"/>
 		</rules>
+	</element>
+
+	<element name="Immense Agility" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_IMMENSE_AGILITY">
+		<supports> Custom Race Racial Trait </supports>
+		<description>
+			<p>Your reflexes and agility allow you to move with a burst of speed. When you move on your turn in combat, you can double your speed until the end of the turn. Once you use this trait, you can't use it again until you move 0 feet on one of your turns.</p>
+		</description>
+		<sheet>
+			<description>When you move on your turn in combat, you can double your speed until the end of the turn. Once you use this trait, you can't use it again until you move 0 feet on one of your turns.</description>
+		</sheet>
+		<compendium display="false" />
+		<rules />
 	</element>
 
    <!-- Ability Score Improvement 2 -->
