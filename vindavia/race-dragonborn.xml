@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Dragonborn</name>
-		<update version="0.1.1">
+		<update version="0.1.2">
 			<file name="race-dragonborn.xml" url="https://raw.githubusercontent.com/MordecaiSir/elements/master/vindavia/race-dragonborn.xml" />
 		</update>
 	</info>
@@ -60,7 +60,7 @@
 				<tr><td>White</td><td>Cold</td></tr>
 			</table>
 			<br />
-			<span class="feature">Breath Weapon.</span>You can use your action to exhale destructive energy. Your Draconic Ancestry determines the size, shape, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw, the type of which is determined by your Draconic Ancestry. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 damage on a failed save, and half as much damage on a successful one. The damage increases to 3d6 at 6th level, 4d6 at 11th level, and 5d6 at 16th level. After you use your breath weapon, you can’t use it again until you complete a short or long rest.
+			<span class="feature">Breath Weapon.</span>You can use your action to exhale destructive energy. Your Draconic Ancestry determines the size, shape, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw, the type of which is determined by your Draconic Ancestry. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 1d10 damage on a failed save, and half as much damage on a successful one. The damage increases to 2d10 at 5th level, 3d10 at 11th level, and 4d10 at 17th level. After you use your breath weapon, you can’t use it again until you complete a short or long rest.
 			<br />
 			<span class="feature">Damage Resistance.</span>You have resistance to the damage type associated with your Draconic Ancestry.
 			<br />
@@ -120,7 +120,7 @@
 
 	<element name="Breath Weapon" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_DRAGONBORN_BREATH_WEAPON">
 		<description>
-			<p>When you take the Attack action on your turn, you can replace one of your attacks with an exhalation of magical energy in either a 15-foot Cone or a 30-foot Line that is 5 feet wide (choose the shape each time). Each creature in that area must make a Dexterity saving throw (DC 8 plus your Constitution modifier and Proficiency Bonus). On a failed save, a creature takes 1d6 damage of the type determined by your Draconic Ancestry trait. On a successful save, a creature takes half as much damage. This damage increases by 1d6 when you reach character levels 5 (2d6), 11 (3d6), and 17 (4d6).</p> 
+			<p>When you take the Attack action on your turn, you can replace one of your attacks with an exhalation of magical energy in either a 15-foot Cone or a 30-foot Line that is 5 feet wide (choose the shape each time). Each creature in that area must make a Dexterity saving throw (DC 8 plus your Constitution modifier and Proficiency Bonus). On a failed save, a creature takes 1d10 damage of the type determined by your Draconic Ancestry trait. On a successful save, a creature takes half as much damage. This damage increases by 1d10 when you reach character levels 5 (2d10), 11 (3d10), and 17 (4d10).</p> 
 			<p class="indent">You can use this Breath Weapon a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p>
 		</description>
 		<sheet display="false" />
@@ -149,67 +149,67 @@
 	<element name="Breath Weapon (Black)" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_DRAGONBORN_BREATH_WEAPON_BLACK">
 		<compendium display="false" />
 		<sheet alt="Breath Weapon" action="Attack" usage="{{proficiency}}/Long Rest">
-			<description>You exhale magical energy in either a 15-foot Cone or a 30-foot Line that is 5 feet wide (choose the shape each time). Each creature in the area must make a Dexterity saving throw against a DC {{breath weapon:dc}}. On a failed save, a creature takes {{breath weapon:dice count}}d6 Acid damage, or half as much damage on a successful one.</description>
+			<description>You exhale magical energy in either a 15-foot Cone or a 30-foot Line that is 5 feet wide (choose the shape each time). Each creature in the area must make a Dexterity saving throw against a DC {{breath weapon:dc}}. On a failed save, a creature takes {{breath weapon:dice count}}d10 Acid damage, or half as much damage on a successful one.</description>
 		</sheet>
 	</element>
 	<element name="Breath Weapon (Blue)" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_DRAGONBORN_BREATH_WEAPON_BLUE">
 		<compendium display="false" />
 		<sheet alt="Breath Weapon" action="Attack" usage="{{proficiency}}/Long Rest">
-			<description>You exhale magical energy in either a 15-foot Cone or a 30-foot Line that is 5 feet wide (choose the shape each time). Each creature in the area must make a Dexterity saving throw against a DC {{breath weapon:dc}}. On a failed save, a creature takes {{breath weapon:dice count}}d6 Lightning damage, or half as much damage on a successful one.</description>
+			<description>You exhale magical energy in either a 15-foot Cone or a 30-foot Line that is 5 feet wide (choose the shape each time). Each creature in the area must make a Dexterity saving throw against a DC {{breath weapon:dc}}. On a failed save, a creature takes {{breath weapon:dice count}}d10 Lightning damage, or half as much damage on a successful one.</description>
 		</sheet>
 	</element>
 	<element name="Breath Weapon (Brass)" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_DRAGONBORN_BREATH_WEAPON_BRASS">
 		<compendium display="false" />
 		<sheet alt="Breath Weapon" action="Attack" usage="{{proficiency}}/Long Rest">
-			<description>You exhale magical energy in either a 15-foot Cone or a 30-foot Line that is 5 feet wide (choose the shape each time). Each creature in the area must make a Dexterity saving throw against a DC {{breath weapon:dc}}. On a failed save, a creature takes {{breath weapon:dice count}}d6 Fire damage, or half as much damage on a successful one.</description>
+			<description>You exhale magical energy in either a 15-foot Cone or a 30-foot Line that is 5 feet wide (choose the shape each time). Each creature in the area must make a Dexterity saving throw against a DC {{breath weapon:dc}}. On a failed save, a creature takes {{breath weapon:dice count}}d10 Fire damage, or half as much damage on a successful one.</description>
 		</sheet>
 	</element>
 	<element name="Breath Weapon (Bronze)" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_DRAGONBORN_BREATH_WEAPON_BRONZE">
 		<compendium display="false" />
 		<sheet alt="Breath Weapon" action="Attack" usage="{{proficiency}}/Long Rest">
-			<description>You exhale magical energy in either a 15-foot Cone or a 30-foot Line that is 5 feet wide (choose the shape each time). Each creature in the area must make a Dexterity saving throw against a DC {{breath weapon:dc}}. On a failed save, a creature takes {{breath weapon:dice count}}d6 Lightning damage, or half as much damage on a successful one.</description>
+			<description>You exhale magical energy in either a 15-foot Cone or a 30-foot Line that is 5 feet wide (choose the shape each time). Each creature in the area must make a Dexterity saving throw against a DC {{breath weapon:dc}}. On a failed save, a creature takes {{breath weapon:dice count}}d10 Lightning damage, or half as much damage on a successful one.</description>
 		</sheet>
 	</element>
 	<element name="Breath Weapon (Copper)" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_DRAGONBORN_BREATH_WEAPON_COPPER">
 		<compendium display="false" />
 		<sheet alt="Breath Weapon" action="Attack" usage="{{proficiency}}/Long Rest">
-			<description>You exhale magical energy in either a 15-foot Cone or a 30-foot Line that is 5 feet wide (choose the shape each time). Each creature in the area must make a Dexterity saving throw against a DC {{breath weapon:dc}}. On a failed save, a creature takes {{breath weapon:dice count}}d6 Acid damage, or half as much damage on a successful one.</description>
+			<description>You exhale magical energy in either a 15-foot Cone or a 30-foot Line that is 5 feet wide (choose the shape each time). Each creature in the area must make a Dexterity saving throw against a DC {{breath weapon:dc}}. On a failed save, a creature takes {{breath weapon:dice count}}d10 Acid damage, or half as much damage on a successful one.</description>
 		</sheet>
 	</element>
 	<element name="Breath Weapon (Dark)" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_DRAGONBORN_BREATH_WEAPON_DARK">
 		<compendium display="false" />
 		<sheet alt="Breath Weapon" action="Attack" usage="{{proficiency}}/Long Rest">
-			<description>You exhale magical energy in either a 15-foot Cone or a 30-foot Line that is 5 feet wide (choose the shape each time). Each creature in the area must make a Dexterity saving throw against a DC {{breath weapon:dc}}. On a failed save, a creature takes {{breath weapon:dice count}}d6 Necrotic damage, or half as much damage on a successful one.</description>
+			<description>You exhale magical energy in either a 15-foot Cone or a 30-foot Line that is 5 feet wide (choose the shape each time). Each creature in the area must make a Dexterity saving throw against a DC {{breath weapon:dc}}. On a failed save, a creature takes {{breath weapon:dice count}}d10 Necrotic damage, or half as much damage on a successful one.</description>
 		</sheet>
 	</element>
 	<element name="Breath Weapon (Gold)" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_DRAGONBORN_BREATH_WEAPON_GOLD">
 		<compendium display="false" />
 		<sheet alt="Breath Weapon" action="Attack" usage="{{proficiency}}/Long Rest">
-			<description>You exhale magical energy in either a 15-foot Cone or a 30-foot Line that is 5 feet wide (choose the shape each time). Each creature in the area must make a Dexterity saving throw against a DC {{breath weapon:dc}}. On a failed save, a creature takes {{breath weapon:dice count}}d6 Fire damage, or half as much damage on a successful one.</description>
+			<description>You exhale magical energy in either a 15-foot Cone or a 30-foot Line that is 5 feet wide (choose the shape each time). Each creature in the area must make a Dexterity saving throw against a DC {{breath weapon:dc}}. On a failed save, a creature takes {{breath weapon:dice count}}d10 Fire damage, or half as much damage on a successful one.</description>
 		</sheet>
 	</element>
 	<element name="Breath Weapon (Green)" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_DRAGONBORN_BREATH_WEAPON_GREEN">
 		<compendium display="false" />
 		<sheet alt="Breath Weapon" action="Attack" usage="{{proficiency}}/Long Rest">
-			<description>You exhale magical energy in either a 15-foot Cone or a 30-foot Line that is 5 feet wide (choose the shape each time). Each creature in the area must make a Dexterity saving throw against a DC {{breath weapon:dc}}. On a failed save, a creature takes {{breath weapon:dice count}}d6 Poison damage, or half as much damage on a successful one.</description>
+			<description>You exhale magical energy in either a 15-foot Cone or a 30-foot Line that is 5 feet wide (choose the shape each time). Each creature in the area must make a Dexterity saving throw against a DC {{breath weapon:dc}}. On a failed save, a creature takes {{breath weapon:dice count}}d10 Poison damage, or half as much damage on a successful one.</description>
 		</sheet>
 	</element>
 	<element name="Breath Weapon (Red)" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_DRAGONBORN_BREATH_WEAPON_RED">
 		<compendium display="false" />
 		<sheet alt="Breath Weapon" action="Attack" usage="{{proficiency}}/Long Rest">
-			<description>You exhale magical energy in either a 15-foot Cone or a 30-foot Line that is 5 feet wide (choose the shape each time). Each creature in the area must make a Dexterity saving throw against a DC {{breath weapon:dc}}. On a failed save, a creature takes {{breath weapon:dice count}}d6 Fire damage, or half as much damage on a successful one.</description>
+			<description>You exhale magical energy in either a 15-foot Cone or a 30-foot Line that is 5 feet wide (choose the shape each time). Each creature in the area must make a Dexterity saving throw against a DC {{breath weapon:dc}}. On a failed save, a creature takes {{breath weapon:dice count}}d10 Fire damage, or half as much damage on a successful one.</description>
 		</sheet>
 	</element>
 	<element name="Breath Weapon (Silver)" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_DRAGONBORN_BREATH_WEAPON_SILVER">
 		<compendium display="false" />
 		<sheet alt="Breath Weapon" action="Attack" usage="{{proficiency}}/Long Rest">
-			<description>You exhale magical energy in either a 15-foot Cone or a 30-foot Line that is 5 feet wide (choose the shape each time). Each creature in the area must make a Dexterity saving throw against a DC {{breath weapon:dc}}. On a failed save, a creature takes {{breath weapon:dice count}}d6 Cold damage, or half as much damage on a successful one.</description>
+			<description>You exhale magical energy in either a 15-foot Cone or a 30-foot Line that is 5 feet wide (choose the shape each time). Each creature in the area must make a Dexterity saving throw against a DC {{breath weapon:dc}}. On a failed save, a creature takes {{breath weapon:dice count}}d10 Cold damage, or half as much damage on a successful one.</description>
 		</sheet>
 	</element>
 	<element name="Breath Weapon (White)" type="Racial Trait" source="Vindavia RPG" id="ID_MS_VRPG_RACIAL_TRAIT_DRAGONBORN_BREATH_WEAPON_WHITE">
 		<compendium display="false" />
 		<sheet alt="Breath Weapon" action="Attack" usage="{{proficiency}}/Long Rest">
-			<description>You exhale magical energy in either a 15-foot Cone or a 30-foot Line that is 5 feet wide (choose the shape each time). Each creature in the area must make a Dexterity saving throw against a DC {{breath weapon:dc}}. On a failed save, a creature takes {{breath weapon:dice count}}d6 Cold damage, or half as much damage on a successful one.</description>
+			<description>You exhale magical energy in either a 15-foot Cone or a 30-foot Line that is 5 feet wide (choose the shape each time). Each creature in the area must make a Dexterity saving throw against a DC {{breath weapon:dc}}. On a failed save, a creature takes {{breath weapon:dice count}}d10 Cold damage, or half as much damage on a successful one.</description>
 		</sheet>
 	</element>
 
