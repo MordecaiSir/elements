@@ -26,7 +26,7 @@
 			<select type="Racial Trait" name="Size" supports="Custom Race Size" />
             <select type="Racial Trait" name="Variable Trait" supports="Custom Race Variable Trait" number="2" />
 			<select type="Racial Trait" name="Sight" supports="Custom Race Sight" optional="true"/>
-            <select type="Racial Trait" name="Racial Feature" supports="Custom Race Racial Trait" optional="true" number="3"/>
+            <select type="Racial Trait" name="Racial Feature" supports="Custom Race Racial Trait" optional="true" number="5"/>
 			<select type="Ability Score Improvement" name="Ability Score Improvement +2 (Custom Lineage)" supports="Custom Race ASI" />
 			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_MS_VRPG_OPTION_CUSTOMIZED_LANGUAGE" />
 		</rules>
